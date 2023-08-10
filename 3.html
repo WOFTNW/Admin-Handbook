@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Handbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sidenav.js"></script>
+
+    <link rel="stylesheet" href="highlight/styles/vs2015.min.css">
+    <script src="highlight/highlight.min.js"></script>
+    <script src="highlight/src/languages/mcfunction.js"></script>
+    <script src="highlight/dist/mcfunction.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<!-- Side navigation -->
+<div id="sidenav" class="sidenav">
+
+    <a href="index.html">Home</a>
+    <a href="0.html">Section 0: What is an Admin?</a>
+    <div class="subnav">
+        <a href="0.html#What-are-the-responsibilities-of-administrators">What are the responsibilities of
+            administrators?</a>
+        <a href="0.html#How-does-this-differ-from-other-staff-positions">How does this differ from other staff
+            positions?</a>
+        <a href="0.html#The purpose of this handbook">The purpose of this handbook</a>
+    </div>
+
+    <a href="1.html">Section 1: Minecraft Commands</a>
+    <div class="subnav">
+        <a href="1.html#notation-guide">Notation Guide</a>
+        <a href="1.html#target-selectors">Target Selectors</a>
+        <a href="1.html#important-commands">Important Commands</a>
+        <div class="subsubnav">
+            <a href="1.html#ban">/ban</a>
+            <a href="1.html#clear">/clear</a>
+            <a href="1.html#datapack">/datapack</a>
+            <a href="1.html#execute">/execute</a>
+            <a href="1.html#give">/give</a>
+            <a href="1.html#kick">/kick</a>
+            <a href="1.html#pardon">/pardon</a>
+            <a href="1.html#scoreboard">/scoreboard</a>
+            <a href="1.html#summon">/summon</a>
+            <a href="1.html#tellraw">/tellraw</a>
+            <a href="1.html#whitelist">/whitelist</a>
+        </div>
+    </div>
+
+    <a href="2.html">Section 2: Server Commands</a>
+    <div class="subnav">
+        <a href="2.html#paper-spigot-bukkit">Paper/Spigot/Bukkit</a>
+        <a href="2.html#dreamvisitor">Dreamvisitor</a>
+        <div class="subsubnav">
+            <a href="2.html#item-blacklist">Item Blacklist</a>
+            <a href="2.html#soft-whitelist">Soft Whitelist</a>
+            <a href="2.html#pause-chat">Pause Chat</a>
+        </div>
+        <a href="2.html#essentialsx">EssentialsX</a>
+        <div class="subsubnav">
+            <a href="2.html#powertools">Powertools</a>
+        </div>
+        <a href="2.html#eyeofonyx">Eye of Onyx</a>
+        <div class="subsubnav">
+            <a href="2.html#challenge-handshakes">Challenge Handshakes</a>
+        </div>
+        <a href="2.html#griefdefender">GriefDefender</a>
+        <div class="subsubnav">
+            <a href="2.html#griefdefender-commands">Commands</a>
+            <a href="2.html#claim-types">Claim Types</a>
+            <a href="2.html#trust-types">Trust Types</a>
+        </div>
+        <a href="2.html#luckperms">LuckPerms</a>
+        <a href="2.html#signshop">SignShop</a>
+        <a href="2.html#vault">Vault</a>
+        <a href="2.html#worldedit">WorldEdit</a>
+        <div class="subsubnav">
+            <a href="2.html#worldedit-basic-commands">Basic Commands</a>
+            <a href="2.html#worldedit-tool-commands">Tool Commands</a>
+            <a href="2.html#worldedit-generation-commands">Generation Commands</a>
+            <a href="2.html#worldedit-brush-commands">Brush Commands</a>
+            <a href="2.html#worldedit-flags">Flags</a>
+        </div>
+        <a href="2.html#worldedit">WorldGuard</a>
+        <div class="subsubnav">
+            <a href="2.html#worldguard-commands">Commands</a>
+            <a href="2.html#worldguard-flags">Flags</a>
+        </div>
+    </div>
+
+    <a href="3.html">Section 3: Navigating Discord</a>
+    <div class="subnav">
+        <a href="3.html#bots">Bots</a>
+        <div class="subsubnav">
+            <a href="3.html#tupperbox">Tupperbox</a>
+            <a href="3.html#chip">Chip</a>
+            <a href="3.html#tickets">Tickets</a>
+            <a href="3.html#zira">Zira</a>
+            <a href="3.html#circle">Circle</a>
+            <a href="3.html#pluralkit">PluralKit</a>
+            <a href="3.html#dreamvisitor">Dreamvisitor</a>
+            <a href="3.html#starboard">Starboard</a>
+        </div>
+        <a href="3.html#channels">Channels</a>
+        <a href="3.html#roles">Roles</a>
+        <a href="3.html#stages-events">Stages & Events</a>
+    </div>
+
+    <a href="4.html">Section 4: Royalty</a>
+
+    <a href="5.html">Section 5: Project Management</a>
+    <div class="subnav">
+        <a href="5.html#documentation-tracking">Documentation and Tracking</a>
+        <a href="5.html#time-management">Time Management</a>
+        <a href="5.html#communication">Communication</a>
+        <a href="5.html#respect-professionalism">Respect and Professionalism</a>
+        <a href="5.html#tracking-a-project">Tracking a Project</a>
+        <a href="5.html#operations-activities">Operations Activities</a>
+        <a href="5.html#project-retrospectives">Project Retrospectives</a>
+    </div>
+
+    <a href="6.html">Section 6: Personal Responsibility</a>
+    <div class="subnav">
+        <a href="6.html#security">Security</a>
+        <a href="6.html#engagement">Engaging in a Community</a>
+    </div>
+
+    <br>
+</div>
+
+<body id="body">
+    <header style="display: flex; align-items: center; background-color: #131313;">
+        <span class="navtoggle" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <nav style="margin: auto;">
+            <p style="margin: 0px; margin-right: 50px;">Wings of Fire: The New World - Admin Handbook</p>
+        </nav>
+    </header>
+
+    <main style="padding: 0;">
+
+        <header>
+            <div class="maintext">
+                <h1>Section 3: Navigating Discord</h1>
+            </div>
+        </header>
+
+        <div class="maintext">
+
+            <p>The Discord server is the communication hub for Wings of Fire: The New World. It’s just as important as
+                the Minecraft server itself. Both need to be in good condition, upkeep, and activity for the server to
+                be enjoyable. Admins have full administrative permissions on the Discord server. Much of the content in
+                this section is also included in mod training, so this may look familiar. However, there are some
+                admin-specific permissions and processes which you should know.</p>
+
+            <h2 id="bots">Bots</h2>
+
+            <div class="two-share">
+                <div>
+                    <p>Not unlike the plugins from Section 2, we use a variety of bots to add features and functionality
+                        to the Discord server. Each one will be individually addressed, but not all functions and
+                        features will be detailed. Generally, we should try to keep the number of bots to a minimum, but
+                        if you or another player has a great idea for a bot, ask the rest of the team!</p>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Tupperbox</li>
+                        <li>Chip</li>
+                        <li>Tickets</li>
+                        <li>Zira</li>
+                        <li>Circle</li>
+                        <li>PluralKit</li>
+                        <li>Dreamvisitor</li>
+                        <li>Starboard</li>
+                        <li>Buff Kinkajou</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 id="tupperbox"><a href="https://tupperbox.app/guide/basics">Tupperbox</a></h3>
+            <p>Tupperbox lets you have many different profiles ("Tuppers") which you can choose between easily with
+                every message you send. The best way to manage Tupperbox (for both users and administrators) is through
+                the <a href="https://tupperbox.app/dashboard/list">dashboard</a>.</p>
+
+            <h3 id="chip"><a href="https://chipbot.gg/home">Chip</a></h3>
+            <p>Chip is a music bot that can play from various music streaming platforms. Here are some important
+                commands to remember:</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>/clear [queue|filters]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Clear the queue or all applied filters.</p>
+                </div>
+                <div>
+                    <p><code>/duplicates</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Removes duplicate tracks from the queue.</p>
+                </div>
+                <div>
+                    <p><code>/forceskip [track #]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Forcefully skip without starting a vote.</p>
+                </div>
+                <div>
+                    <p><code>/loop [disable|current|all]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Loop the current track, queue, or nothing.</p>
+                </div>
+                <div>
+                    <p><code>/move [track #] [destination #]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Move a track to a specific location in the queue.</p>
+                </div>
+                <div>
+                    <p><code>/np</code></p>
+                </div>
+                <div>
+                    <p>Show the currently playing track and its progress.</p>
+                </div>
+                <div>
+                    <p><code>/pause</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Pause the player.</p>
+                </div>
+                <div>
+                    <p><code>/play [input]</code></p>
+                </div>
+                <div>
+                    <p>Play a track from a supported platform.</p>
+                </div>
+                <div>
+                    <p><code>/previous</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Go back to the previously playing track.</p>
+                </div>
+                <div>
+                    <p><code>/queue [list|export]</code></p>
+                </div>
+                <div>
+                    <p>Show or export the current queue.</p>
+                </div>
+                <div>
+                    <p><code>/remove [track #] [track #]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Remove one or multiple tracks from the queue.</p>
+                </div>
+                <div>
+                    <p><code>/resume</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Resume the player.</p>
+                </div>
+                <div>
+                    <p><code>/search [input]</code></p>
+                </div>
+                <div>
+                    <p>Search for a track and pick the right option.</p>
+                </div>
+                <div>
+                    <p><code>/seek [min:sec]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Seek to a specific point in the track.</p>
+                </div>
+                <div>
+                    <p><code>/shuffle</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Shuffle the current queue.</p>
+                </div>
+                <div>
+                    <p><code>/skip</code></p>
+                </div>
+                <div>
+                    <p>Start a vote to skip to the next track. 50% of listeners must agree.</p>
+                </div>
+                <div>
+                    <p><code>/stop</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Clears the queue and makes Chip leave the voice channel.</p>
+                </div>
+                <div>
+                    <p><code>/upload [file|queue]</code></p>
+                </div>
+                <div>
+                    <p>Upload a file or import a queue.</p>
+                </div>
+            </div>
+
+            <h3 id="tickets"><a href="https://docs.ticketsbot.net/">Tickets</a></h3>
+            <p>Tickets is simple, customisable and powerful Discord ticket system complete with a <a
+                    href="https://panel.ticketsbot.net/">web UI</a>.</p>
+
+            <div class="sidenote"><p>This section is incomplete and needs more content.</p></div>
+
+            <h3 id="zira"><a href="https://docs.zira.bot/docs/home">Zira</a></h3>
+            <p>Zira is built first to be a reaction roles bot, but it also has powerful messaging tools.</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>/channel &lt;#channel></code></p>
+                </div>
+                <div>
+                    <p>Set the active channel that Zira will be adding reaction roles in.</p>
+                </div>
+                <div>
+                    <p><code>/message send &lt;content of message></code></p>
+                </div>
+                <div>
+                    <p>Send a message by Zira in the currently selected active channel.</p>
+                </div>
+                <div>
+                    <p><code>/message set &lt;Message ID></code></p>
+                </div>
+                <div>
+                    <p>Set a pre-existing message for Zira to use for reaction roles.</p>
+                </div>
+                <div>
+                    <p><code>/embed builder</code></p>
+                </div>
+                <div>
+                    <p>Start Zira's interactive embedded message creator. You can customise the preview embed using the
+                        provided buttons.</p>
+                </div>
+                <div>
+                    <p><code>/embed json &lt;JSON Code></code></p>
+                </div>
+                <div>
+                    <p>Use JSON code to build an embed with Zira.</p>
+                </div>
+                <div>
+                    <p><code>/edit &lt;Message ID></code></p>
+                </div>
+                <div>
+                    <p>Edit a Zira-created message (both regular and embedded).</p>
+                </div>
+            </div>
+
+            <h3 id="circle"><a href="https://circlebot.xyz/en/">Circle</a></h3>
+            <p>Circle is an all-in-one bot primarily used for moderation and logging on Wings of Fire: The New World.
+                Circle's configuration can be accessed through the <a
+                    href="https://circlebot.xyz/dashboard">dashboard</a>.</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>/ban</code></p>
+                </div>
+                <div>
+                    <p>Ban a user from the server, with an optional time limit.</p>
+                </div>
+                <div>
+                    <p><code>/case</code></p>
+                </div>
+                <div>
+                    <p>Lookup a modlog by its case number.</p>
+                </div>
+                <div>
+                    <p><code>/clean</code></p>
+                </div>
+                <div>
+                    <p>Clean up Circle's recent messages.</p>
+                </div>
+                <div>
+                    <p><code>/diagnose</code></p>
+                </div>
+                <div>
+                    <p>Check if there are any issues with the bot or one of her plugins/commands.</p>
+                </div>
+                <div>
+                    <p><code>/editcase</code></p>
+                </div>
+                <div>
+                    <p>Edit the duration or reason of a case.</p>
+                </div>
+                <div>
+                    <p><code>/kick</code></p>
+                </div>
+                <div>
+                    <p>Kick a user from the server.</p>
+                </div>
+                <div>
+                    <p><code>/lock</code></p>
+                </div>
+                <div>
+                    <p>Deny Send Messages permissions for the <code>@everyone</code> role in the mentioned channel.</p>
+                </div>
+                <div>
+                    <p><code>/locked</code></p>
+                </div>
+                <div>
+                    <p>Get a list of temporary locked channels in your server.</p>
+                </div>
+                <div>
+                    <p><code>/members</code></p>
+                </div>
+                <div>
+                    <p>View a list of users who have a role and don't have another, or get the membercount of the
+                        server.</p>
+                </div>
+                <div>
+                    <p><code>/moderations</code></p>
+                </div>
+                <div>
+                    <p>Get a list of muted/temp-banned users and the time until they're unmuted/unbanned.</p>
+                </div>
+                <div>
+                    <p><code>/modlogs</code></p>
+                </div>
+                <div>
+                    <p>Get a list of moderation actions taken against the mentioned user.</p>
+                </div>
+                <div>
+                    <p><code>/modstats</code></p>
+                </div>
+                <div>
+                    <p>View stats for top moderators or for a specific moderator. This will update every 10 minutes.</p>
+                </div>
+                <div>
+                    <p><code>/mute</code></p>
+                </div>
+                <div>
+                    <p>Mute a user, with an optional time limit.</p>
+                </div>
+                <div>
+                    <p><code>/nick</code></p>
+                </div>
+                <div>
+                    <p>Change/clear the nickname of the bot or a user.</p>
+                </div>
+                <div>
+                    <p><code>/purge</code></p>
+                </div>
+                <div>
+                    <p>Bulk delete a number of messages.</p>
+                </div>
+                <div>
+                    <p><code>/roles</code></p>
+                </div>
+                <div>
+                    <p>List all roles in the server or that a user has, or search for specific roles.</p>
+                </div>
+                <div>
+                    <p><code>/softban</code></p>
+                </div>
+                <div>
+                    <p>Softban a user. This will ban then immediately unban them to purge their messages.</p>
+                </div>
+                <div>
+                    <p><code>/unban</code></p>
+                </div>
+                <div>
+                    <p>Unban a banned user from the server.</p>
+                </div>
+                <div>
+                    <p><code>/unlock</code></p>
+                </div>
+                <div>
+                    <p>Allow Send Messages permissions for the <code>@everyone</code> role in the mentioned channel.</p>
+                </div>
+                <div>
+                    <p><code>/unmute</code></p>
+                </div>
+                <div>
+                    <p>Unmute a muted user.</p>
+                </div>
+                <div>
+                    <p><code>/verifybypass</code></p>
+                </div>
+                <div>
+                    <p>Allow a user to bypass verification.</p>
+                </div>
+                <div>
+                    <p><code>/void</code></p>
+                </div>
+                <div>
+                    <p>Clear a users modlogs.</p>
+                </div>
+                <div>
+                    <p><code>/warn</code></p>
+                </div>
+                <div>
+                    <p>Send a member an official warning DM with a case number.</p>
+                </div>
+            </div>
+
+            <h3 id="pluralkit"><a href="https://pluralkit.me/">PluralKit</a></h3>
+            <p>PluralKit is a bot designed for plural communities on Discord. It allows you to register systems,
+                maintain system information, set up message proxying, log switches, and more.</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>pk;system [system]</code></p>
+                </div>
+                <div>
+                    <p>Shows information about a system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system new [name]</code></p>
+                </div>
+                <div>
+                    <p>Creates a new system registered to your account.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] rename [new name]</code></p>
+                </div>
+                <div>
+                    <p>Changes the name of your system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] servername [servername]</code></p>
+                </div>
+                <div>
+                    <p>Changes the name of your system in the current server.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] description [description]</code></p>
+                </div>
+                <div>
+                    <p>Changes the description of your system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] avatar [avatar url|@mention|upload]</code></p>
+                </div>
+                <div>
+                    <p>Changes the avatar of your system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] serveravatar [avatar url|@mention|upload]</code></p>
+                </div>
+                <div>
+                    <p>Changes the avatar of your system in the current server.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] banner [image url|upload]</code></p>
+                </div>
+                <div>
+                    <p>Changes your system's banner image.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] color [color]</code></p>
+                </div>
+                <div>
+                    <p>Changes your system's color.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] privacy</code></p>
+                </div>
+                <div>
+                    <p>Displays your system's current privacy settings.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] privacy &lt;subject> &lt;public|private></code></p>
+                </div>
+                <div>
+                    <p>Changes your systems privacy settings.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] tag [tag]</code></p>
+                </div>
+                <div>
+                    <p>Changes the system tag of your system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] servertag [tag|-enable|-disable]</code></p>
+                </div>
+                <div>
+                    <p>Changes your system's tag in the current server, or disables it for the current server.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] pronouns [pronouns]</code></p>
+                </div>
+                <div>
+                    <p>Changes the pronouns of your system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system proxy [server id] [on|off]</code></p>
+                </div>
+                <div>
+                    <p>Toggles message proxying for a specific server.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] delete</code></p>
+                </div>
+                <div>
+                    <p>Deletes your system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] fronter</code></p>
+                </div>
+                <div>
+                    <p>Shows the current fronter of a system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] fronthistory</code></p>
+                </div>
+                <div>
+                    <p>Shows the last 10 fronters of a system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] frontpercent [timeframe]</code></p>
+                </div>
+                <div>
+                    <p>Shows the aggregated front history of a system within a given time frame.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] list</code></p>
+                </div>
+                <div>
+                    <p>Shows a paginated list of a system's members.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] list -full</code></p>
+                </div>
+                <div>
+                    <p>Shows a paginated list of a system's members, with increased detail.</p>
+                </div>
+                <div>
+                    <p><code>pk;find <search term></code></p>
+                </div>
+                <div>
+                    <p>Searches members by name.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] find <search term></code></p>
+                </div>
+                <div>
+                    <p>(same as above, but for a specific system)</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] random [-group]</code></p>
+                </div>
+                <div>
+                    <p>Shows the info card of a randomly selected member [or group] in a system.</p>
+                </div>
+                <div>
+                    <p><code>pk;system [system] id</code></p>
+                </div>
+                <div>
+                    <p>Prints a system's id.</p>
+                </div>
+            </div>
+
+            <h3 id="dreamvisitor"><a href="https://github.com/stonley890/Dreamvisitor/wiki">Dreamvisitor</a></h3>
+            <p>Dreamvisitor, created by Bog specifically for the server, has a variety of features. It serves as an
+                all-in-one utility plugin and Discord bot. Here are some important commands:</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>/setgamechat &lt;channel></code></p>
+                </div>
+                <div>
+                    <p>🛡️ Set the channel that game chat occurs in.</p>
+                </div>
+                <div>
+                    <p><code>/setwhitelist &lt;channel></code></p>
+                </div>
+                <div>
+                    <p>🛡️ Set the channel that whitelists players.</p>
+                </div>
+                <div>
+                    <p><code>/setrole &lt;type> &lt;role></code></p>
+                </div>
+                <div>
+                    <p>🛡️ Set a role.</p>
+                </div>
+                <div>
+                    <p><code>/list</code></p>
+                </div>
+                <div>
+                    <p>List online players.</p>
+                </div>
+                <div>
+                    <p><code>/tempban &lt;username> &lt;hours> &lt;reason></code></p>
+                </div>
+                <div>
+                    <p>🛡️ Tempban an online player from the Minecraft server.</p>
+                </div>
+                <div>
+                    <p><code>/msg &lt;username> &lt;message></code></p>
+                </div>
+                <div>
+                    <p>Message a player on the Minecraft server.</p>
+                </div>
+                <div>
+                    <p><code>/activity &lt;type> &lt;activity></code></p>
+                </div>
+                <div>
+                    <p>🛡️ Set the bot activity. This does not save through restarts!</p>
+                </div>
+                <div>
+                    <p><code>/broadcast &lt;message></code></p>
+                </div>
+                <div>
+                    <p>🛡️ Broadcast a message to the Minecraft server.</p>
+                </div>
+                <div>
+                    <p><code>/panic</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Kick all players from the server and set the player limit to 0. This will <i>not</i> ask for
+                        confirmation.</p>
+                </div>
+                <div>
+                    <p><code>/link &lt:user> &ltusername></code></p>
+                </div>
+                <div>
+                    <p>🛡️ Link a Discord account to a Minecraft account.</p>
+                </div>
+                <div>
+                    <p><code>/user &lt;user></code></p>
+                </div>
+                <div>
+                    <p>🛡️ Get the details of a user.</p>
+                </div>
+            </div>
+
+            <p>The whitelist functionality is built to handle whitelisting players completely automatically. There are a
+                few things you should know about how exactly it works and what takes place when a player is whitelisted.
+            </p>
+            <p>When a user on Discord sends a username in the whitelist channel, Dreamvisitor will first check if the
+                username is legal. Minecraft usernames are alphanumeric (including underscores). If the message is not
+                alphanumeric, Dreamvisitor will take no action. This also occurs if the provided username is not able to
+                be found by the Mojang API.</p>
+            <p>If the username is valid, Dreamvisitor will first fetch the UUID of the username and add it to
+                <code>accountLink.txt</code>, which tracks which Minecraft UUIDs are connected to which Discord
+                Snowflake IDs. It will also add this information to the <a
+                    href="https://docs.google.com/spreadsheets/d/1Tz3_JRr214ia_mHrgqwT4uANcwAzUyjXgTgNSWxKiqg/edit?usp=sharing">User
+                    Tracker</a>. In both cases, a new entry will be recorded every time unless the UUID has already been
+                registered. This means that a Discord account can be linked to multiple Minecraft accounts, but not the
+                other way around.
+            </p>
+            <p>Dreamvisitor will then check whether or not the account is already whitelisted. If they are not, they are
+                added to the whitelist. Either way, the user will be directed to check the FAQ for the IP.</p>
+
+            <h3 id="starboard"><a href="https://docs.starboard.best/about/starboard">Starboard</a></h3>
+            <p>A starboard is a discord bot that essentially allows users to "vote" to "pin" messages, but instead of
+                pinning them to the channel using Discord's pins, they are sent to your starboard. Usually, it works
+                like this:</p>
+            <ul>
+                <li>You create a channel called #starboard.</li>
+                <li>If someone sends a funny message, people can react to that message with ⭐.</li>
+                <li>Once the message receives a certain number of ⭐ reactions, the message is sent to the #starboard.
+                </li>
+            </ul>
+
+            <h2 id="channels">Channels</h2>
+            <p>Here is a quick overview of some important channels as an admin:</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Channel Name</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/849091822525218848">#i-need-help-❗</a>
+                    </p>
+                </div>
+                <div>
+                    <p>Players in the joining process can reach out for assistance. Typically, admins don’t need to be
+                        involved and Helpers should be able to take care of this.</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/658005787209367552">#announcements</a>
+                    </p>
+                </div>
+                <div>
+                    <p>Announcements relating to major server — Minecraft or Discord — or general changes.</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/857394193831165973">#polls</a></p>
+                </div>
+                <div>
+                    <p>Polls- for fun or for research. Feel free to use this if you want to poll the players.</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/932158281114353675">#about-staff</a></p>
+                </div>
+                <div>
+                    <p>Contains information about staff roles and staff introductions. Update yours if you’re a new
+                        admin or trial admin!</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/914620824332435456">#faq</a></p>
+                </div>
+                <div>
+                    <p>Frequently asked questions. From time to time, this may need to be updated.</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/854952453133041664">#questions</a></p>
+                </div>
+                <div>
+                    <p>Like #i-need-help-❗, Helpers should mostly be able to take care of this channel, but occasionally
+                        there may be more technical questions.</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/1032870694914101258">#suggestions</a>
+                    </p>
+                </div>
+                <div>
+                    <p>Admins are the ones to confirm, deny, and resolve suggestions. Read them and respond to them
+                        promptly if you have an idea/response or can resolve it yourself. Don’t be afraid to ask other
+                        staff for input, including Helpers and Moderators!</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/791102701307691043">#bug-report</a></p>
+                </div>
+                <div>
+                    <p>Bugs are posted by the players here. Report them to the appropriate staff member if it is
+                        specific to one.</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/934336765693689876">#tickets</a></p>
+                </div>
+                <div>
+                    <p>Encourage players to make tickets if they have an issue.</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/1011442258870022205">#issues-talk</a>
+                    </p>
+                </div>
+                <div>
+                    <p>Like tickets, but created by admins to talk to players.</p>
+                </div>
+                <div>
+                    <p><a href="https://discord.com/channels/658004601869565962/660597606233276436">#log</a></p>
+                </div>
+                <div>
+                    <p>System channel, logs actions. Not visible to trial admins.</p>
+                </div>
+            </div>
+
+            <h2 id="roles">Roles</h2>
+
+            <div class="sidenote"><p>This section is incomplete and needs more content.</p></div>
+            
+            <p>Here is a quick overview of some of our roles:</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Role Name</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p>On Break Role</p>
+                </div>
+                <div>
+                    <p>A cosmetic role that indicates that a staff member is on break from their responsibilities.</p>
+                </div>
+                <div>
+                    <p>Bots</p>
+                </div>
+                <div>
+                    <p>A role bestowed to bots for being good bots. This is a cosmetic role, as all bots have individual
+                        roles for permissions.</p>
+                </div>
+                <div>
+                    <p>Admin-Designated Purple Heart</p>
+                </div>
+                <div>
+                    <p>A cosmetic role for members that are exceptionally kind, dedicated, or otherwise stand out
+                        positively in the community. Keep an eye out for potential members and discuss with your fellow
+                        admins!</p>
+                </div>
+                <div>
+                    <p>SB</p>
+                </div>
+                <div>
+                    <p>A cosmetic role that indicates that the user is banned from the Minecraft server.</p>
+                </div>
+                <div>
+                    <p>Issues Talk</p>
+                </div>
+                <div>
+                    <p>A role that allows the user to access #issues-talk.</p>
+                </div>
+                <div>
+                    <p>Member</p>
+                </div>
+                <div>
+                    <p>This role allows access to the whole Discord server after completing the joining steps.</p>
+                </div>
+                <div>
+                    <p>RB</p>
+                </div>
+                <div>
+                    <p>A cosmetic role that indicates that the user is barred from participating in royalty.</p>
+                </div>
+            </div>
+
+            <h2 id="stages-events">Stages & Events</h2>
+            <p>You can use Discord's event system to make it more convenient for members to find information and
+                participate in an event. To create an event:</p>
+            <ol>
+                <li>Click on the Events button at the top of the channel list.</li>
+                <li>In the pop-up menu, click <b>Create Event</b>.</li>
+                <li>Choose a location for your event.</li>
+                <li>Define the topic, date, and time. You can also add a description and cover image.</li>
+                <li>Review your event and click create.</li>
+            </ol>
+
+            <p>If your event is in a stage channel, you should know how a stage channel works.</p>
+            <p>The stage channel plays background music while there are no speakers. When you attempt to join the stage, you are presented with three options:</p>
+            <ul>
+                <li><b>Start the Stage</b> - Pick a topic to start the conversation. This will begin an event.</li>
+                <li><b>Create Event</b> - Schedule a Stage for a future date. This will take you through the same process as above.</li>
+                <li><b>Continue without starting</b> - This will let you join the stage without starting an event.</li>
+            </ul>
+            <p>If an event is scheduled, you will have the option to start that event.</p>
+            <p>A stage channel has two parts: the speakers and the audience. The speakers can be heard by everyone. The audience is unable to speak and can only listen to the speakers. As a <b>Stage Moderator</b>, you can freely switch between the stage and the audience. Stage Moderators are indicated by a badge that appears while a speaker.</p>
+            <p>Users who are not Stage Moderators cannot join the stage unless invited by a Stage Moderator. Users can indicate they desire to join the speakers, but they must be approved by a Stage Moderator. In either case, the user then must accept the invitation to finally join the speakers.</p>
+            <p>Stages support many features found in voice channels. Stages have built-in chats where all users can send messages. Speaker invitations also appear here for Stage Moderators. Screen sharing is supported by Stages and both speakers and the audience will always have this steam open. However, there can only be one stream at a time.</p>
+            <p>When your event is over, you can end the event instead of disconnecting to end the Discord event and disconnect all users from the stage.</p>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+        <header class="minorheader">
+            <div class="maintext">
+                <div class="navbar">
+                    <div>
+                        <a class="textbutton" href="2.html" title="Section 2: Server Commands">Previous</a>
+                    </div>
+                    <a class="textbutton" href="4.html" title="Section 4: Royalty">Next</a>
+                </div>
+
+            </div>
+        </header>
+        <div class="copy">
+            &copy; 2023 Wings of Fire: The New World. <a
+                href="https://github.com/Stonley890/Admin-Handbook/blob/main/LICENSE">GNU
+                General Public License v3.0<a>
+        </div>
+
+    </footer>
+</body>
+
+<script>
+
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    function toggleNav() {
+        if (document.getElementById("sidenav").style.width == "250px") {
+            closeNav();
+        } else {
+            openNav();
+        }
+    }
+
+    const closeNav = async () => {
+        const sidenav = document.getElementById("sidenav")
+        for (const child of sidenav.children) {
+            child.style.opacity = "0";
+        }
+
+        await delay(200);
+
+        document.getElementById("sidenav").style.width = "0px";
+        document.getElementById("body").style.marginLeft = "0px";
+        document.getElementById("footer").style.marginLeft = "0px";
+    }
+
+    const openNav = async () => {
+
+        document.getElementById("sidenav").style.width = "250px";
+        document.getElementById("body").style.marginLeft = "250px";
+        document.getElementById("footer").style.marginLeft = "250px";
+
+        await delay(500);
+
+        const sidenav = document.getElementById("sidenav")
+        for (const child of sidenav.children) {
+            child.style.opacity = "100";
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Handbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sidenav.js"></script>
+
+    <link rel="stylesheet" href="highlight/styles/vs2015.min.css">
+    <script src="highlight/highlight.min.js"></script>
+    <script src="highlight/src/languages/mcfunction.js"></script>
+    <script src="highlight/dist/mcfunction.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<!-- Side navigation -->
+<div id="sidenav" class="sidenav">
+
+    <a href="index.html">Home</a>
+    <a href="0.html">Section 0: What is an Admin?</a>
+    <div class="subnav">
+        <a href="0.html#What-are-the-responsibilities-of-administrators">What are the responsibilities of
+            administrators?</a>
+        <a href="0.html#How-does-this-differ-from-other-staff-positions">How does this differ from other staff
+            positions?</a>
+        <a href="0.html#The purpose of this handbook">The purpose of this handbook</a>
+    </div>
+
+    <a href="1.html">Section 1: Minecraft Commands</a>
+    <div class="subnav">
+        <a href="1.html#notation-guide">Notation Guide</a>
+        <a href="1.html#target-selectors">Target Selectors</a>
+        <a href="1.html#important-commands">Important Commands</a>
+        <div class="subsubnav">
+            <a href="1.html#ban">/ban</a>
+            <a href="1.html#clear">/clear</a>
+            <a href="1.html#datapack">/datapack</a>
+            <a href="1.html#execute">/execute</a>
+            <a href="1.html#give">/give</a>
+            <a href="1.html#kick">/kick</a>
+            <a href="1.html#pardon">/pardon</a>
+            <a href="1.html#scoreboard">/scoreboard</a>
+            <a href="1.html#summon">/summon</a>
+            <a href="1.html#tellraw">/tellraw</a>
+            <a href="1.html#whitelist">/whitelist</a>
+        </div>
+    </div>
+
+    <a href="2.html">Section 2: Server Commands</a>
+    <div class="subnav">
+        <a href="2.html#paper-spigot-bukkit">Paper/Spigot/Bukkit</a>
+        <a href="2.html#dreamvisitor">Dreamvisitor</a>
+        <div class="subsubnav">
+            <a href="2.html#item-blacklist">Item Blacklist</a>
+            <a href="2.html#soft-whitelist">Soft Whitelist</a>
+            <a href="2.html#pause-chat">Pause Chat</a>
+        </div>
+        <a href="2.html#essentialsx">EssentialsX</a>
+        <div class="subsubnav">
+            <a href="2.html#powertools">Powertools</a>
+        </div>
+        <a href="2.html#eyeofonyx">Eye of Onyx</a>
+        <div class="subsubnav">
+            <a href="2.html#challenge-handshakes">Challenge Handshakes</a>
+        </div>
+        <a href="2.html#griefdefender">GriefDefender</a>
+        <div class="subsubnav">
+            <a href="2.html#griefdefender-commands">Commands</a>
+            <a href="2.html#claim-types">Claim Types</a>
+            <a href="2.html#trust-types">Trust Types</a>
+        </div>
+        <a href="2.html#luckperms">LuckPerms</a>
+        <a href="2.html#signshop">SignShop</a>
+        <a href="2.html#vault">Vault</a>
+        <a href="2.html#worldedit">WorldEdit</a>
+        <div class="subsubnav">
+            <a href="2.html#worldedit-basic-commands">Basic Commands</a>
+            <a href="2.html#worldedit-tool-commands">Tool Commands</a>
+            <a href="2.html#worldedit-generation-commands">Generation Commands</a>
+            <a href="2.html#worldedit-brush-commands">Brush Commands</a>
+            <a href="2.html#worldedit-flags">Flags</a>
+        </div>
+        <a href="2.html#worldedit">WorldGuard</a>
+        <div class="subsubnav">
+            <a href="2.html#worldguard-commands">Commands</a>
+            <a href="2.html#worldguard-flags">Flags</a>
+        </div>
+    </div>
+
+    <a href="3.html">Section 3: Navigating Discord</a>
+    <div class="subnav">
+        <a href="3.html#bots">Bots</a>
+        <div class="subsubnav">
+            <a href="3.html#tupperbox">Tupperbox</a>
+            <a href="3.html#chip">Chip</a>
+            <a href="3.html#tickets">Tickets</a>
+            <a href="3.html#zira">Zira</a>
+            <a href="3.html#circle">Circle</a>
+            <a href="3.html#pluralkit">PluralKit</a>
+            <a href="3.html#dreamvisitor">Dreamvisitor</a>
+            <a href="3.html#starboard">Starboard</a>
+        </div>
+        <a href="3.html#channels">Channels</a>
+        <a href="3.html#roles">Roles</a>
+        <a href="3.html#stages-events">Stages & Events</a>
+    </div>
+
+    <a href="4.html">Section 4: Royalty</a>
+
+    <a href="5.html">Section 5: Project Management</a>
+    <div class="subnav">
+        <a href="5.html#documentation-tracking">Documentation and Tracking</a>
+        <a href="5.html#time-management">Time Management</a>
+        <a href="5.html#communication">Communication</a>
+        <a href="5.html#respect-professionalism">Respect and Professionalism</a>
+        <a href="5.html#tracking-a-project">Tracking a Project</a>
+        <a href="5.html#operations-activities">Operations Activities</a>
+        <a href="5.html#project-retrospectives">Project Retrospectives</a>
+    </div>
+
+    <a href="6.html">Section 6: Personal Responsibility</a>
+    <div class="subnav">
+        <a href="6.html#security">Security</a>
+        <a href="6.html#engagement">Engaging in a Community</a>
+    </div>
+
+    <br>
+</div>
+
+<body id="body">
+    <header style="display: flex; align-items: center; background-color: #131313;">
+        <span class="navtoggle" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <nav style="margin: auto;">
+            <p style="margin: 0px; margin-right: 50px;">Wings of Fire: The New World - Admin Handbook</p>
+        </nav>
+    </header>
+
+    <main style="padding: 0;">
+
+        <header>
+            <div class="maintext">
+                <h1>Section 4: Royalty</h1>
+            </div>
+        </header>
+
+        <div class="maintext">
+
+            <p>The Wings of Fire: The New World royalty system is complex, but it must be as simple and intuitive as
+                possible for players. Admins alone primarily manage and oversee the royalty system and there are many
+                different steps to operate it correctly. Here is the simplified pipeline:</p>
+
+            <div
+                style="display: flex; align-items: center; gap: 10px; justify-items: center; text-align: center; font-weight: 300;">
+                <p>A player initiates a challenge.</p>
+                <div style="width: 50px; border: solid 1px; height: 0; justify-self: center;"></div>
+                <p>The challenge takes place.</p>
+                <div style="width: 50px; border: solid 1px; height: 0;"></div>
+                <p>The royalty board changes accordingly.</p>
+            </div>
+
+            <p>The <a href="2.html#eyeofonyx">Eye of Onyx</a> plugin automates this system.</p>
+            <div class="sidenote"><p>This section is incomplete and needs more content.</p></div>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+        <header class="minorheader">
+            <div class="maintext">
+                <div class="navbar">
+                    <div>
+                        <a class="textbutton" href="3.html" title="Section 3: Navigating Discord">Previous</a>
+                    </div>
+                    <a class="textbutton" href="5.html" title="Section 5: Project Management">Next</a>
+                </div>
+
+            </div>
+        </header>
+        <div class="copy">
+            &copy; 2023 Wings of Fire: The New World. <a
+                href="https://github.com/Stonley890/Admin-Handbook/blob/main/LICENSE">GNU
+                General Public License v3.0<a>
+        </div>
+
+    </footer>
+</body>
+
+<script>
+
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    function toggleNav() {
+        if (document.getElementById("sidenav").style.width == "250px") {
+            closeNav();
+        } else {
+            openNav();
+        }
+    }
+
+    const closeNav = async () => {
+        const sidenav = document.getElementById("sidenav")
+        for (const child of sidenav.children) {
+            child.style.opacity = "0";
+        }
+
+        await delay(200);
+
+        document.getElementById("sidenav").style.width = "0px";
+        document.getElementById("body").style.marginLeft = "0px";
+        document.getElementById("footer").style.marginLeft = "0px";
+    }
+
+    const openNav = async () => {
+
+        document.getElementById("sidenav").style.width = "250px";
+        document.getElementById("body").style.marginLeft = "250px";
+        document.getElementById("footer").style.marginLeft = "250px";
+
+        await delay(500);
+
+        const sidenav = document.getElementById("sidenav")
+        for (const child of sidenav.children) {
+            child.style.opacity = "100";
+        }
+    }
+
+</script>
+
+</html>

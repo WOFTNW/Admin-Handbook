@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Handbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sidenav.js"></script>
+
+    <link rel="stylesheet" href="highlight/styles/vs2015.min.css">
+    <script src="highlight/highlight.min.js"></script>
+    <script src="highlight/src/languages/mcfunction.js"></script>
+    <script src="highlight/dist/mcfunction.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<!-- Side navigation -->
+<div id="sidenav" class="sidenav">
+
+    <a href="index.html">Home</a>
+    <a href="0.html">Section 0: What is an Admin?</a>
+    <div class="subnav">
+        <a href="0.html#What-are-the-responsibilities-of-administrators">What are the responsibilities of
+            administrators?</a>
+        <a href="0.html#How-does-this-differ-from-other-staff-positions">How does this differ from other staff
+            positions?</a>
+        <a href="0.html#The purpose of this handbook">The purpose of this handbook</a>
+    </div>
+
+    <a href="1.html">Section 1: Minecraft Commands</a>
+    <div class="subnav">
+        <a href="1.html#notation-guide">Notation Guide</a>
+        <a href="1.html#target-selectors">Target Selectors</a>
+        <a href="1.html#important-commands">Important Commands</a>
+        <div class="subsubnav">
+            <a href="1.html#ban">/ban</a>
+            <a href="1.html#clear">/clear</a>
+            <a href="1.html#datapack">/datapack</a>
+            <a href="1.html#execute">/execute</a>
+            <a href="1.html#give">/give</a>
+            <a href="1.html#kick">/kick</a>
+            <a href="1.html#pardon">/pardon</a>
+            <a href="1.html#scoreboard">/scoreboard</a>
+            <a href="1.html#summon">/summon</a>
+            <a href="1.html#tellraw">/tellraw</a>
+            <a href="1.html#whitelist">/whitelist</a>
+        </div>
+    </div>
+
+    <a href="2.html">Section 2: Server Commands</a>
+    <div class="subnav">
+        <a href="2.html#paper-spigot-bukkit">Paper/Spigot/Bukkit</a>
+        <a href="2.html#dreamvisitor">Dreamvisitor</a>
+        <div class="subsubnav">
+            <a href="2.html#item-blacklist">Item Blacklist</a>
+            <a href="2.html#soft-whitelist">Soft Whitelist</a>
+            <a href="2.html#pause-chat">Pause Chat</a>
+        </div>
+        <a href="2.html#essentialsx">EssentialsX</a>
+        <div class="subsubnav">
+            <a href="2.html#powertools">Powertools</a>
+        </div>
+        <a href="2.html#eyeofonyx">Eye of Onyx</a>
+        <div class="subsubnav">
+            <a href="2.html#challenge-handshakes">Challenge Handshakes</a>
+        </div>
+        <a href="2.html#griefdefender">GriefDefender</a>
+        <div class="subsubnav">
+            <a href="2.html#griefdefender-commands">Commands</a>
+            <a href="2.html#claim-types">Claim Types</a>
+            <a href="2.html#trust-types">Trust Types</a>
+        </div>
+        <a href="2.html#luckperms">LuckPerms</a>
+        <a href="2.html#signshop">SignShop</a>
+        <a href="2.html#vault">Vault</a>
+        <a href="2.html#worldedit">WorldEdit</a>
+        <div class="subsubnav">
+            <a href="2.html#worldedit-basic-commands">Basic Commands</a>
+            <a href="2.html#worldedit-tool-commands">Tool Commands</a>
+            <a href="2.html#worldedit-generation-commands">Generation Commands</a>
+            <a href="2.html#worldedit-brush-commands">Brush Commands</a>
+            <a href="2.html#worldedit-flags">Flags</a>
+        </div>
+        <a href="2.html#worldedit">WorldGuard</a>
+        <div class="subsubnav">
+            <a href="2.html#worldguard-commands">Commands</a>
+            <a href="2.html#worldguard-flags">Flags</a>
+        </div>
+    </div>
+
+    <a href="3.html">Section 3: Navigating Discord</a>
+    <div class="subnav">
+        <a href="3.html#bots">Bots</a>
+        <div class="subsubnav">
+            <a href="3.html#tupperbox">Tupperbox</a>
+            <a href="3.html#chip">Chip</a>
+            <a href="3.html#tickets">Tickets</a>
+            <a href="3.html#zira">Zira</a>
+            <a href="3.html#circle">Circle</a>
+            <a href="3.html#pluralkit">PluralKit</a>
+            <a href="3.html#dreamvisitor">Dreamvisitor</a>
+            <a href="3.html#starboard">Starboard</a>
+        </div>
+        <a href="3.html#channels">Channels</a>
+        <a href="3.html#roles">Roles</a>
+        <a href="3.html#stages-events">Stages & Events</a>
+    </div>
+
+    <a href="4.html">Section 4: Royalty</a>
+
+    <a href="5.html">Section 5: Project Management</a>
+    <div class="subnav">
+        <a href="5.html#documentation-tracking">Documentation and Tracking</a>
+        <a href="5.html#time-management">Time Management</a>
+        <a href="5.html#communication">Communication</a>
+        <a href="5.html#respect-professionalism">Respect and Professionalism</a>
+        <a href="5.html#tracking-a-project">Tracking a Project</a>
+        <a href="5.html#operations-activities">Operations Activities</a>
+        <a href="5.html#project-retrospectives">Project Retrospectives</a>
+    </div>
+
+    <a href="6.html">Section 6: Personal Responsibility</a>
+    <div class="subnav">
+        <a href="6.html#security">Security</a>
+        <a href="6.html#engagement">Engaging in a Community</a>
+    </div>
+
+    <br>
+</div>
+
+<body id="body">
+    <header style="display: flex; align-items: center; background-color: #131313;">
+        <span class="navtoggle" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <nav style="margin: auto;">
+            <p style="margin: 0px; margin-right: 50px;">Wings of Fire: The New World - Admin Handbook</p>
+        </nav>
+    </header>
+
+    <main style="padding: 0;">
+
+        <header>
+            <div class="maintext">
+                <h1>Section 5: Project Management</h1>
+            </div>
+        </header>
+
+        <div class="maintext">
+
+            <p>This is where we have to get into the boring management stuff, but do read; this is incredibly important
+                for creating successful projects. Most projects break down into phases. Typically the phases of
+                production are:</p>
+
+            <div
+                style="display: grid; grid: auto-flow auto / repeat(4, auto); align-items: top; justify-items: center; text-align: center; font-weight: 300;">
+                <div style="border-right: solid 1px; padding: 10px;">
+                    <p><b>Pre-production</b></p>
+                    <p>The work done before full-scale production begins, such as planning, prototyping, pipeline setup,
+                        and initial designs.</p>
+                </div>
+                <div style="border-right: solid 1px; padding: 10px;">
+                    <p><b>Production</b></p>
+                    <p>The actual creation of the project and elements within it.</p>
+                </div>
+                <div style="border-right: solid 1px; padding: 10px;">
+                    <p><b>Post-production</b></p>
+                    <p>Work done after the final project appears to be complete including quality assurance (QA),
+                        editing, testing, bug fixing, and final polishing.</p>
+                </div>
+                <div style="padding: 10px;">
+                    <p><b>Operations</b></p>
+                    <p>Ongoing work after a project has been released to keep it running such as updates and continued
+                        maintenance.</p>
+                </div>
+            </div>
+
+            <p><b>Properly planning for each phase of the production cycle is crucial when you need to deliver a project
+                    that is on time and works as expected.</b></p>
+            <p>When working on projects, you need to plan appropriate schedules, manage time, communicate, and
+                collaborate. Even if you’re working on a project independently, it’s likely that you’ll be communicating
+                with others at some point in the production process, especially when engaging in user testing. Let’s
+                explore some guidance for successfully completing and delivering projects, as an individual or member of
+                a larger team.</p>
+
+            <h2 id="documentation-tracking">Documentation and Tracking</h2>
+
+            <p>Documentation plays a critical role in project management. Our <a
+                    href="https://docs.google.com/spreadsheets/d/1ytx_hFpynTo_fqdRMUdsQkT7NP4R-ugDCJrvRdjsjXo/edit?usp=sharing">Event
+                    Tracker</a> and <a href="https://trello.com/w/wingsoffiremc">Trello Hub</a> act as central
+                information hubs where you can record the specific requirements for whatever you want to create. When
+                managing projects, consistently use design documents in the following ways to guide the design and
+                development process:</p>
+
+            <ul>
+                <li><u>Identify</u> the purpose, audience, and goals of your project.</li>
+                <li><u>Identify</u> the necessary project steps by creating a project plan.</li>
+                <li>Within the project plan, create a timeline with specific deliverables and due dates.</li>
+                <li><u>Consistently</u> track your milestones in order to produce deliverables and meet deadlines.</li>
+                <li>Assign roles when working in teams, and define and prioritize tasks for you and all teammates.</li>
+                <li>Make sure you and all teammates are following up and following through on roles and
+                    responsibilities.</li>
+            </ul>
+
+            <h2 id="time-manangement">Time Management</h2>
+
+            <p>Effective time management is critical to the delivery and completion of the project. When managing
+                projects:</p>
+
+            <ul>
+                <li>Scope time for each phase of the design and development process.</li>
+                <li>Use contingency planning for any unforeseen delays; reprioritize and update the tasks and
+                    deliverables in your project plans when needed.</li>
+                <li>Identify which project planning and management tools are suitable for you or your team; when you’ve
+                    chosen them, <u>use them consistently.</u></li>
+            </ul>
+
+            <h2 id="time-manangement">Communication</h2>
+
+            <p>Without clear communication, collaboration is challenging at best and <i>impossible</i> at worst.
+                Communication is one of the most important skills for working with others in any capacity and is vital
+                for effective project management. When communicating with others on your project:</p>
+
+            <ul>
+                <li><u>Be clear</u> about your progress and any issues that impact the work of others, whether they are
+                    members of your team or supporting external collaborators.</li>
+                <li>Be respectful of others’ time as well as your own.</li>
+                <li>When critiquing work, remain constructive and sensitive to the feelings of others. Focus on making
+                    your feedback helpful, specific, and respectful.</li>
+                <li>Be open to feedback yourself by actively listening and engaging with the person delivering the
+                    feedback. Reflect honestly on <u>how their feedback can be addressed.</u></li>
+            </ul>
+
+            <h2 id="respect-professionalism">Respect and Professionalism</h2>
+
+            <p>Even if you’re completing a project for personal development or fun, when working with others it’s
+                important to respect them and have a professional attitude in your work. When collaborating on a project
+                with others:
+            </p>
+
+            <ul>
+                <li>Be punctual.</li>
+                <li>Promptly reply to the team around you.</li>
+                <li>Listen to others’ opinions and contributions.</li>
+                <li>Actively engage in collaborative work.</li>
+            </ul>
+
+            <h2 id="tracking-a-project">Tracking a Project</h2>
+
+            <p>Once you have your project clearly scoped out, it is time to start planning how to manage a project by
+                planning appropriate schedules and managing a project plan. While the project plan is usually created in
+                pre-production, it is used and iterated <i>throughout</i> the production phase to track the project's
+                progress.
+                The project plan takes the elements identified in the documentation and sets specific tasks and
+                deliverable dates. If you don’t create and follow a project plan, the result is usually <u>scope
+                    creep</u>: the
+                continuous adding of new ideas and features to your plan which can lead to being late or worse - failing
+                altogether. Some guidelines to successfully track projects, for both individuals and teams, include:
+            </p>
+
+            <ul>
+                <li><u>Identify</u> the necessary project steps.</li>
+                <li>If working in a team, identify and assign <u>specific</u> project roles and responsibilities.</li>
+                <li>Create a timeline with specific due dates, including project completion.</li>
+                <li><i>Identify</i> common problems and issues in project management, such as scope creep, overly
+                    ambitious design plans, and tight time constraints.</li>
+                <li>Set due dates for each smaller piece of the project that will <u>build to the overall project.</u>
+                </li>
+                <li>Create <u>reasonable time frames</u> for each project phase.</li>
+                <li>If working in a team, <u>designate task owners</u> for each task on the list.</li>
+            </ul>
+
+            <h2 id="operations-activities">Operations Activities</h2>
+
+            <p>The final phase of the production cycle, operations, includes work typically done after a project has
+                been released to keep it running. Although operations activities generally don’t start until the release
+                date, they should be identified and planned during pre-production. These activities include ongoing
+                updates, fixes, and continued maintenance.
+            </p>
+
+            <h2 id="project-retrospectives">Project Retrospectives</h2>
+
+            <p>Finally, a retrospective should be planned once the project is released so that you (and your team, if
+                there was one) can reflect back on the design and development process. Retrospectives help you identify
+                areas that went well, areas that didn’t go well, and ways to improve for future projects. The simplest
+                approach to conducting a retrospective can be to make a chart with three columns and identify things
+                that you think you should <b>start doing</b>, <b>stop doing</b>, and <b>continue doing</b>.
+            </p>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+        <header class="minorheader">
+            <div class="maintext">
+                <div class="navbar">
+                    <div>
+                        <a class="textbutton" href="4.html" title="Section 4: Royalty">Previous</a>
+                    </div>
+                    <a class="textbutton" href="6.html" title="Section 6: Personal Responsibility">Next</a>
+                </div>
+
+            </div>
+        </header>
+        <div class="copy">
+            &copy; 2023 Wings of Fire: The New World. <a
+                href="https://github.com/Stonley890/Admin-Handbook/blob/main/LICENSE">GNU
+                General Public License v3.0<a>
+        </div>
+
+    </footer>
+</body>
+
+<script>
+
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    function toggleNav() {
+        if (document.getElementById("sidenav").style.width == "250px") {
+            closeNav();
+        } else {
+            openNav();
+        }
+    }
+
+    const closeNav = async () => {
+        const sidenav = document.getElementById("sidenav")
+        for (const child of sidenav.children) {
+            child.style.opacity = "0";
+        }
+
+        await delay(200);
+
+        document.getElementById("sidenav").style.width = "0px";
+        document.getElementById("body").style.marginLeft = "0px";
+        document.getElementById("footer").style.marginLeft = "0px";
+    }
+
+    const openNav = async () => {
+
+        document.getElementById("sidenav").style.width = "250px";
+        document.getElementById("body").style.marginLeft = "250px";
+        document.getElementById("footer").style.marginLeft = "250px";
+
+        await delay(500);
+
+        const sidenav = document.getElementById("sidenav")
+        for (const child of sidenav.children) {
+            child.style.opacity = "100";
+        }
+    }
+
+</script>
+
+</html>

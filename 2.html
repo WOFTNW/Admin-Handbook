@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Handbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sidenav.js"></script>
+
+    <link rel="stylesheet" href="highlight/styles/vs2015.min.css">
+    <script src="highlight/highlight.min.js"></script>
+    <script src="highlight/src/languages/mcfunction.js"></script>
+    <script src="highlight/dist/mcfunction.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<!-- Side navigation -->
+<div id="sidenav" class="sidenav">
+
+    <a href="index.html">Home</a>
+    <a href="0.html">Section 0: What is an Admin?</a>
+    <div class="subnav">
+        <a href="0.html#What-are-the-responsibilities-of-administrators">What are the responsibilities of
+            administrators?</a>
+        <a href="0.html#How-does-this-differ-from-other-staff-positions">How does this differ from other staff
+            positions?</a>
+        <a href="0.html#The purpose of this handbook">The purpose of this handbook</a>
+    </div>
+
+    <a href="1.html">Section 1: Minecraft Commands</a>
+    <div class="subnav">
+        <a href="1.html#notation-guide">Notation Guide</a>
+        <a href="1.html#target-selectors">Target Selectors</a>
+        <a href="1.html#important-commands">Important Commands</a>
+        <div class="subsubnav">
+            <a href="1.html#ban">/ban</a>
+            <a href="1.html#clear">/clear</a>
+            <a href="1.html#datapack">/datapack</a>
+            <a href="1.html#execute">/execute</a>
+            <a href="1.html#give">/give</a>
+            <a href="1.html#kick">/kick</a>
+            <a href="1.html#pardon">/pardon</a>
+            <a href="1.html#scoreboard">/scoreboard</a>
+            <a href="1.html#summon">/summon</a>
+            <a href="1.html#tellraw">/tellraw</a>
+            <a href="1.html#whitelist">/whitelist</a>
+        </div>
+    </div>
+
+    <a href="2.html">Section 2: Server Commands</a>
+    <div class="subnav">
+        <a href="2.html#paper-spigot-bukkit">Paper/Spigot/Bukkit</a>
+        <a href="2.html#dreamvisitor">Dreamvisitor</a>
+        <div class="subsubnav">
+            <a href="2.html#item-blacklist">Item Blacklist</a>
+            <a href="2.html#soft-whitelist">Soft Whitelist</a>
+            <a href="2.html#pause-chat">Pause Chat</a>
+        </div>
+        <a href="2.html#essentialsx">EssentialsX</a>
+        <div class="subsubnav">
+            <a href="2.html#powertools">Powertools</a>
+        </div>
+        <a href="2.html#eyeofonyx">Eye of Onyx</a>
+        <div class="subsubnav">
+            <a href="2.html#challenge-handshakes">Challenge Handshakes</a>
+        </div>
+        <a href="2.html#griefdefender">GriefDefender</a>
+        <div class="subsubnav">
+            <a href="2.html#griefdefender-commands">Commands</a>
+            <a href="2.html#claim-types">Claim Types</a>
+            <a href="2.html#trust-types">Trust Types</a>
+        </div>
+        <a href="2.html#luckperms">LuckPerms</a>
+        <a href="2.html#signshop">SignShop</a>
+        <a href="2.html#vault">Vault</a>
+        <a href="2.html#worldedit">WorldEdit</a>
+        <div class="subsubnav">
+            <a href="2.html#worldedit-basic-commands">Basic Commands</a>
+            <a href="2.html#worldedit-tool-commands">Tool Commands</a>
+            <a href="2.html#worldedit-generation-commands">Generation Commands</a>
+            <a href="2.html#worldedit-brush-commands">Brush Commands</a>
+            <a href="2.html#worldedit-flags">Flags</a>
+        </div>
+        <a href="2.html#worldedit">WorldGuard</a>
+        <div class="subsubnav">
+            <a href="2.html#worldguard-commands">Commands</a>
+            <a href="2.html#worldguard-flags">Flags</a>
+        </div>
+    </div>
+
+    <a href="3.html">Section 3: Navigating Discord</a>
+    <div class="subnav">
+        <a href="3.html#bots">Bots</a>
+        <div class="subsubnav">
+            <a href="3.html#tupperbox">Tupperbox</a>
+            <a href="3.html#chip">Chip</a>
+            <a href="3.html#tickets">Tickets</a>
+            <a href="3.html#zira">Zira</a>
+            <a href="3.html#circle">Circle</a>
+            <a href="3.html#pluralkit">PluralKit</a>
+            <a href="3.html#dreamvisitor">Dreamvisitor</a>
+            <a href="3.html#starboard">Starboard</a>
+        </div>
+        <a href="3.html#channels">Channels</a>
+        <a href="3.html#roles">Roles</a>
+        <a href="3.html#stages-events">Stages & Events</a>
+    </div>
+
+    <a href="4.html">Section 4: Royalty</a>
+
+    <a href="5.html">Section 5: Project Management</a>
+    <div class="subnav">
+        <a href="5.html#documentation-tracking">Documentation and Tracking</a>
+        <a href="5.html#time-management">Time Management</a>
+        <a href="5.html#communication">Communication</a>
+        <a href="5.html#respect-professionalism">Respect and Professionalism</a>
+        <a href="5.html#tracking-a-project">Tracking a Project</a>
+        <a href="5.html#operations-activities">Operations Activities</a>
+        <a href="5.html#project-retrospectives">Project Retrospectives</a>
+    </div>
+
+    <a href="6.html">Section 6: Personal Responsibility</a>
+    <div class="subnav">
+        <a href="6.html#security">Security</a>
+        <a href="6.html#engagement">Engaging in a Community</a>
+    </div>
+
+    <br>
+</div>
+
+<body id="body">
+    <header style="display: flex; align-items: center; background-color: #131313;">
+        <span class="navtoggle" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <nav style="margin: auto;">
+            <p style="margin: 0px; margin-right: 50px;">Wings of Fire: The New World - Admin Handbook</p>
+        </nav>
+    </header>
+
+    <main style="padding: 0;">
+
+        <header>
+            <div class="maintext">
+                <h1>Section 2: Server Commands</h1>
+            </div>
+        </header>
+
+        <div class="maintext">
+
+            <p>There are a variety of plugins that add important or convenient commands. Not all of the plugins we use
+                have commands to know and those that do may not have commands that need to be memorized and used
+                frequently. Here are the plugins we currently use:</p>
+
+            <div class="two-share">
+                <div>
+                    <ul>
+                        <li><a href="#dreamvisitor">Dreamvisitor</a></li>
+                        <li><a href="#essentialsx">EssentialsX</a></li>
+                        <li><a href="#eyeofonyx">Eye of Onyx</a></li>
+                        <li><a href="#griefdefender">GriefDefender</a></li>
+                        <li><a href="#luckperms">LuckPerms</a></li>
+                        <li><a href="#signshop">SignShop</a></li>
+                        <li><a href="#spark">spark</a></li>
+                        <li><a href="#vault">Vault</a></li>
+                        <li><a href="#worldedit">WorldEdit</a></li>
+                        <li><a href="#worldguard">WorldGuard</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Plugins, unlike data packs and resource packs, are not a vanilla Minecraft feature, nor a
+                        client-side modification such as a mod. The community-built Bukkit API (as well as the expanded
+                        Spigot and Paper APIs) provides the capability that plugins have. Having optimized direct hooks
+                        into the main thread as well as being multithreaded allows them to be much more optimized than
+                        data packs (in general).</p>
+                </div>
+            </div>
+
+            <p>Side Note: <b>Client Side VS Server Side</b></p>
+            <div class="sidenote">
+                <p>On a single-player Minecraft world, the world runs on an internal server. When you open a world, that
+                    server starts and connects your client to itself. <b>The <i>server side</i> does all the back-end
+                        world management
+                        and tick calculation.</b> It path-finds mobs, calculates light levels, and runs things like
+                    redstone and
+                    command blocks. <b>The <i>client side</i> is the actual interface that the player uses to interact
+                        with the world,
+                        but it doesn’t do any world generation or entity ticking.</b> The client side is just
+                    responsible for
+                    letting the player interact with the game (moving, changing blocks, running commands, rendering the
+                    game). This concept is similar on a multiplayer server. The only difference is that all the previous
+                    server-side tasks are handled on a separate computer (the server) that the client connects to.
+                    <b>All world
+                        updates run on the server side and have to be sent to the client for each tick.</b>
+                </p>
+            </div>
+
+            <h2 id="paper-spigot-bukkit">Paper/Spigot/Bukkit</h2>
+            <p class="caption">This section will likely be removed as Paper is phasing out their timings feature.</p>
+            <p>Paper, Spigot, and Bukkit have their own commands, but the only one we’re most interested in is Paper’s
+                Timings feature.</p>
+            <p>Paper comes with a feature called <b>Timings</b> which records process times for server ticking and makes
+                finding performance problems much easier. Timings is enabled by default, so you can use
+                <code>/timings report</code>
+                to generate a report. If you want to get a more specific sample, you can use <code>/timings on</code> to
+                clear
+                timings data and start a new session. You can then open the provided link and find information on how
+                much time a given process is taking to tick. It’s worth noting that we also have <a
+                    href="#spark">spark</a>, a performance
+                profiler similar to timings. Spark provides graphs and visual tools to analyze sessions, but both tools
+                give insight into different things, so use them together rather than one over the other.
+            </p>
+
+            <p>Side Note: <b>What exactly are Paper, Spigot, and Bukkit?</b></p>
+            <div class="sidenote">
+                <p>Paper, Spigot, and Bukkit are not the same thing. CraftBukkit was released in December 2010 as a
+                    “Minecraft Server mod” (like the previous hMod (yeah, there’s a whole history of server mods))
+                    aiming to prioritize performance and ease of use. Bukkit provides a comprehensive API for plugins to
+                    easily interface with Minecraft. Spigot, released in 2012, is a modified version of CraftBukkit with
+                    hundreds of improvements, customization, and optimization (as well as an expanded API) while
+                    remaining fully compatible with Bukkit plugins which made it the most popular server mod in the
+                    world. Paper (previously PaperSpigot) took what Spigot did and did it tenfold, increasing
+                    performance, fixing countless bugs, and expanding the API again. Paper, released in 2014, is the
+                    most popular compromise between excellent performance and vanilla gameplay / backwards
+                    compatibility.</p>
+            </div>
+
+            <h2 id="dreamvisitor"><a href="https://github.com/stonley890/Dreamvisitor/wiki">Dreamvisitor</a></h2>
+            <p>Dreamvisitor, created by Bog specifically for the server, has a variety of features. It serves as an
+                all-in-one utility plugin and Discord bot. Here are some important commands:</p>
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>/aradio &lt;message></code></p>
+                </div>
+                <div>
+                    <p>📗 The admin radio sends a message to all online operators and the console.</p>
+                </div>
+                <div>
+                    <p><a href="#item-blacklist"><code>/itemblacklist</code></a></p>
+                </div>
+                <div>
+                    <p>📒 Access the item blacklist GUI.</p>
+                </div>
+                <div>
+                    <p><code>/panic</code></p>
+                </div>
+                <div>
+                    <p>📕 Kicks all players and sets the player limit override to 0.</p>
+                </div>
+                <div>
+                    <p><code>/pausebypass &lt;add|remove|list></code></p>
+                </div>
+                <div>
+                    <p>📗 Allow players to bypass chat pause in case of events or other situations where certain
+                        players need chat priority.</p>
+                </div>
+                <div>
+                    <p><a href="#pause-chat"><code>/pausechat</code></a></p>
+                </div>
+                <div>
+                    <p>📕 Pauses chat for non-operators. This will disable all player chat sending and prevent the
+                        use of <code>/me</code>. You can allow certain players to bypass this with
+                        <code>/pausebypass</code>.
+                    </p>
+                </div>
+                <div>
+                    <p><code>/playerlimit [limit]</code></p>
+                </div>
+                <div>
+                    <p>📕 Sets the player limit. This will bypass the server’s player limit, both over and under.
+                        The player limit can be increased for a concentrated event, for example.</p>
+                </div>
+                <div>
+                    <p><code>/radio &lt;message></code></p>
+                </div>
+                <div>
+                    <p>📗 Sends a message to all online players with the <code>dreamvisitor.radio</code> permission.
+                    </p>
+                </div>
+                <div>
+                    <p><a
+                            href="#soft-whitelist"><code>/softwhitelist &lt;add|remove|list|on|off> [&lt;player>]</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📒 Manage the soft whitelist.</p>
+                </div>
+                <div>
+                    <p><code>/tagradio &lt;tag> &lt;message></code></p>
+                </div>
+                <div>
+                    <p>📗 Sends a message to all players with the specified tag.</p>
+                </div>
+                <div>
+                    <p><code>/user &lt;username></code></p>
+                </div>
+                <div>
+                    <p>📗 Get the details of a player, even if they are offline.</p>
+                </div>
+                <div>
+                    <p><code>/togglepvp</code></p>
+                </div>
+                <div>
+                    <p>📒 Globally turns PvP off. Only use this if absolutely necessary in an emergency or during an
+                        event.</p>
+                </div>
+                <div>
+                    <p><code>/zoop</code></p>
+                </div>
+                <div>
+                    <p>📗 Vanish from Discord. This command should be used with Essentials <code>/vanish</code> and
+                        a false disconnect tellraw.</p>
+                </div>
+
+            </div>
+
+            <h3 id="item-blacklist">Item Blacklist</h3>
+
+            <p><code>/itemblacklist</code> will open a chest-like inventory. Items placed in this container will be
+                saved in their place and players with matching items will have them automatically removed from
+                non-operator player inventories. <b>This removal is permanent.</b> Be cautious of items you add.</p>
+            <p><b>Items are only removed if the data is an exact match.</b> If you put a potato into the blacklist GUI,
+                potatoes that have been renamed or enchanted will not be removed.</p>
+
+            <img alt="A demonstration of the item blacklist."
+                src="https://lh4.googleusercontent.com/0gH6woVlWJzaanhzgc0o8121lrALOaPUCC8aZix1Cxr6Zwokr218AT7QcPQLgeUbBaTNR1Gq6Aum7-R8wCYko1sBSVYIsaLaji5quwqjI8lVdrqxqsi3E10dO1edqsmvRIXRn8G2__I53NAvMBV0jz0">
+            <p class="caption">A demonstration of the item blacklist.</p>
+
+            <h3 id="soft-whitelist">Soft Whitelist</h3>
+            <p>The soft whitelist acts as a secondary whitelist that works much like Minecraft’s built-in whitelist
+                feature. This allows reducing the allowed players to a specified group while not modifying the main
+                whitelist. Players with the <code>dreamvisitor.nowhitelist</code> permission will always bypass the soft
+                whitelist. <b>Operators will always bypass the soft whitelist.</b>
+            </p>
+
+            <h3 id="pause-chat">Pause Chat</h3>
+            <p>The <code>/pausechat</code> command will stop all incoming chat messages from being broadcasted. It will
+                also block messages from <code>/me</code> and Discord passthrough. You can allow certain players to
+                bypass this with <code>/pausebypass</code>. Players with the <code>dreamvisitor.nopause</code>
+                permission will always bypass chat pause. <b>Operators will always bypass chat pause.</b>
+            </p>
+
+            <h2 id="essentialsx"><a href="https://essinfo.xeya.me/commands.html">EssentialsX</a></h2>
+            <p>EssentialsX is the most comprehensive general-purpose plugin available. It provides teleportation,
+                moderation tools, gameplay enhancements, homes, warps, sign shops, kits, and everything in between.
+                Being a general-purpose plugin, it doesn’t excel at any specific feature or function, but its
+                versatility means there are a lot of commands to consider. Here are the most important for an admin:
+            </p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>/editsign &lt;set/clear/copy/paste> [line number] [text]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Edits a sign that the player is looking at.</p>
+                </div>
+                <div>
+                    <p><code>/msgtoggle [player] [on|off]</code></p>
+                </div>
+                <div>
+                    <p>📗 Blocks receiving all private messages.</p>
+                </div>
+                <div>
+                    <p><code>/mute &lt;player> [datediff]</code></p>
+                </div>
+                <div>
+                    <p>📗 Mutes or unmutes a player.</p>
+                </div>
+                <div>
+                    <p><code>/spawner &lt;mob> [delay]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Change the mob type of a spawner.</p>
+                </div>
+                <div>
+                    <p><a
+                            href="#powertools"><code>/powertool [l:|a:|r:|c:|d:][command] [arguments] ({player} can be replaced by name of a clicked player.)</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>🛡️ 📒 Assigns a command to the item in hand. Use 'c:' as the command to make a chat macro. Use
+                        'a:' to append multiple commands. Use 'r:' to remove a single command. Use 'l:' to list all
+                        power tools Use 'd:' to remove all power tools.</p>
+                </div>
+                <div>
+                    <p><code>/gc</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Reports memory, uptime and tick info.</p>
+                </div>
+                <div>
+                    <p><code>/enderchest [player], /ec</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Lets you see inside an ender chest.</p>
+                </div>
+                <div>
+                    <p><code>/powertooltoggle</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Enables or disables all current powertools.</p>
+                </div>
+                <div>
+                    <p><code>/speed [type] &lt;speed> [player]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Change your walk or fly speed.</p>
+                </div>
+                <div>
+                    <p><code>/whois &lt;nickname|playername></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Displays player information.</p>
+                </div>
+                <div>
+                    <p><code>/disposal</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Opens a portable disposal menu.</p>
+                </div>
+                <div>
+                    <p><code>/condense [itemname]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Condenses items into more compact blocks.</p>
+                </div>
+                <div>
+                    <p><code>/book [title|author [name]]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Allows reopening and editing of sealed books.</p>
+                </div>
+                <div>
+                    <p><code>/mail [read|clear|clear [number]|send [to] [message]|sendtemp [to] [expire time] [message]|sendall [message]]</code>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Manages inter-player, intra-server mail.</p>
+                </div>
+                <div>
+                    <p><code>/pweather [list|reset|storm|sun|clear] [player|*]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Adjust a player's weather.</p>
+                </div>
+                <div>
+                    <p><code>/ignore &lt;player></code></p>
+                </div>
+                <div>
+                    <p>📗 Toggles ignoring other players.</p>
+                </div>
+                <div>
+                    <p><code>/near [playername] [radius]</code></p>
+                </div>
+                <div>
+                    <p>📗 Lists the players nearby or around a player.</p>
+                </div>
+                <div>
+                    <p><code>/invsee &lt;player> [armor]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 See and/or edit the inventory of other players.</p>
+                </div>
+                <div>
+                    <p><code>/socialspy [player] [on|off]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Toggles if you can see msg/mail commands in chat.</p>
+                </div>
+                <div>
+                    <p><code>/ptime [list|reset|day|night|dawn|17:30|4pm|4000ticks] [player|*]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Adjust player's client time. Add @ prefix to fix.</p>
+                </div>
+                <div>
+                    <p><code>/home [player:]&lt;name></code></p>
+                </div>
+                <div>
+                    <p>📗 Teleport to your home.</p>
+                </div>
+                <div>
+                    <p><code>/vanish [player] [on|off]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Hide yourself from other players.</p>
+                </div>
+                <div>
+                    <p><code>/god [player] [on|off]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Enables your godly powers.</p>
+                </div>
+                <div>
+                    <p><code>/skull [owner]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Get the player head item with your skin or a skin of a specified player, or change the
+                        skin of the head you're holding.</p>
+                </div>
+                <div>
+                    <p><code>/broadcast &lt;msg></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Broadcasts a message to the entire server.</p>
+                </div>
+                <div>
+                    <p><code>/itemdb &lt;item></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Searches for an item.</p>
+                </div>
+                <div>
+                    <p><code>/itemlore &lt;add/set/clear> [text/line] [text]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Edit the lore of an item.</p>
+                </div>
+                <div>
+                    <p><code>/itemname [name]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Renames the item you're currently holding. Leave [name] empty to reset. You can add in
+                        color codes when you have permission to.</p>
+                </div>
+                <div>
+                    <p><code>/eco &lt;give|take|set|reset> &lt;player> &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📒 Manages a player’s economy.</p>
+                </div>
+                <div>
+                    <p><code>/feed [player]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Satisfy the hunger.</p>
+                </div>
+                <div>
+                    <p><code>/heal [player]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Heals you or the given player.</p>
+                </div>
+                <div>
+                    <p><code>/nick [player] &lt;nickname|off></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Change your nickname or that of another player.</p>
+                </div>
+            </div>
+
+            <h3 id="powertools">Powertools</h3>
+            <p><code>/powertool</code> allows you to assign a command to an item. Pressing the attack button (left mouse
+                button by default) will execute the command. The argument <code>{player}</code> will insert the name of
+                a clicked player. There are five flags you can prepend to the argument that change the behavior of
+                <code>/powertool. c:</code> will create a chat macro. Instead of running a command, the powertool will
+                send a chat message. Use <code>a:</code> to append multiple commands. Use <code>r:</code> to remove a
+                single command from a powertool. Use <code>l:</code> to list all power tools and their commandes. Use
+                <code>d:</code> to remove all power tools.
+            </p>
+            <p>Examples:</p>
+            <pre><code>/powertool setblock ~ ~-1 ~ stone
+# Executes 'setblock ~ ~-1 ~ stone' on click
+/powertool effect give {player} regeneration
+# Gives regeneration to a clicked player
+/powertool a:effect give {player} saturation
+# Adds a subsequent command to give saturation to a clicked player</code></pre>
+
+            <h2 id="eyeofonyx"><a href="https://github.com/Stonley890/Eye-of-Onyx/wiki">Eye of Onyx</a></h2>
+            <p>Eye of Onyx is the custom royalty management plugin co-developed by Stonley890 and iHeron. Its purpose is
+                to completely automate the royalty board and challenge system across both Minecraft and Discord.
+            </p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><code><b>Command</b></code></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>/royalty list [tribe]</code></p>
+                </div>
+                <div>
+                    <p>📗 Lists the royalty board. If a tribe is specified, only that tribe will be reported.</p>
+                </div>
+                <div>
+                    <p><code>/royalty set &lt;player> &lt;position></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Sets the specified player to the specified position of their tribe. This will overwrite
+                        the position entirely.</p>
+                </div>
+                <div>
+                    <p><code>/royalty clear &lt;tribe> &lt;position></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Clears the entry at the specified location and updates the royalty board. If there are
+                        filled positions below the empty ones, they will be moved up.</p>
+                </div>
+                <div>
+                    <p><code>/royalty update</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📒 Reloads and updates the royalty board. If there are manual changes to board.yml, use this
+                        command to load the new file in-game.</p>
+                </div>
+                <div>
+                    <p><code>/royalty manage &lt;tribe> &lt;position> [key] [value]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📕 Manually set data values in board.yml.</p>
+                </div>
+                <div>
+                    <p><code>/eyeofonyx ban &lt;username></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Adds a player to the royalty ban list. Banned players may not participate in royalty.</p>
+                </div>
+                <div>
+                    <p><code>/eyeofonyx unban &lt;username></code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Removes a player from the royalty ban list.</p>
+                </div>
+                <div>
+                    <p><code>/eyeofonyx freeze</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📕 Toggles whether the royalty board can change or not. In the frozen state, challenge
+                        initiation and royalty board movement are disabled.</p>
+                </div>
+                <div>
+                    <p><code>/eyeofonyx disable</code></p>
+                </div>
+                <div>
+                    <p>🛡️ ✖️ Disables the Eye of Onyx plugin. Use in a dire emergency.</p>
+                </div>
+                <div>
+                    <p><code>/eyeofonyx config [key] [value]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📕 Allows changing some values in config.yml.</p>
+                </div>
+                <div>
+                    <p><a href="#challenge-handshakes"><code>/challenge</code></a></p>
+                </div>
+                <div>
+                    <p>📗 Initiate a challenge.</p>
+                </div>
+
+            </div>
+
+            <h3 id="challenge-handshakes">Challenge Handshakes</h3>
+
+            <div class="two-share">
+                <div>
+                    <p>A challenge can be initiated with /challenge. To initiate a challenge, a player must meet the
+                        following requirements:</p>
+                    <ul>
+                        <li>The player must be part of a tribe-associated team.</li>
+                        <li>The player must not already be participating in a challenge.</li>
+                        <li>The player must not be on movement cooldown.</li>
+                        <li>he player must not be a ruler.</li>
+                        <li>The player must not be banned from royalty.</li>
+                    </ul>
+                    <p>If all these requirements are met, the player will be given the option to challenge one of the
+                        positions directly above their own. When chosen, Eye of Onyx will verify that the player being
+                        challenged (the defender) meets the following requirements:</p>
+                    <ul>
+                        <li>The player must not already be participating in a challenge.</li>
+                        <li>The player must not be on movement cooldown.</li>
+                    </ul>
+                    <p>If all these requirements are met, the challenge will be initiated! The defender then must
+                        acknowledge the challenge via the notification received.</p>
+                </div>
+
+                <div>
+                    <img alt="A GIF of the challenge initiation process." src="ChallengeInit.GIF">
+                    <p class="caption">The challenge initiation process.</p>
+                    <img alt="A GIF of the challenge acknowledgement process."
+                        src="https://lh6.googleusercontent.com/8BcBdk_SV2HeTC1Tk-hrHB_E42T8orivb2WEhm3VvSJgqCOaiCmSZne8kx6cNGYjV7jvpUU7uKwve3HLWC5oTQnnZPZTeaW6E1rIaRmTQvAk6-qvtHPTjWUq_kTOBDa201ZJlc18fiVJ0IYnCetLHh4">
+                    <p class="caption">The challenge acknowledgement process</p>
+                </div>
+            </div>
+
+            <h2 id="grieffefender"><a href="https://docs.griefdefender.com/wiki/">GriefDefender</a></h2>
+            <p>GriefDefender is the anti-grief system we use that allows players to claim and protect 2D and 3D land
+                plots.</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>/abandon &lt;all|claim|top></code></p>
+                </div>
+                <div>
+                    <p>📒 Abandon a specific claim, or all of your owned claims.</p>
+                </div>
+                <div>
+                    <p><code>/abandon world [world]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📒 Abandon all claims in the current world or a specified world.</p>
+                </div>
+                <div>
+                    <p><code>/buyblocks &lt;count></count></code></p>
+                </div>
+                <div>
+                    <p>📗 Purchases additional claim blocks.</p>
+                </div>
+                <div>
+                    <p><code>/gd buy claim</code></p>
+                </div>
+                <div>
+                    <p>📗 View a list of claims for sale.</p>
+                </div>
+                <div>
+                    <p><code>/contractclaim &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>📗 Contracts/shrinks the claim from the direction you are facing.</p>
+                </div>
+                <div>
+                    <p><code>/claimcreate &lt;radius> [<a href="#claim-types">type</a>]</code></p>
+                </div>
+                <div>
+                    <p>📗 Creates a claim around the player of the given type.</p>
+                </div>
+                <div>
+                    <p><code>/expandclaim &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>📗 Expands the claim in the direction you are facing.</p>
+                </div>
+                <div>
+                    <p><code>/gd claim farewell &lt;clear|message></code></p>
+                </div>
+                <div>
+                    <p>📗 Sets a message to display when a player leaves the claim.</p>
+                </div>
+                <div>
+                    <p><code>/gd claim greeting &lt;clear|message></code></p>
+                </div>
+                <div>
+                    <p>📗 Sets a message to display when a player enters the claim.</p>
+                </div>
+                <div>
+                    <p><code>/claimnotifications</code></p>
+                </div>
+                <div>
+                    <p>📗 Enable/disable greeting and farewell messages on trusted claims.</p>
+                </div>
+                <div>
+                    <p><code>/gd claim we &lt;claim|clear|select></code></p>
+                </div>
+                <div>
+                    <p>📗 Used to manage GD claims with WorldEdit.</p>
+                </div>
+                <div>
+                    <p><code>/cuboid</code></p>
+                </div>
+                <div>
+                    <p>📗 Toggles 3D claiming on and off.</p>
+                </div>
+                <div>
+                    <p><code>/modeadmin</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Enables admin claim mode with the claiming tool.</p>
+                </div>
+                <div>
+                    <p><code>/modebasic</code></p>
+                </div>
+                <div>
+                    <p>📗 Enables basic claim mode with the claiming tool.</p>
+                </div>
+                <div>
+                    <p><code>/modesubdivide</code></p>
+                </div>
+                <div>
+                    <p>📗 Enables subdivide claim mode with the claiming tool.</p>
+                </div>
+                <div>
+                    <p><code>/modetown</code></p>
+                </div>
+                <div>
+                    <p>📗 Enables town claim mode with the claiming tool.</p>
+                </div>
+                <div>
+                    <p><code>/gd player info <player> <world>|<player>|[<world>]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ 📗 Gets information about a player and their claim blocks.</p>
+                </div>
+                <div>
+                    <p><code>/sellblocks &lt;blocks></code></p>
+                </div>
+                <div>
+                    <p>📗 Sell your claim blocks for server money.</p>
+                </div>
+                <div>
+                    <p><code>/gd sell claim &lt;price></code></p>
+                </div>
+                <div>
+                    <p>📗 Puts your claim up for sale at the set price. To disable sale, set the price to -1 or set
+                        ForSale setting in /claiminfo to false.</p>
+                </div>
+                <div>
+                    <p><code>/transferblocks &lt;player> &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>📗 Transfers the player’s claim blocks to another player.</p>
+                </div>
+                <div>
+                    <p><code>/trapped</code></p>
+                </div>
+                <div>
+                    <p>📗 Teleports the player to a safe location if they are stuck and unable to build.</p>
+                </div>
+                <div>
+                    <p><code>/trust|trustall &lt;player|group|list> &lt;<a href="#trust-types">trusttype</a>></code></p>
+                </div>
+                <div>
+                    <p>📗 View and manage claim permissions for this claim or all claims you own.</p>
+                </div>
+                <div>
+                    <p><code>/untrust|untrustall &lt;player|group></code></p>
+                </div>
+                <div>
+                    <p>📗 Revoke a player or group’s access to this claim or all claims you own.</p>
+                </div>
+
+            </div>
+
+            <h3 id="claim-types">Claim Types</h3>
+            <ul>
+                <li><b><a href="https://docs.griefdefender.com/wiki/basic/Claim-Types.html#basic">Basic</a></b>: Default
+                    claim type used for users.</li>
+                <li><b><a href="https://docs.griefdefender.com/wiki/basic/Claim-Types.html#town">Town</a></b>: Can house
+                    other basic claims, similarly to how basic or admin claims can house subdivisions.</li>
+                <li><b><a href="https://docs.griefdefender.com/wiki/basic/Claim-Types.html#admin">Admin</a></b>: Has no
+                    size restrictions, does not cost anything to create, can be created around any existing claim, can
+                    be rented, and are only manageable by administrators.</li>
+                <li><b><a
+                            href="https://docs.griefdefender.com/wiki/basic/Claim-Types.html#wilderness">Wilderness</a></b>:
+                    Default claim around the world that is not owned by any player.</li>
+                <li><b><a
+                            href="https://docs.griefdefender.com/wiki/basic/Claim-Types.html#subdivision">Subdivision</a></b>:
+                    Used to subdivide top level claims such as basic/admin/town into smaller areas.</li>
+            </ul>
+
+            <h3 id="trust-types">Trust Types</h3>
+            <ul>
+                <li><b>Resident</b>: Player/group can create (sub?)claims. Includes Accessor trust.</li>
+                <li><b>Accessor</b>: Player/group can enter your claim and use your bed.</li>
+                <li><b>Container</b>: Player/group can access containers, crops, animals, beds, buttons, and levers in
+                    your claim.</li>
+                <li><b>Builder</b>: Player/group can build in your claim.</li>
+                <li><b>Manager</b>: Player/group can do all of the above and use this command.</li>
+            </ul>
+
+            <h2 id="luckperms"><a href="https://luckperms.net/wiki/Command-Usage">LuckPerms</a></h2>
+            <p>LuckPerms is a permissions plugin for Minecraft servers. It allows server admins to control what features
+                players can use by creating groups and assigning permissions.</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>/lp editor</code></p>
+                </div>
+                <div>
+                    <p>📗 Provides a link to a web editor. This editor is used to manage permissions.</p>
+                </div>
+            </div>
+
+            <h2 id="signshop"><a href="https://dev.bukkit.org/projects/signshop/pages/signs">SignShop</a></h2>
+            <p>SignShop is an economy-dependent plugin that allows players to exchange goods with an installed economy
+                plugin (for us, this is Vault). As there are few, if any, commands to know for SignShop usage, below is
+                a table of sign types available with SignShop instead.</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Sign</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>[Buy] / [Sell]</code></p>
+                </div>
+                <div>
+                    <p>Buy / sell an item from the shop chest for the price specified on the 4th line.</p>
+                </div>
+                <div>
+                    <p><code>[Trade]</code></p>
+                </div>
+                <div>
+                    <p>Trades one set of items for another, 2 chests required.</p>
+                </div>
+                <div>
+                    <p><code>[Share]</code></p>
+                </div>
+                <div>
+                    <p>Link to another SignShop to split profits, lines 2 and 3 are for the other players, line 4 is for
+                        % amounts (e.g. "25/50" for 75% to others).</p>
+                </div>
+                <div>
+                    <p><code>[Bank]</code></p>
+                </div>
+                <div>
+                    <p>Link to another SignShop to make the shop take/give money to a bank account, The bank account is
+                        specified on line 2 of the sign (Note: you must own the bank account for this to work).</p>
+                </div>
+                <div>
+                    <p><code>[Donate]</code></p>
+                </div>
+                <div>
+                    <p>Gives an item to the shop chest.</p>
+                </div>
+                <div>
+                    <p><code>[DonateHand]</code></p>
+                </div>
+                <div>
+                    <p>Donates the item in your hand to the shop chest.</p>
+                </div>
+                <div>
+                    <p><code>[Dispose]</code></p>
+                </div>
+                <div>
+                    <p>Takes the item in your hand and safely decomposes the material.</p>
+                </div>
+                <div>
+                    <p><code>[Slot]</code></p>
+                </div>
+                <div>
+                    <p>Gives a random item from the selected chest items (not the entire inventory) to the player.</p>
+                </div>
+                <div>
+                    <p><code>[DeviceOn]</code></p>
+                </div>
+                <div>
+                    <p>Turns a lever on.</p>
+                </div>
+                <div>
+                    <p><code>[DeviceOff]</code></p>
+                </div>
+                <div>
+                    <p>Turns a lever off.</p>
+                </div>
+                <div>
+                    <p><code>[Toggle]</code></p>
+                </div>
+                <div>
+                    <p>Toggles a lever.</p>
+                </div>
+                <div>
+                    <p><code>[Device]</code></p>
+                </div>
+                <div>
+                    <p>Temporarily turns on a lever.</p>
+                </div>
+                <div>
+                    <p><code>[DeviceItem]</code></p>
+                </div>
+                <div>
+                    <p>Temporarily turns on a lever using items as payment.</p>
+                </div>
+                <div>
+                    <p><code>[Jukebox]</code></p>
+                </div>
+                <div>
+                    <p>Allows players to create jukeboxes by placing music discs in a chest.</p>
+                </div>
+                <div>
+                    <p><code>[Restricted]</code></p>
+                </div>
+                <div>
+                    <p>Makes it so only certain permission groups can use the linked SignShop (listed on lines 2, 3, and
+                        4).</p>
+                </div>
+                <div>
+                    <p><code>[gBuy]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Buy an item from the shop chest, but the owner receives no money.</p>
+                </div>
+                <div>
+                    <p><code>[gSell]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Sell an item to the shop chest, and the player receives money, but not from the owner.</p>
+                </div>
+                <div>
+                    <p><code>[iBuy]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Buy an item from the "shop", money goes to no one, infinite items.</p>
+                </div>
+                <div>
+                    <p><code>[iSell]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Sell an item to the "shop", infinite money, item disappears.</p>
+                </div>
+                <div>
+                    <p><code>[iTrade]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Trades one set of items for another, infinite stock.</p>
+                </div>
+                <div>
+                    <p><code>[Class]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Takes the user's inventory and replaces it with items from a chest, infinite stock.</p>
+                </div>
+                <div>
+                    <p><code>[Kit]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Gives the buyer a set of items once (infinite stock), must be reset using ResetKit sign
+                        before they can use it again.</p>
+                </div>
+                <div>
+                    <p><code>[ResetKit]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Allows a player to use a Kit sign again.</p>
+                </div>
+                <div>
+                    <p><code>[iBuyXP]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Buy the number of XP levels on the third line of the sign.</p>
+                </div>
+                <div>
+                    <p><code>[iSellXP]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Sell the number of XP levels on the third line of the sign.</p>
+                </div>
+                <div>
+                    <p><code>[iXPBuy]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Buy an item using raw XP points on the third line of the sign.</p>
+                </div>
+                <div>
+                    <p><code>[iXPSell]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Sell an item using raw XP points on the third line of the sign.</p>
+                </div>
+                <div>
+                    <p><code>[iSlot]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Gives a random item from the selected chest items with infinite stock.</p>
+                </div>
+                <div>
+                    <p><code>[Day]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Turns the time to day.</p>
+                </div>
+                <div>
+                    <p><code>[Night]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Turns the time to night.</p>
+                </div>
+                <div>
+                    <p><code>[Rain]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Turns on rain + thunder.</p>
+                </div>
+                <div>
+                    <p><code>[ClearSkies]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Turns off rain + thunder.</p>
+                </div>
+                <div>
+                    <p><code>[Repair]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Repairs the current item.</p>
+                </div>
+                <div>
+                    <p><code>[Heal]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Fully heals the player.</p>
+                </div>
+                <div>
+                    <p><code>[Enchant]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Sells the enchantments from the item in the chest.</p>
+                </div>
+                <div>
+                    <p><code>[Disenchant]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Removes enchantments from an item.</p>
+                </div>
+                <div>
+                    <p><code>[TpToOwner]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ An example of a custom sign for running commands.</p>
+                </div>
+                <div>
+                    <p><code>[Command]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Allows players to run commands on the 2nd and 3rd lines of the sign.</p>
+                </div>
+                <div>
+                    <p><code>[UserCommand]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Allows players to run commands on the 2nd and 3rd lines of the sign as if they typed it
+                        themselves.</p>
+                </div>
+                <div>
+                    <p><code>[Promote]</code></p>
+                </div>
+                <div>
+                    <p>🛡️ Promotes players to the permission group listed on the 2nd line of the sign.</p>
+                </div>
+
+            </div>
+
+            <h2 id="spark"><a href="https://spark.lucko.me/docs/Command-Usage">spark</a></h2>
+            <p>spark (yes, the <i>s</i> in uncapitalized) is a performance monitoring tool.</p>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><a
+                            href="https://spark.lucko.me/docs/Command-Usage#spark-profiler"><code>/spark profiler</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Used to start, stop, or view information on a profiler. Profilers are used to create
+                        digestible information on how well the server is running.</p>
+                </div>
+                <div>
+                    <p><a href="https://spark.lucko.me/docs/Command-Usage#spark-tps"><code>/spark tps</code></a></p>
+                </div>
+                <div>
+                    <p>📗 Prints information about the servers TPS (ticks per second) rate and CPU usage.</p>
+                </div>
+                <div>
+                    <p><a href="https://spark.lucko.me/docs/Command-Usage#spark-health"><code>/spark health</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Generates a health report for the server, including TPS, CPU, Memory and Disk Usage.</p>
+                </div>
+                <div>
+                    <p><a
+                            href="https://spark.lucko.me/docs/Command-Usage#spark-ping"><code>/spark ping [--player &lt;username>]</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Prints information about average (or specific) player ping.</p>
+                </div>
+                <div>
+                    <p><a
+                            href="https://spark.lucko.me/docs/Command-Usage#spark-tickmonitor"><code>/spark tickmonitor</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Controls the tick monitoring system.</p>
+                </div>
+                <div>
+                    <p><a href="https://spark.lucko.me/docs/Command-Usage#spark-gc"><code>/spark gc</code></a></p>
+                </div>
+                <div>
+                    <p>📗 Prints information about the servers GC (garbage collection) history.</p>
+                </div>
+                <div>
+                    <p><a
+                            href="https://spark.lucko.me/docs/Command-Usage#spark-gcmonitor"><code>/spark gcmonitor</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Toggles the GC (garbage collection) monitoring system on or off.</p>
+                </div>
+                <div>
+                    <p><a
+                            href="https://spark.lucko.me/docs/Command-Usage#spark-heapsummary"><code>/spark heapsummary</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Generates a new memory (heap) dump summary and upload it to the viewer.</p>
+                </div>
+                <div>
+                    <p><a
+                            href="https://spark.lucko.me/docs/Command-Usage#spark-heapdump"><code>/spark heapdump</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Generates a new heapdump (.hprof snapshot) file and saves to the disk.</p>
+                </div>
+                <div>
+                    <p><a
+                            href="https://spark.lucko.me/docs/Command-Usage#spark-activity"><code>/spark activity</code></a>
+                    </p>
+                </div>
+                <div>
+                    <p>📗 Prints information about recent activity performed by spark.</p>
+                </div>
+            </div>
+
+            <h2 id="vault">Vault</h2>
+            <p>Vault provides APIs for chat, permissions, and economy, but Wings of Fire: The New World only uses it as
+                an API for EssentialsEcon (the economy provided by EssentialsX). As such, Vault has no important
+                commands.</p>
+
+            <h2 id="worldedit"><a href="https://worldedit.enginehub.org/en/latest/">WorldEdit</a></h2>
+            <p>WorldEdit is a terrain editing plugin that allows operators to move and shape large quantities of blocks.
+                The <a href="https://www.curseforge.com/minecraft/mc-mods/worldeditcui-fabric">WorldEdit CUI mod</a> is
+                recommended for some helpful visual information when using this tool. This guide will cover the most
+                common commands. More in-depth information can be found at the <a
+                    href="https://worldedit.enginehub.org/en/latest/commands/">WorldEdit Documentation Hub.</a></p>
+
+            <h3 id="worldedit-basic-commands">Basic Commands</h3>
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>//wand</code></p>
+                </div>
+                <div>
+                    <p>📗 Gives the player a wand (wooden axe). Left click to select the first desired position, right
+                        click to select the second.</p>
+                </div>
+                <div>
+                    <p><code>//undo [#]</code></p>
+                </div>
+                <div>
+                    <p>📗 Reverses a chosen number of WorldEdit commands. Defaults to 1.</p>
+                </div>
+                <div>
+                    <p><code>//redo [#]</code></p>
+                </div>
+                <div>
+                    <p>📗 Reverses a chosen number of <code>//undo</code> commands. Defaults to 1.</p>
+                </div>
+                <div>
+                    <p><code>//pos1|pos2, //1|2</code></p>
+                </div>
+                <div>
+                    <p>📗 Sets first and second positions to your current location respectively without the wand.</p>
+                </div>
+                <div>
+                    <p><code>//set &lt;block></code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Sets the current selection to the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//replace &lt;from> &lt;to></code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Replaces the target block in a selection to the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//replacenear &lt;radius> &lt;from> &lt;to></code></p>
+                </div>
+                <div>
+                    <p>📒 Replaces the target block in the radius to the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//copy</code></p>
+                </div>
+                <div>
+                    <p>📗 Copies all blocks in a selection to the clipboard.</p>
+                </div>
+                <div>
+                    <p><code>//cut</code></p>
+                </div>
+                <div>
+                    <p>📗 Cuts all blocks in a selection to the clipboard.</p>
+                </div>
+                <div>
+                    <p><code>//paste</code></p>
+                </div>
+                <div>
+                    <p>📒 📕 Pastes all blocks in the clipboard relative to the player’s position.</p>
+                </div>
+                <div>
+                    <p><code>//clear clipboard</code></p>
+                </div>
+                <div>
+                    <p>📗 Clears the clipboard.</p>
+                </div>
+                <div>
+                    <p><code>//rotate &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>📗 Rotates the contents of the clipboard with the given angle (multiples of 90).</p>
+                </div>
+                <div>
+                    <p><code>//flip &lt;direction></code></p>
+                </div>
+                <div>
+                    <p>📗 Flips the contents of the clipboard across the given direction or the direction the player is
+                        facing.</p>
+                </div>
+                <div>
+                    <p><code>//move &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Moves all blocks in the selection to the chosen distance relative to the direction the
+                        player is facing.</p>
+                </div>
+            </div>
+
+            <h3 id="worldedit-tool-commands">Tool Commands</h3>
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>//shift &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Shifts the selection a given amount.</p>
+                </div>
+                <div>
+                    <p><code>//expand &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>📗 Expands the selection a given amount.</p>
+                </div>
+                <div>
+                    <p><code>//sel</code></p>
+                </div>
+                <div>
+                    <p>📗 Deselects the selection.</p>
+                </div>
+                <div>
+                    <p><code>//count &lt;target></code></p>
+                </div>
+                <div>
+                    <p>📗 Counts the number of blocks in a selection.</p>
+                </div>
+                <div>
+                    <p><code>//size</code></p>
+                </div>
+                <div>
+                    <p>📗 Provides information about the selection.</p>
+                </div>
+                <div>
+                    <p><code>//drain &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Drains water and lava in the given radius.</p>
+                </div>
+                <div>
+                    <p><code>//fixwater|fixlava &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Levels water or lava in the given radius.</p>
+                </div>
+                <div>
+                    <p><code>/butcher &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Kills mobs in the given radius.</p>
+                </div>
+                <div>
+                    <p><code>/up &lt;amount></code></p>
+                </div>
+                <div>
+                    <p>📗 Teleports the player up on the y axis the given amount of blocks.</p>
+                </div>
+                <div>
+                    <p><code>/thru</code></p>
+                </div>
+                <div>
+                    <p>📗 Teleports the player through obstacles in the facing direction.</p>
+                </div>
+                <div>
+                    <p><code>/give &lt;player> debugstick 1</code></p>
+                </div>
+                <div>
+                    <p>📗 Gives the player a debug stick that can be used to easily rotate blocks.</p>
+                </div>
+            </div>
+
+            <h3 id="worldedit-generation-commands">Generation Commands</h3>
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>//stack &lt;#></code></p>
+                </div>
+                <div>
+                    <p>📗 Repeats the content of the selection the chosen distance (#) relative to the direction the
+                        player is facing.</p>
+                </div>
+                <div>
+                    <p><code>//schematic list</code></p>
+                </div>
+                <div>
+                    <p>📗 Lists available saved schematics.</p>
+                </div>
+                <div>
+                    <p><code>//schematic load &lt;name></code></p>
+                </div>
+                <div>
+                    <p>📗 Loads the chosen schematic into the clipboard.</p>
+                </div>
+                <div>
+                    <p><code>//schematic paste</code></p>
+                </div>
+                <div>
+                    <p>📒 Pastes the schematic currently in the clipboard.</p>
+                </div>
+                <div>
+                    <p><code>//schematic save &lt;name></code></p>
+                </div>
+                <div>
+                    <p>📗 Saves the current selection as a schematic with the chosen name.</p>
+                </div>
+                <div>
+                    <p><code>//schematic delete &lt;name></code></p>
+                </div>
+                <div>
+                    <p>📗 Deletes the chosen saved schematic.</p>
+                </div>
+                <div>
+                    <p><code>//hollow &lt;thickness> &lt;block></code></p>
+                </div>
+                <div>
+                    <p>📗 Hollows out the object in the selection with the given wall thickness and block.</p>
+                </div>
+                <div>
+                    <p><code>//walls &lt;block></code></p>
+                </div>
+                <div>
+                    <p>📗 Creates walls around the sides of the selection with the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//cyl &lt;block> &lt;radius> &lt;height></code></p>
+                </div>
+                <div>
+                    <p>📗 Creates a cylinder of the specified size using the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//hcyl &lt;block> &lt;radius> &lt;height></code></p>
+                </div>
+                <div>
+                    <p>📗 Creates a hollow cylinder of the specified size using the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//sphere &lt;block> &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Creates a sphere of the specified size using the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//hsphere &lt;block> &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Creates a hollow sphere of the specified size using the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//pyramid &lt;block> &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Creates a pyramid of the specified size using the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//hpyramid &lt;block> &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Creates a hollow pyramid of the specified size using the chosen block.</p>
+                </div>
+                <div>
+                    <p><code>//fill &lt;block></code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Fills a hole or container with the given block.</p>
+                </div>
+                <div>
+                    <p><code>//forest &lt;type></code></p>
+                </div>
+                <div>
+                    <p>📗 Generates the specified type of forest in the selected region.</p>
+                </div>
+                <div>
+                    <p><code>//snow &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Places snow in a given radius.</p>
+                </div>
+            </div>
+
+            <h3 id="worldedit-brush-commands">Brush Commands</h3>
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>//br sphere &lt;block> &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Applies a sphere brush to the held tool. Right click to use the brush.</p>
+                </div>
+                <div>
+                    <p><code>//br cyl &lt;block> &lt;radius> &lt;height></code></p>
+                </div>
+                <div>
+                    <p>📗 Applies a cylinder brush to the held tool. Unlike the sphere, the cylinder brush has a height
+                        parameter along with a radius.</p>
+                </div>
+                <div>
+                    <p><code>//br smooth &lt;radius> &lt;height></code></p>
+                </div>
+                <div>
+                    <p>📗 Applies a horizontal smoothing brush to the held tool.</p>
+                </div>
+                <div>
+                    <p><code>//br deform &lt;radius></code></p>
+                </div>
+                <div>
+                    <p>📗 Applies a deform brush to the held tool.</p>
+                </div>
+                <div>
+                    <p><code>/br none/unbind</code></p>
+                </div>
+                <div>
+                    <p>📗 Unbinds the brush from the tool you are currently holding.</p>
+                </div>
+                <div>
+                    <p><code>/mask &lt;block></code></p>
+                </div>
+                <div>
+                    <p>📗 Applies or removes a mask to the selected brush. The brush will only affect the specified
+                        block until the mask is disabled using <code>/mask</code> again.</p>
+                </div>
+                <div>
+                    <p><code>/gmask &lt;block></code></p>
+                </div>
+                <div>
+                    <p>📗 Sets a global mask for all brushes. The brush will only affect the specified block until the
+                        mask is disabled using <code>/gmask</code> again.</p>
+                </div>
+                <div>
+                    <p><code>/tracemask #solid</code></p>
+                </div>
+                <div>
+                    <p>📗 Allows brush to work underwater. Run /tracemask to disable.</p>
+                </div>
+            </div>
+
+            <h3 id="worldedit-flags">Flags</h3>
+            <div class="cmdtable">
+                <div>
+                    <p><b>Flag</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>[%block1,%block2,%block3,...]</code></p>
+                </div>
+                <div>
+                    <p>Percentage modifier that allows multiple blocks to be included in a command. The given percentage
+                        values must add up to 100% and are separated by a comma with no spaces. Exclude percentages for
+                        equal distribution. (e.g. <code>//replace stone 70%dirt,30%cobblestone</code>) </p>
+                </div>
+                <div>
+                    <p><code>[facing=direction]</code></p>
+                </div>
+                <div>
+                    <p>Specifies where a directional block should face.</p>
+                </div>
+                <div>
+                    <p><code>[-a]</code></p>
+                </div>
+                <div>
+                    <p>Ignore air blocks</p>
+                </div>
+                <div>
+                    <p><code>[-e]</code></p>
+                </div>
+                <div>
+                    <p>Include entities</p>
+                </div>
+                <div>
+                    <p><code>[-b]</code></p>
+                </div>
+                <div>
+                    <p>Include biomes</p>
+                </div>
+                <div>
+                    <p><code>[-m &lt;block>]</code></p>
+                </div>
+                <div>
+                    <p>Excludes everything that isn’t a given block.</p>
+                </div>
+                <div>
+                    <p><code>[!]</code></p>
+                </div>
+                <div>
+                    <p>Prefixing any block with an exclamation point will exclude everything that comes after it. (e.g.
+                        <code>//replace !dirt stone</code> will replace everything that is not dirt with stone.)</p>
+                </div>
+                <div>
+                    <p><code>[*]</code></p>
+                </div>
+                <div>
+                    <p>Prefixing any block with an asterisk (*) will set the given block in random directions.</p>
+                </div>
+            </div>
+
+            <h2 id="worldguard"><a href="https://worldguard.enginehub.org/en/latest/">WorldGuard</a></h2>
+            <p>WorldGuard is a plugin that allows operators to create regions with specific game rules and functions.
+                The <a href="https://www.curseforge.com/minecraft/mc-mods/worldeditcui-fabric">WorldEdit CUI mod</a> is
+                recommended for some helpful visual information when using this tool. This guide will cover the most
+                common commands. More in-depth information can be found at the <a
+                    href="https://worldguard.enginehub.org/en/latest/">WorldGuard Documentation Hub</a>.
+            </p>
+
+            <h3 id="worldguard-commands">Commands</h3>
+            <div class="cmdtable">
+                <div><p><b>Command</b></p></div> <div><p><b>🛡️ Description</b></p></div>
+                <div><p><code>//wand</code></p></div> <div><p>📗 Gives the player a wand (wooden axe). Left click to select the first desired position, right click to select the second.</p></div>
+                <div><p><code>//pos1|pos2</code></p></div> <div><p>📗 Sets first and second positions to your current location respectively without the wand.</p></div>
+                <div><p><code>/rg define &lt;name></code></p></div> <div><p>📗 Creates a new region using the current selection.</p></div>
+                <div><p><code>/rg remove &lt;name></code></p></div> <div><p>📒 📕 Deletes the given region. This cannot be undone.</p></div>
+                <div><p><code>/rg info &lt;name></code></p></div> <div><p>📗 Provides information on the given region. Defaults to the region the player is currently inside if no name is specified. Manual selections and changes can be made in this menu.</p></div>
+                <div><p><code>/rg flags &lt;name></code></p></div> <div><p>📗 Lists all region flags in the given region. Manual selections can be made in this menu.</p></div>
+                <div><p><code>/rg flag &lt;name></code></p></div> <div><p>📗 📒 Allows or denies a specified game rule in the given region.</p></div>
+                <div><p><code>/rg setpriority</code></p></div> <div><p>📗 📒 Sets the priority of a given region. Higher number priorities override the permissions of lower number priorities.</p></div>
+                <div><p><code>/rg flag &lt;name> deny-message &lt;content></code></p></div> <div><p>📗 Sets the message players will receive when an action they attempt is blocked.</p></div>
+                <div><p><code>/rg flag &lt;name> blocked-cmds </command></code></p></div> <div><p>📗 📒 Blocks specific commands from being used in the given region. Additional commands can be added by separating with a comma. (e.g. <code>/rg flag spawn blocked-cmd /tpa,/back,/tell</code>)</p></div>
+            </div>
+
+            <h3 id="worldguard-flags">Flags</h3>
+            <p>Below are protection-based flags. Note that there are three default permission groups: <code>non-member</code>, <code>member</code>, and <code>owner</code>. <b>You do not need to set any flags to protect a region.</b> Also note that flags are not player-specific. Setting <code>block-break</code> to deny will prevent pistons, endermen, and any other mechanics that move or remove blocks from doing so because setting that flag denies access to <b>members</b>.</p>
+            <p>A member is defined as anything <i>inside</i> the region. By default, pistons will work inside the region, but pistons outside the region cannot push blocks inside because they are <i>non-members</i>. Because players are non-members by default, you don't need to set any flags for protection, and it still allows members to function correctly.</p>
+            <p>In specific cases, you may want to disallow any block modification whatsoever. What you want to do is to <b>deny building for all permission groups.</b> This is when you want to set <code>build</code> to <code>deny</code>.</p>
+            <p>Region groups are powerful, but can be difficult to understand. Keep this in mind:</p>
+            <p><b>Members are objects that exist/originate within the region. Non-members are objects that do not exist/originate within the region, including all players. Most flags, by default, unset, allow <i>members</i> but deny <i>non-members</i>. Setting a flag to <code>allow</code> or <code>deny</code> applies that setting to both members and non-members.</b></p>
+
+            <div class="cmdtable">
+                <div><p><b>Flag</b></p></div> <div><p><b>Description</b></p></div>
+                <div><p><code>passthrough</code></p></div> <div><p>📒 This flag is short for ‘passthrough build’. It has nothing to do with movement.</p><ul>
+                    <li>If not set (default), then the region protects it area.</li>
+                    <li>If set to <code>deny</code>, then the region protects its area.</li>
+                    <li>If set to <code>allow</code>, then the region no longer protects its area.</li>
+                </ul></div>
+                <div><p><code>build</code></p></div> <div style="display: block;"><p>📕 Everything:</p><ul>
+                    <li>Whether blocks can be mined or placed</li>
+                    <li>Whether doors, levers, etc. (but not inventories) can be used</li>
+                    <li>Whether entities and blocks can be interacted with</li>
+                    <li>Whether player versus player combat is permitted</li>
+                    <li>Whether sleeping in a bed is permitted</li>
+                    <li>Whether inventories can be accessed</li>
+                    <li>Whether vehicles (boats, minecarts) can be placed</li>
+                    <li>etc.</li>
+                </ul><p>This <b>should not be used to protect a region!</b> Regions are automatically protected by the <code>passthrough</code> flag.</p></div>
+                <div><p><code>interact</code></p></div> <div style="display: block;"><p>📗 Everything that involves ‘using’ a block or entity:</p><ul>
+                    <li>Whether doors, levers, etc. (but not inventories) can be used</li>
+                    <li>Whether vehicles (including animals) can be mounted</li>
+                    <li>etc.</li>
+                </ul></div>
+                <div><p><code>block-break / block-place</code></p></div> <div><p>📗 Whether blocks can be mined / used.</p></div>
+                <div><p><code>use</code></p></div> <div><p>📗 Whether doors, levers, etc. (but not inventories) can be used.</p></div>
+                <div><p><code>damage-animals</code></p></div> <div><p>📗 Whether players can harm friendly animals (cows, sheep, etc).</p></div>
+                <div><p><code>chest-access</code></p></div> <div><p>📗 Whether inventories can be accessed.</p></div>
+                <div><p><code>ride</code></p></div> <div><p>📗 Whether vehicles (including animals) can be mounted.</p></div>
+                <div><p><code>pvp</code></p></div> <div><p>📗 Whether player versus player combat is permitted.</p></div>
+                <div><p><code>sleep</code></p></div> <div><p>📗 Whether sleeping in a bed is permitted.</p></div>
+                <div><p><code>respawn-anchors</code></p></div> <div><p>📗 Whether respawn anchors can be activated.</p></div>
+                <div><p><code>tnt</code></p></div> <div><p>📗 Whether TNT detonation or damage is permitted.</p></div>
+                <div><p><code>vehicle-place / vehicle-destroy</code></p></div> <div><p>📗 Whether vehicles (boats, minecarts) can be placed / destroyed.</p></div>
+                <div><p><code>lighter</code></p></div> <div><p>📗 Whether flint and steel can be used.</p></div>
+                <div><p><code>block-trampling</code></p></div> <div><p>📗 Whether farmland and turtle eggs can be trampled.</p></div>
+                <div><p><code>frosted-ice-form</code></p></div> <div><p>📗 Whether players with frost walker boots will form ice</p></div>
+                <div><p><code>item-frame-rotation</code></p></div> <div><p>📗 Whether items can be rotated within item frames</p></div>
+                <div><p><code>firework-damage</code></p></div> <div><p>📗 Whether fireworks can deal damage to entities</p></div>
+                <div><p><code>use-anvil</code></p></div> <div><p>📗 Whether anvils can be used.</p></div>
+                <div><p><code>use-dripleaf</code></p></div> <div><p>📗 Whether dripleaf can be used.</p></div>
+            </div>
+
+            <p>WorldGuard Extra Flags provides the following extra flags. Note that most of these flags <b>bypass operators entirely.</b></p>
+
+            <div class="cmdtable">
+                <div><p><b>Flag</b></p></div> <div><p><b>Description</b></p></div>
+                <div><p><code>blocked-effects</code></p></div> <div><p>📗 Disables the effects of potion effects while inside.</p></div>
+                <div><p><code>chat-prefix / chat-suffix</code></p></div> <div><p>📗 Defines the prefix/suffix shown when inside the region.</p></div>
+                <div><p><code>chunk-unload</code></p></div> <div><p>📒 Prevents chunks the region occupies from being unloaded.</p></div>
+                <div><p><code>command-on-entry / command-on-exit</code></p></div> <div><p>📒 Executes a command as the player when a player enters/exits the region.</p></div>
+                <div><p><code>console-command-on-entry / console-command-on-exit</code></p></div> <div><p>📒 Executes a command as the console when a player enters/exits the region.</p></div>
+                <div><p><code>fly</code></p></div> <div><p>📗 📒 When set to <code>deny</code>, disallows creative flight from the ground.</p></div>
+                <div><p><code>frostwalker</code></p></div> <div><p>📗 When set to <code>deny</code>, stops frostwalker boots from forming ice on water within the region.</p></div>
+                <div><p><code>give-effects</code></p></div> <div><p>📗 Gives players who enter the region a permanent <a href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html">potion effect</a> until they leave.</p></div>
+                <div><p><code>glide</code></p></div> <div><p>📗 When set to <code>deny</code>, stops all gliding inside the region.</p></div>
+                <div><p><code>godmode</code></p></div> <div><p>📗 When set to <code>allow</code>, stops all damage delivered to players.</p></div>
+                <div><p><code>item-durability</code></p></div> <div><p>📗 When set to <code>deny</code>, tools will not be damaged by any actions.</p></div>
+                <div><p><code>join-location</code></p></div> <div><p>📗 Players who disconnect in the region will teleport to the given location when joining.</p></div>
+                <div><p><code>keep-exp</code></p></div> <div><p>📒 When set to <code>allow</code>, players always keep experience levels on death. If the <code>keepInventory</code> gamerule is set to <code>true</code> and this flag is set to <code>deny</code>, the experience will be deleted on death.</p></div>
+                <div><p><code>keep-inventory</code></p></div> <div><p>📒 When set to <code>allow</code>, players always keep inventory on death. If the <code>keepInventory</code> gamerule is set to <code>true</code> and this flag is set to <code>deny</code>, the inventory will be deleted on death.</p></div>
+                <div><p><code>nether-portals</code></p></div> <div><p>📗 When set to <code>deny</code>, nether portals cannot be lit.</p></div>
+                <div><p><code>play-sounds</code></p></div> <div><p>📒 Plays a sound (from a resource location) repeatedly at a specified interval to players inside the region.<br><b>This flag may produce errors if it is set incorrectly. Ask a friend to help you set this if you're not sure.</b></p></div>
+                <div><p><code>respawn-location</code></p></div> <div><p>📗 Sets the location to respawn players upon death.</p></div>
+                <div><p><code>teleport-on-entry /  teleport-on-exit</code></p></div> <div><p>📗 Teleports a player to the give location when they enter/exit the region.</p></div>
+                <div><p><code>walk-speed / fly-speed</code></p></div> <div><p>📗 Players inside the region will inherit this speed while walking/flying.</p></div>
+                <div><p><code>worldedit</code></p></div> <div><p>📗 When set to <code>deny</code>, stops all WorldEdit operations.</p></div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+        <header class="minorheader">
+            <div class="maintext">
+                <div class="navbar">
+                    <div>
+                        <a class="textbutton" href="1.html" title="Section 1: Minecraft Commands">Previous</a>
+                    </div>
+                    <a class="textbutton" href="3.html" title="Section 3: Navigating Discord">Next</a>
+                </div>
+
+            </div>
+        </header>
+        <div class="copy">
+            &copy; 2023 Wings of Fire: The New World. <a
+                href="https://github.com/Stonley890/Admin-Handbook/blob/main/LICENSE">GNU
+                General Public License v3.0<a>
+        </div>
+
+    </footer>
+</body>
+
+<script>
+
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    function toggleNav() {
+        if (document.getElementById("sidenav").style.width == "250px") {
+            closeNav();
+        } else {
+            openNav();
+        }
+    }
+
+    const closeNav = async () => {
+        const sidenav = document.getElementById("sidenav")
+        for (const child of sidenav.children) {
+            child.style.opacity = "0";
+        }
+
+        await delay(200);
+
+        document.getElementById("sidenav").style.width = "0px";
+        document.getElementById("body").style.marginLeft = "0px";
+        document.getElementById("footer").style.marginLeft = "0px";
+    }
+
+    const openNav = async () => {
+
+        document.getElementById("sidenav").style.width = "250px";
+        document.getElementById("body").style.marginLeft = "250px";
+        document.getElementById("footer").style.marginLeft = "250px";
+
+        await delay(500);
+
+        const sidenav = document.getElementById("sidenav")
+        for (const child of sidenav.children) {
+            child.style.opacity = "100";
+        }
+    }
+
+</script>
+
+</html>
