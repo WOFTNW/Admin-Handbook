@@ -8,7 +8,10 @@
     <title>Admin Handbook</title>
     <link rel="stylesheet" href="style.css">
     <script src="sidenav.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="highlight/styles/vs2015.min.css">
     <script src="highlight/highlight.min.js"></script>
     <script src="highlight/src/languages/mcfunction.js"></script>
@@ -132,7 +135,7 @@
 
 <body id="body">
     <header style="display: flex; align-items: center; background-color: #131313;">
-        <span class="navtoggle" onclick="toggleNav()">
+        <span id="navbutton" id="navbutton" class="navtoggle" onclick="toggleNav()">
             <div></div>
             <div></div>
             <div></div>
@@ -159,6 +162,7 @@
             <div class="two-share">
                 <div>
                     <ul>
+                        <li><a href="#coreprotect">CoreProtect</a></li>
                         <li><a href="#dreamvisitor">Dreamvisitor</a></li>
                         <li><a href="#essentialsx">EssentialsX</a></li>
                         <li><a href="#eyeofonyx">Eye of Onyx</a></li>
@@ -199,34 +203,150 @@
                 </p>
             </div>
 
-            <h2 id="paper-spigot-bukkit">Paper/Spigot/Bukkit</h2>
-            <p class="caption">This section will likely be removed as Paper is phasing out their timings feature.</p>
-            <p>Paper, Spigot, and Bukkit have their own commands, but the only one we’re most interested in is Paper’s
-                Timings feature.</p>
-            <p>Paper comes with a feature called <b>Timings</b> which records process times for server ticking and makes
-                finding performance problems much easier. Timings is enabled by default, so you can use
-                <code>/timings report</code>
-                to generate a report. If you want to get a more specific sample, you can use <code>/timings on</code> to
-                clear
-                timings data and start a new session. You can then open the provided link and find information on how
-                much time a given process is taking to tick. It’s worth noting that we also have <a
-                    href="#spark">spark</a>, a performance
-                profiler similar to timings. Spark provides graphs and visual tools to analyze sessions, but both tools
-                give insight into different things, so use them together rather than one over the other.
-            </p>
+            <h2 id="coreprotect"><a href="https://docs.coreprotect.net/">CoreProtect</a></h2>
+            <p>CoreProtect is a fast, efficient, data logging and anti-griefing tool. Rollback and restore any amount of
+                damage. Designed with large servers in mind, CoreProtect will record and manage data without impacting
+                server performance.</p>
+            <div class="cmdtable">
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>/co help</code></p>
+                </div>
+                <div>
+                    <p>📗 Display a list of commands in-game.</p>
+                </div>
+                <div>
+                    <p><code>/co inspect</code></p>
+                </div>
+                <div>
+                    <p>📗 Enable the inspector. Type the command again to disable it. You can also use just "/co i".</p>
+                </div>
+                <div>
+                    <p><code>/co lookup u:&lt;user> t:&lt;time> r:&lt;radius> a:&lt;action> i:&lt;include> e:&lt;exclude></code></p>
+                </div>
+                <div>
+                    <p>📗 Perform a lookup. Nearly all of the parameters are optional.</p>
+                </div>
+                <div>
+                    <p><code>/co rollback u:&lt;user> t:&lt;time> r:&lt;radius> a:&lt;action> i:&lt;include> e:&lt;exclude></code></p>
+                </div>
+                <div>
+                    <p>📒 Perform a rollback. Uses the same parameters as /co lookup.<br><i>Rollbacks can be used to revert player actions.</i></p>
+                </div>
+                <div>
+                    <p><code>/co restore</code></p>
+                </div>
+                <div>
+                    <p>📒 Perform a restore. Uses the same parameters as /co lookup.<br><i>Restoring can be used to undo rollbacks or to restore player actions.</i></p>
+                </div>
+                <div>
+                    <p><code>/co purge t:&lt;time> r:&lt;world></code></p>
+                </div>
+                <div>
+                    <p>📒 Purge old block data. Useful for freeing up space on your HDD if you don't need the older data.</p>
+                </div>
+                <div>
+                    <p><code>/co reload</code></p>
+                </div>
+                <div>
+                    <p>📗 Reloads the configuration file.</p>
+                </div>
+                <div>
+                    <p><code>/co status</code></p>
+                </div>
+                <div>
+                    <p>📗 Displays the plugin status and version information.</p>
+                </div>
+                <div>
+                    <p><code>/co consumer</code></p>
+                </div>
+                <div>
+                    <p>📗 Console command to pause or resume consumer queue processing.</p>
+                </div>
+            </div>
 
-            <p>Side Note: <b>What exactly are Paper, Spigot, and Bukkit?</b></p>
-            <div class="sidenote">
-                <p>Paper, Spigot, and Bukkit are not the same thing. CraftBukkit was released in December 2010 as a
-                    “Minecraft Server mod” (like the previous hMod (yeah, there’s a whole history of server mods))
-                    aiming to prioritize performance and ease of use. Bukkit provides a comprehensive API for plugins to
-                    easily interface with Minecraft. Spigot, released in 2012, is a modified version of CraftBukkit with
-                    hundreds of improvements, customization, and optimization (as well as an expanded API) while
-                    remaining fully compatible with Bukkit plugins which made it the most popular server mod in the
-                    world. Paper (previously PaperSpigot) took what Spigot did and did it tenfold, increasing
-                    performance, fixing countless bugs, and expanding the API again. Paper, released in 2014, is the
-                    most popular compromise between excellent performance and vanilla gameplay / backwards
-                    compatibility.</p>
+            <br>
+
+            <div class="cmdtable">
+                <div>
+                    <p><b>Parameter</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p>u:&lt;user></p>
+                </div>
+                <div>
+                    <p>You can specify a single user or multiple users.<br><ul>
+                        <li>Example: <code>u:Notch</code></li>
+                        <li>Example: <code>u:Notch,Intelli</code></li>
+                        <li>Example: <code>u:#fire,#tnt,#creeper,#explosion</code></li>
+                    </ul></p>
+                </div>
+                <div>
+                    <p>t:&lt;time></p>
+                </div>
+                <div>
+                    <p>You can specify weeks, days, hours, minutes, and seconds.<br>Time amounts can be combined, and decimals may be used.<br><ul>
+                        <li>Example: <code>t:2w,5d,7h,2m,10s</code></li>
+                        <li>Example: <code>t:5d2h</code></li>
+                        <li>Example: <code>t:1h-2h</code> <i>(between one to two hours)</i></li>
+                        <li>Example: <code>t:2.50h</code> <i>(two and a half hours)</i></li>
+                    </ul></p>
+                </div>
+                <div>
+                    <p>r:&lt;radius></p>
+                </div>
+                <div>
+                    <p>A numeric radius targets within that many blocks of your player location.<br><ul>
+                        <li>Example: <code>r:10</code> <i>(target within 10 blocks of your location)</i></li>
+                        <li>Example: <code>r:#world_the_end</code> <i>(target a specific world)</i></li>
+                        <li>Example: <code>r:#global</code> <i>(target the entire server)</i></li>
+                        <li>Example: <code>r:#worldedit</code> or <code>r:#we</code> <i>(target a WorldEdit selection)</i></li>
+                    </ul></p>
+                </div>
+                <div>
+                    <p>a:&lt;action></p>
+                </div>
+                <div>
+                    <p>Restrict the command to a specific action.<br><ul>
+                        <li>Example: <code>a:+block</code> <i>(only include placed blocks)</i></li>
+                    </ul>The full list of actions can be found in the CoreProtect documentation.</p>
+                </div>
+                <div>
+                    <p>i:&lt;include></p>
+                </div>
+                <div>
+                    <p>Can be used to specify a block/item/entity.<br><ul>
+                        <li>Example: <code>i:stone</code> <i>(only include stone)</i></li>
+                        <li>Example: <code>i:stone,oak_wood,bedrock</code> <i>(specify multiple blocks)</i></li>
+                    </ul>You can find a list of block names at <a href="https://coreprotect.net/wiki-blocks">https://coreprotect.net/wiki-blocks</a>.<br>You can find a list of entity names at <a href="https://coreprotect.net/wiki-entities">https://coreprotect.net/wiki-entities</a>.</p>
+                </div>
+                <div>
+                    <p>e:&lt;exclude></p>
+                </div>
+                <div>
+                    <p>Can be used to exclude a block/item/entity/user.<br><ul>
+                        <li>Example: <code>e:tnt</code> <i>(exclude TNT)</i></li>
+                    </ul></p>
+                </div>
+                <div>
+                    <p>#&lt;hashtag>></p>
+                </div>
+                <div>
+                    <p>Add a hashtag to the end of your command to perform additional actions.<br><ul>
+                        <li><code>#preview</code> Preview a rollback/restore</li>
+                        <li><code>#count</code> Return the number of rows found in a lookup query</li>
+                        <li><code>#verbose</code> Display additional information during a rollback/restore</li>
+                        <li><code>#silent</code> Display minimal information during a rollback/restore</li>
+                    </ul></p>
+                </div>
             </div>
 
             <h2 id="dreamvisitor"><a href="https://github.com/stonley890/Dreamvisitor/wiki">Dreamvisitor</a></h2>
@@ -313,6 +433,12 @@
                 <div>
                     <p>📒 Globally turns PvP off. Only use this if absolutely necessary in an emergency or during an
                         event.</p>
+                </div>
+                <div>
+                    <p><code>/tribeupdate [player]</code></p>
+                </div>
+                <div>
+                    <p>📒 Update the roles of a user based on their player's team.</p>
                 </div>
                 <div>
                     <p><code>/zoop</code></p>
@@ -1657,7 +1783,8 @@
                 </div>
                 <div>
                     <p>Prefixing any block with an exclamation point will exclude everything that comes after it. (e.g.
-                        <code>//replace !dirt stone</code> will replace everything that is not dirt with stone.)</p>
+                        <code>//replace !dirt stone</code> will replace everything that is not dirt with stone.)
+                    </p>
                 </div>
                 <div>
                     <p><code>[*]</code></p>
@@ -1677,91 +1804,388 @@
 
             <h3 id="worldguard-commands">Commands</h3>
             <div class="cmdtable">
-                <div><p><b>Command</b></p></div> <div><p><b>🛡️ Description</b></p></div>
-                <div><p><code>//wand</code></p></div> <div><p>📗 Gives the player a wand (wooden axe). Left click to select the first desired position, right click to select the second.</p></div>
-                <div><p><code>//pos1|pos2</code></p></div> <div><p>📗 Sets first and second positions to your current location respectively without the wand.</p></div>
-                <div><p><code>/rg define &lt;name></code></p></div> <div><p>📗 Creates a new region using the current selection.</p></div>
-                <div><p><code>/rg remove &lt;name></code></p></div> <div><p>📒 📕 Deletes the given region. This cannot be undone.</p></div>
-                <div><p><code>/rg info &lt;name></code></p></div> <div><p>📗 Provides information on the given region. Defaults to the region the player is currently inside if no name is specified. Manual selections and changes can be made in this menu.</p></div>
-                <div><p><code>/rg flags &lt;name></code></p></div> <div><p>📗 Lists all region flags in the given region. Manual selections can be made in this menu.</p></div>
-                <div><p><code>/rg flag &lt;name></code></p></div> <div><p>📗 📒 Allows or denies a specified game rule in the given region.</p></div>
-                <div><p><code>/rg setpriority</code></p></div> <div><p>📗 📒 Sets the priority of a given region. Higher number priorities override the permissions of lower number priorities.</p></div>
-                <div><p><code>/rg flag &lt;name> deny-message &lt;content></code></p></div> <div><p>📗 Sets the message players will receive when an action they attempt is blocked.</p></div>
-                <div><p><code>/rg flag &lt;name> blocked-cmds </command></code></p></div> <div><p>📗 📒 Blocks specific commands from being used in the given region. Additional commands can be added by separating with a comma. (e.g. <code>/rg flag spawn blocked-cmd /tpa,/back,/tell</code>)</p></div>
+                <div>
+                    <p><b>Command</b></p>
+                </div>
+                <div>
+                    <p><b>🛡️ Description</b></p>
+                </div>
+                <div>
+                    <p><code>//wand</code></p>
+                </div>
+                <div>
+                    <p>📗 Gives the player a wand (wooden axe). Left click to select the first desired position, right
+                        click to select the second.</p>
+                </div>
+                <div>
+                    <p><code>//pos1|pos2</code></p>
+                </div>
+                <div>
+                    <p>📗 Sets first and second positions to your current location respectively without the wand.</p>
+                </div>
+                <div>
+                    <p><code>/rg define &lt;name></code></p>
+                </div>
+                <div>
+                    <p>📗 Creates a new region using the current selection.</p>
+                </div>
+                <div>
+                    <p><code>/rg remove &lt;name></code></p>
+                </div>
+                <div>
+                    <p>📒 📕 Deletes the given region. This cannot be undone.</p>
+                </div>
+                <div>
+                    <p><code>/rg info &lt;name></code></p>
+                </div>
+                <div>
+                    <p>📗 Provides information on the given region. Defaults to the region the player is currently
+                        inside if no name is specified. Manual selections and changes can be made in this menu.</p>
+                </div>
+                <div>
+                    <p><code>/rg flags &lt;name></code></p>
+                </div>
+                <div>
+                    <p>📗 Lists all region flags in the given region. Manual selections can be made in this menu.</p>
+                </div>
+                <div>
+                    <p><code>/rg flag &lt;name></code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Allows or denies a specified game rule in the given region.</p>
+                </div>
+                <div>
+                    <p><code>/rg setpriority</code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Sets the priority of a given region. Higher number priorities override the permissions of
+                        lower number priorities.</p>
+                </div>
+                <div>
+                    <p><code>/rg flag &lt;name> deny-message &lt;content></code></p>
+                </div>
+                <div>
+                    <p>📗 Sets the message players will receive when an action they attempt is blocked.</p>
+                </div>
+                <div>
+                    <p><code>/rg flag &lt;name> blocked-cmds </command></code></p>
+                </div>
+                <div>
+                    <p>📗 📒 Blocks specific commands from being used in the given region. Additional commands can be
+                        added by separating with a comma. (e.g.
+                        <code>/rg flag spawn blocked-cmd /tpa,/back,/tell</code>)</p>
+                </div>
             </div>
 
             <h3 id="worldguard-flags">Flags</h3>
-            <p>Below are protection-based flags. Note that there are three default permission groups: <code>non-member</code>, <code>member</code>, and <code>owner</code>. <b>You do not need to set any flags to protect a region.</b> Also note that flags are not player-specific. Setting <code>block-break</code> to deny will prevent pistons, endermen, and any other mechanics that move or remove blocks from doing so because setting that flag denies access to <b>members</b>.</p>
-            <p>A member is defined as anything <i>inside</i> the region. By default, pistons will work inside the region, but pistons outside the region cannot push blocks inside because they are <i>non-members</i>. Because players are non-members by default, you don't need to set any flags for protection, and it still allows members to function correctly.</p>
-            <p>In specific cases, you may want to disallow any block modification whatsoever. What you want to do is to <b>deny building for all permission groups.</b> This is when you want to set <code>build</code> to <code>deny</code>.</p>
+            <p>Below are protection-based flags. Note that there are three default permission groups:
+                <code>non-member</code>, <code>member</code>, and <code>owner</code>. <b>You do not need to set any
+                    flags to protect a region.</b> Also note that flags are not player-specific. Setting
+                <code>block-break</code> to deny will prevent pistons, endermen, and any other mechanics that move or
+                remove blocks from doing so because setting that flag denies access to <b>members</b>.</p>
+            <p>A member is defined as anything <i>inside</i> the region. By default, pistons will work inside the
+                region, but pistons outside the region cannot push blocks inside because they are <i>non-members</i>.
+                Because players are non-members by default, you don't need to set any flags for protection, and it still
+                allows members to function correctly.</p>
+            <p>In specific cases, you may want to disallow any block modification whatsoever. What you want to do is to
+                <b>deny building for all permission groups.</b> This is when you want to set <code>build</code> to
+                <code>deny</code>.</p>
             <p>Region groups are powerful, but can be difficult to understand. Keep this in mind:</p>
-            <p><b>Members are objects that exist/originate within the region. Non-members are objects that do not exist/originate within the region, including all players. Most flags, by default, unset, allow <i>members</i> but deny <i>non-members</i>. Setting a flag to <code>allow</code> or <code>deny</code> applies that setting to both members and non-members.</b></p>
+            <p><b>Members are objects that exist/originate within the region. Non-members are objects that do not
+                    exist/originate within the region, including all players. Most flags, by default, unset, allow
+                    <i>members</i> but deny <i>non-members</i>. Setting a flag to <code>allow</code> or
+                    <code>deny</code> applies that setting to both members and non-members.</b></p>
 
             <div class="cmdtable">
-                <div><p><b>Flag</b></p></div> <div><p><b>Description</b></p></div>
-                <div><p><code>passthrough</code></p></div> <div><p>📒 This flag is short for ‘passthrough build’. It has nothing to do with movement.</p><ul>
-                    <li>If not set (default), then the region protects it area.</li>
-                    <li>If set to <code>deny</code>, then the region protects its area.</li>
-                    <li>If set to <code>allow</code>, then the region no longer protects its area.</li>
-                </ul></div>
-                <div><p><code>build</code></p></div> <div style="display: block;"><p>📕 Everything:</p><ul>
-                    <li>Whether blocks can be mined or placed</li>
-                    <li>Whether doors, levers, etc. (but not inventories) can be used</li>
-                    <li>Whether entities and blocks can be interacted with</li>
-                    <li>Whether player versus player combat is permitted</li>
-                    <li>Whether sleeping in a bed is permitted</li>
-                    <li>Whether inventories can be accessed</li>
-                    <li>Whether vehicles (boats, minecarts) can be placed</li>
-                    <li>etc.</li>
-                </ul><p>This <b>should not be used to protect a region!</b> Regions are automatically protected by the <code>passthrough</code> flag.</p></div>
-                <div><p><code>interact</code></p></div> <div style="display: block;"><p>📗 Everything that involves ‘using’ a block or entity:</p><ul>
-                    <li>Whether doors, levers, etc. (but not inventories) can be used</li>
-                    <li>Whether vehicles (including animals) can be mounted</li>
-                    <li>etc.</li>
-                </ul></div>
-                <div><p><code>block-break / block-place</code></p></div> <div><p>📗 Whether blocks can be mined / used.</p></div>
-                <div><p><code>use</code></p></div> <div><p>📗 Whether doors, levers, etc. (but not inventories) can be used.</p></div>
-                <div><p><code>damage-animals</code></p></div> <div><p>📗 Whether players can harm friendly animals (cows, sheep, etc).</p></div>
-                <div><p><code>chest-access</code></p></div> <div><p>📗 Whether inventories can be accessed.</p></div>
-                <div><p><code>ride</code></p></div> <div><p>📗 Whether vehicles (including animals) can be mounted.</p></div>
-                <div><p><code>pvp</code></p></div> <div><p>📗 Whether player versus player combat is permitted.</p></div>
-                <div><p><code>sleep</code></p></div> <div><p>📗 Whether sleeping in a bed is permitted.</p></div>
-                <div><p><code>respawn-anchors</code></p></div> <div><p>📗 Whether respawn anchors can be activated.</p></div>
-                <div><p><code>tnt</code></p></div> <div><p>📗 Whether TNT detonation or damage is permitted.</p></div>
-                <div><p><code>vehicle-place / vehicle-destroy</code></p></div> <div><p>📗 Whether vehicles (boats, minecarts) can be placed / destroyed.</p></div>
-                <div><p><code>lighter</code></p></div> <div><p>📗 Whether flint and steel can be used.</p></div>
-                <div><p><code>block-trampling</code></p></div> <div><p>📗 Whether farmland and turtle eggs can be trampled.</p></div>
-                <div><p><code>frosted-ice-form</code></p></div> <div><p>📗 Whether players with frost walker boots will form ice</p></div>
-                <div><p><code>item-frame-rotation</code></p></div> <div><p>📗 Whether items can be rotated within item frames</p></div>
-                <div><p><code>firework-damage</code></p></div> <div><p>📗 Whether fireworks can deal damage to entities</p></div>
-                <div><p><code>use-anvil</code></p></div> <div><p>📗 Whether anvils can be used.</p></div>
-                <div><p><code>use-dripleaf</code></p></div> <div><p>📗 Whether dripleaf can be used.</p></div>
+                <div>
+                    <p><b>Flag</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>passthrough</code></p>
+                </div>
+                <div>
+                    <p>📒 This flag is short for ‘passthrough build’. It has nothing to do with movement.</p>
+                    <ul>
+                        <li>If not set (default), then the region protects it area.</li>
+                        <li>If set to <code>deny</code>, then the region protects its area.</li>
+                        <li>If set to <code>allow</code>, then the region no longer protects its area.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p><code>build</code></p>
+                </div>
+                <div style="display: block;">
+                    <p>📕 Everything:</p>
+                    <ul>
+                        <li>Whether blocks can be mined or placed</li>
+                        <li>Whether doors, levers, etc. (but not inventories) can be used</li>
+                        <li>Whether entities and blocks can be interacted with</li>
+                        <li>Whether player versus player combat is permitted</li>
+                        <li>Whether sleeping in a bed is permitted</li>
+                        <li>Whether inventories can be accessed</li>
+                        <li>Whether vehicles (boats, minecarts) can be placed</li>
+                        <li>etc.</li>
+                    </ul>
+                    <p>This <b>should not be used to protect a region!</b> Regions are automatically protected by the
+                        <code>passthrough</code> flag.</p>
+                </div>
+                <div>
+                    <p><code>interact</code></p>
+                </div>
+                <div style="display: block;">
+                    <p>📗 Everything that involves ‘using’ a block or entity:</p>
+                    <ul>
+                        <li>Whether doors, levers, etc. (but not inventories) can be used</li>
+                        <li>Whether vehicles (including animals) can be mounted</li>
+                        <li>etc.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p><code>block-break / block-place</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether blocks can be mined / used.</p>
+                </div>
+                <div>
+                    <p><code>use</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether doors, levers, etc. (but not inventories) can be used.</p>
+                </div>
+                <div>
+                    <p><code>damage-animals</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether players can harm friendly animals (cows, sheep, etc).</p>
+                </div>
+                <div>
+                    <p><code>chest-access</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether inventories can be accessed.</p>
+                </div>
+                <div>
+                    <p><code>ride</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether vehicles (including animals) can be mounted.</p>
+                </div>
+                <div>
+                    <p><code>pvp</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether player versus player combat is permitted.</p>
+                </div>
+                <div>
+                    <p><code>sleep</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether sleeping in a bed is permitted.</p>
+                </div>
+                <div>
+                    <p><code>respawn-anchors</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether respawn anchors can be activated.</p>
+                </div>
+                <div>
+                    <p><code>tnt</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether TNT detonation or damage is permitted.</p>
+                </div>
+                <div>
+                    <p><code>vehicle-place / vehicle-destroy</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether vehicles (boats, minecarts) can be placed / destroyed.</p>
+                </div>
+                <div>
+                    <p><code>lighter</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether flint and steel can be used.</p>
+                </div>
+                <div>
+                    <p><code>block-trampling</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether farmland and turtle eggs can be trampled.</p>
+                </div>
+                <div>
+                    <p><code>frosted-ice-form</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether players with frost walker boots will form ice</p>
+                </div>
+                <div>
+                    <p><code>item-frame-rotation</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether items can be rotated within item frames</p>
+                </div>
+                <div>
+                    <p><code>firework-damage</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether fireworks can deal damage to entities</p>
+                </div>
+                <div>
+                    <p><code>use-anvil</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether anvils can be used.</p>
+                </div>
+                <div>
+                    <p><code>use-dripleaf</code></p>
+                </div>
+                <div>
+                    <p>📗 Whether dripleaf can be used.</p>
+                </div>
             </div>
 
-            <p>WorldGuard Extra Flags provides the following extra flags. Note that most of these flags <b>bypass operators entirely.</b></p>
+            <p>WorldGuard Extra Flags provides the following extra flags. Note that most of these flags <b>bypass
+                    operators entirely.</b></p>
 
             <div class="cmdtable">
-                <div><p><b>Flag</b></p></div> <div><p><b>Description</b></p></div>
-                <div><p><code>blocked-effects</code></p></div> <div><p>📗 Disables the effects of potion effects while inside.</p></div>
-                <div><p><code>chat-prefix / chat-suffix</code></p></div> <div><p>📗 Defines the prefix/suffix shown when inside the region.</p></div>
-                <div><p><code>chunk-unload</code></p></div> <div><p>📒 Prevents chunks the region occupies from being unloaded.</p></div>
-                <div><p><code>command-on-entry / command-on-exit</code></p></div> <div><p>📒 Executes a command as the player when a player enters/exits the region.</p></div>
-                <div><p><code>console-command-on-entry / console-command-on-exit</code></p></div> <div><p>📒 Executes a command as the console when a player enters/exits the region.</p></div>
-                <div><p><code>fly</code></p></div> <div><p>📗 📒 When set to <code>deny</code>, disallows creative flight from the ground.</p></div>
-                <div><p><code>frostwalker</code></p></div> <div><p>📗 When set to <code>deny</code>, stops frostwalker boots from forming ice on water within the region.</p></div>
-                <div><p><code>give-effects</code></p></div> <div><p>📗 Gives players who enter the region a permanent <a href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html">potion effect</a> until they leave.</p></div>
-                <div><p><code>glide</code></p></div> <div><p>📗 When set to <code>deny</code>, stops all gliding inside the region.</p></div>
-                <div><p><code>godmode</code></p></div> <div><p>📗 When set to <code>allow</code>, stops all damage delivered to players.</p></div>
-                <div><p><code>item-durability</code></p></div> <div><p>📗 When set to <code>deny</code>, tools will not be damaged by any actions.</p></div>
-                <div><p><code>join-location</code></p></div> <div><p>📗 Players who disconnect in the region will teleport to the given location when joining.</p></div>
-                <div><p><code>keep-exp</code></p></div> <div><p>📒 When set to <code>allow</code>, players always keep experience levels on death. If the <code>keepInventory</code> gamerule is set to <code>true</code> and this flag is set to <code>deny</code>, the experience will be deleted on death.</p></div>
-                <div><p><code>keep-inventory</code></p></div> <div><p>📒 When set to <code>allow</code>, players always keep inventory on death. If the <code>keepInventory</code> gamerule is set to <code>true</code> and this flag is set to <code>deny</code>, the inventory will be deleted on death.</p></div>
-                <div><p><code>nether-portals</code></p></div> <div><p>📗 When set to <code>deny</code>, nether portals cannot be lit.</p></div>
-                <div><p><code>play-sounds</code></p></div> <div><p>📒 Plays a sound (from a resource location) repeatedly at a specified interval to players inside the region.<br><b>This flag may produce errors if it is set incorrectly. Ask a friend to help you set this if you're not sure.</b></p></div>
-                <div><p><code>respawn-location</code></p></div> <div><p>📗 Sets the location to respawn players upon death.</p></div>
-                <div><p><code>teleport-on-entry /  teleport-on-exit</code></p></div> <div><p>📗 Teleports a player to the give location when they enter/exit the region.</p></div>
-                <div><p><code>walk-speed / fly-speed</code></p></div> <div><p>📗 Players inside the region will inherit this speed while walking/flying.</p></div>
-                <div><p><code>worldedit</code></p></div> <div><p>📗 When set to <code>deny</code>, stops all WorldEdit operations.</p></div>
+                <div>
+                    <p><b>Flag</b></p>
+                </div>
+                <div>
+                    <p><b>Description</b></p>
+                </div>
+                <div>
+                    <p><code>blocked-effects</code></p>
+                </div>
+                <div>
+                    <p>📗 Disables the effects of potion effects while inside.</p>
+                </div>
+                <div>
+                    <p><code>chat-prefix / chat-suffix</code></p>
+                </div>
+                <div>
+                    <p>📗 Defines the prefix/suffix shown when inside the region.</p>
+                </div>
+                <div>
+                    <p><code>chunk-unload</code></p>
+                </div>
+                <div>
+                    <p>📒 Prevents chunks the region occupies from being unloaded.</p>
+                </div>
+                <div>
+                    <p><code>command-on-entry / command-on-exit</code></p>
+                </div>
+                <div>
+                    <p>📒 Executes a command as the player when a player enters/exits the region.</p>
+                </div>
+                <div>
+                    <p><code>console-command-on-entry / console-command-on-exit</code></p>
+                </div>
+                <div>
+                    <p>📒 Executes a command as the console when a player enters/exits the region.</p>
+                </div>
+                <div>
+                    <p><code>fly</code></p>
+                </div>
+                <div>
+                    <p>📗 📒 When set to <code>deny</code>, disallows creative flight from the ground.</p>
+                </div>
+                <div>
+                    <p><code>frostwalker</code></p>
+                </div>
+                <div>
+                    <p>📗 When set to <code>deny</code>, stops frostwalker boots from forming ice on water within the
+                        region.</p>
+                </div>
+                <div>
+                    <p><code>give-effects</code></p>
+                </div>
+                <div>
+                    <p>📗 Gives players who enter the region a permanent <a
+                            href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html">potion
+                            effect</a> until they leave.</p>
+                </div>
+                <div>
+                    <p><code>glide</code></p>
+                </div>
+                <div>
+                    <p>📗 When set to <code>deny</code>, stops all gliding inside the region.</p>
+                </div>
+                <div>
+                    <p><code>godmode</code></p>
+                </div>
+                <div>
+                    <p>📗 When set to <code>allow</code>, stops all damage delivered to players.</p>
+                </div>
+                <div>
+                    <p><code>item-durability</code></p>
+                </div>
+                <div>
+                    <p>📗 When set to <code>deny</code>, tools will not be damaged by any actions.</p>
+                </div>
+                <div>
+                    <p><code>join-location</code></p>
+                </div>
+                <div>
+                    <p>📗 Players who disconnect in the region will teleport to the given location when joining.</p>
+                </div>
+                <div>
+                    <p><code>keep-exp</code></p>
+                </div>
+                <div>
+                    <p>📒 When set to <code>allow</code>, players always keep experience levels on death. If the
+                        <code>keepInventory</code> gamerule is set to <code>true</code> and this flag is set to
+                        <code>deny</code>, the experience will be deleted on death.</p>
+                </div>
+                <div>
+                    <p><code>keep-inventory</code></p>
+                </div>
+                <div>
+                    <p>📒 When set to <code>allow</code>, players always keep inventory on death. If the
+                        <code>keepInventory</code> gamerule is set to <code>true</code> and this flag is set to
+                        <code>deny</code>, the inventory will be deleted on death.</p>
+                </div>
+                <div>
+                    <p><code>nether-portals</code></p>
+                </div>
+                <div>
+                    <p>📗 When set to <code>deny</code>, nether portals cannot be lit.</p>
+                </div>
+                <div>
+                    <p><code>play-sounds</code></p>
+                </div>
+                <div>
+                    <p>📒 Plays a sound (from a resource location) repeatedly at a specified interval to players inside
+                        the region.<br><b>This flag may produce errors if it is set incorrectly. Ask a friend to help
+                            you set this if you're not sure.</b></p>
+                </div>
+                <div>
+                    <p><code>respawn-location</code></p>
+                </div>
+                <div>
+                    <p>📗 Sets the location to respawn players upon death.</p>
+                </div>
+                <div>
+                    <p><code>teleport-on-entry /  teleport-on-exit</code></p>
+                </div>
+                <div>
+                    <p>📗 Teleports a player to the give location when they enter/exit the region.</p>
+                </div>
+                <div>
+                    <p><code>walk-speed / fly-speed</code></p>
+                </div>
+                <div>
+                    <p>📗 Players inside the region will inherit this speed while walking/flying.</p>
+                </div>
+                <div>
+                    <p><code>worldedit</code></p>
+                </div>
+                <div>
+                    <p>📗 When set to <code>deny</code>, stops all WorldEdit operations.</p>
+                </div>
             </div>
 
         </div>
@@ -1786,46 +2210,5 @@
 
     </footer>
 </body>
-
-<script>
-
-    const delay = ms => new Promise(res => setTimeout(res, ms));
-
-    function toggleNav() {
-        if (document.getElementById("sidenav").style.width == "250px") {
-            closeNav();
-        } else {
-            openNav();
-        }
-    }
-
-    const closeNav = async () => {
-        const sidenav = document.getElementById("sidenav")
-        for (const child of sidenav.children) {
-            child.style.opacity = "0";
-        }
-
-        await delay(200);
-
-        document.getElementById("sidenav").style.width = "0px";
-        document.getElementById("body").style.marginLeft = "0px";
-        document.getElementById("footer").style.marginLeft = "0px";
-    }
-
-    const openNav = async () => {
-
-        document.getElementById("sidenav").style.width = "250px";
-        document.getElementById("body").style.marginLeft = "250px";
-        document.getElementById("footer").style.marginLeft = "250px";
-
-        await delay(500);
-
-        const sidenav = document.getElementById("sidenav")
-        for (const child of sidenav.children) {
-            child.style.opacity = "100";
-        }
-    }
-
-</script>
 
 </html>

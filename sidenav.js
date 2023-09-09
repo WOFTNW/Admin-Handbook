@@ -22,14 +22,18 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
         document.getElementById("sidenav").style.width = "0px";
         document.getElementById("body").style.marginLeft = "0px";
         document.getElementById("footer").style.marginLeft = "0px";
+        document.getElementById("navbutton").style.marginLeft = "0px";
     }
 
     const openNav = async () => {
 
-        if (document.documentElement.clientWidth > 1100) {
+        if (document.documentElement.clientWidth > 1427) {
             document.getElementById("sidenav").style.width = "250px";
             document.getElementById("body").style.marginLeft = "250px";
             document.getElementById("footer").style.marginLeft = "250px";
+        } else if (document.documentElement.clientWidth > 1100) {
+            document.getElementById("sidenav").style.width = "250px";
+            document.getElementById("navbutton").style.marginLeft = "250px";
         } else {
             document.getElementById("sidenav").style.width = "100%";
             const sidenav = document.getElementById("sidenav")

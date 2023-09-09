@@ -8,7 +8,9 @@
     <title>Admin Handbook</title>
     <link rel="stylesheet" href="style.css">
     <script src="sidenav.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="highlight/styles/vs2015.min.css">
     <script src="highlight/highlight.min.js"></script>
     <script src="highlight/src/languages/mcfunction.js"></script>
@@ -132,7 +134,7 @@
 
 <body id="body">
     <header style="display: flex; align-items: center; background-color: #131313;">
-        <span class="navtoggle" onclick="toggleNav()">
+        <span id="navbutton" class="navtoggle" onclick="toggleNav()">
             <div></div>
             <div></div>
             <div></div>
@@ -959,12 +961,12 @@ ban-ip 7pencilsharpen3r Hacking
 clear @a[team=Skywing] cooked_beef 12
 # Clear 12 steak from every player on the Skywing team
 clear CalamityLegendz diamond_sword{Enchantments:[{id:"minecraft:sharpness",lvl:1000s}]}
-
 # Clear all diamond swords with Sharpness 1000 from CalamityLegendz
 clear @s iron_sword{titanium:1b} 0
 # Check if the executing entity has an iron sword with the NBT “titanium:1b”
 
-# By setting the quantity to 0, we can instead check if the selected entities have the item declared. This is mainly only useful in datapacks, but nonetheless is an interesting feature to know.</code></pre>
+# By setting the quantity to 0, we can instead check if the selected entities have the item declared.
+# This is mainly only useful in datapacks, but nonetheless is an interesting feature to know.</code></pre>
 
             <h3 id="datapack">/datapack &lt;disable | enable | list> &lt;name></h3>
             <p>Enable a disabled data pack, disable an enabled data pack, or list all data packs.</p>
