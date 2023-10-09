@@ -161,560 +161,1152 @@
 
             <h2 id="notation-guide">Notation Guide</h2>
 
-            <p>📗 — These are generally <b>safe to run</b> and/or are highly likely to <b>not have any negative
-                    effect</b> on the
-                server.<br>
+            <p>
+				📗 — These are generally <b>safe to run</b> and/or are <b>highly unlikely to have any negative
+                    effect</b> on the server.<br>
                 📒 — These are <b>high level</b> and/or have <b>decent potential to impact the server in a negative
-                    way</b> if used
-                incorrectly. Exercise caution when using these commands, even if you know what you are doing.<br>
+                    way</b> if used incorrectly. Exercise caution when using these commands, even if you know what 
+					you are doing.<br>
                 📕 — These are <b>dangerous to misuse, affect the player experience,</b> or <b>may break installed
-                    server
-                    software.</b> Do not use these commands unless absolutely necessary, and use extreme caution if you
-                must use
-                these commands.<br>
+                    server software.</b> Do not use these commands unless absolutely necessary, and use extreme 
+					caution if you must use these commands.<br>
                 🛡️ — These require <b>additional permissions</b> to be executed and are not accessable by default.<br>
-                ✖️ — These should <b>never be used</b> or should <b>only be used by operators,</b> and sparingly at
-                that. <b>Do not use
-                    these without notifying other admins!</b><br>
+                ✖️ — These should <b>never be used</b> or should <b>only be used by operators,</b> and sparingly 
+					at that. <b>Do not use these without notifying other admins!</b><br>
             </p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/advancement</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Grants or revokes an advancement. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Grants or revokes an advancement. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/advancement">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/attribute</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Queries, adds, removes or sets an entity attribute. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Queries, adds, removes or sets an entity attribute. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/attribute">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#ban"><code>/ban</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📕 Adds a player to the banlist. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+						
+						Adds a player to the banlist. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/ban">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#ban"><code>/ban-ip, /banip</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📕 Adds an IP address to the banlist. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+						
+						Adds an IP address to the banlist. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/#ban-ip">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/banlist</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Displays the banlist. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Displays the banlist. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/ban#banlist">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/bossbar</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Creates and modifies bossbars. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Creates and modifies bossbars. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/bossbar">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#clear"><code>/clear</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 📕 Clears items from player inventory. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+						
+						Clears items from player inventory. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/clear">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/clone</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Copies blocks from one place to another. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Copies blocks from one place to another. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/clone">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/damage</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Applies damage to specified entities. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Applies damage to specified entities. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/damage">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/data</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Manipulates block, entity, and storage NBT data. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Manipulates block, entity, and storage NBT data. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/data">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#datapack"><code>/datapack</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 📕 Controls the data packs interface. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+						
+						Controls the data packs interface. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/datapack">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/debug</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Starts or stops a debugging session. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Starts or stops a debugging session. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/debug">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/defaultgamemode</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Sets the default game mode. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Sets the default game mode. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/defaultgamemode">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/deop</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 📕 Revokes operator status from a player. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+						Revokes operator status from a player. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/deop">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/difficulty</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Sets the difficulty level. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Sets the difficulty level. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/difficulty">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/effect</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Adds or removes status effects. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Adds or removes status effects. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/effect">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/enchant</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Adds an enchantment to a player's selected item. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Adds an enchantment to a player's selected item. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/enchant">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/execute</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Executes another command. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Executes another command. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/execute">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/experience, /xp</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Adds or removes player experience. [Wi<a
-                            href="https://minecraft.fandom.com/wiki/Commands/experience">Wiki</a>ki]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Adds or removes player experience. [<a
+                            href="https://minecraft.fandom.com/wiki/Commands/experience">Wiki</a>]</p>
+                </entry>
+                <entry>
                     <p><code>/fill</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 📕 Fills a region with a specific block. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+						Fills a region with a specific block. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/fill">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/fillbiome</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Sets a region with a specific biome. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Sets a region with a specific biome. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/fillbiome">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/forceload</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Forces chunks to constantly be loaded or not. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Forces chunks to constantly be loaded or not. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/forceload">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/function</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 📕 Runs a function. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+						Runs a function. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/function">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gamemode</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Sets a player's game mode. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Sets a player's game mode. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/gamemode">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gamerule</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Sets or queries a game rule value. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Sets or queries a game rule value. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/gamerule">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#give"><code>/give</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Gives an item to a player. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Gives an item to a player. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/give">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/help</code></p>
-                </div>
-                <div>
-                    <p>📗 Provides a list of commands or help for a command. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Provides a list of commands or help for a command. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/help">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/item</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Manipulates items in inventories. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Manipulates items in inventories. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/item">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/jfr</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Start or stop a JFR profiler. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Start or stop a JFR profiler. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/jfr">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#kick"><code>/kick</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Kicks a player off a server. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Kicks a player off a server. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/kick">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/kill</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📕 Kills entities (players, mobs, items, etc.). [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+						Kills entities (players, mobs, items, etc.). [<a
                             href="https://minecraft.fandom.com/wiki/Commands/kill">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/list</code></p>
-                </div>
-                <div>
-                    <p>📗 Lists players on the server. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Lists players on the server. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/list">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/locate</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Locates closest structure, biome, or point of interest. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Locates closest structure, biome, or point of interest. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/locate">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/loot</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Give a loot table to a selector or spawn a loot table. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Give a loot table to a selector or spawn a loot table. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/loot">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/me</code></p>
-                </div>
-                <div>
-                    <p>📗 Displays a message about the sender. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Displays a message about the sender. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/me">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/msg, /tell, /w</code></p>
-                </div>
-                <div>
-                    <p>📗 Displays a private message to other players. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Displays a private message to other players. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/msg">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/op</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📕 Grants operator status to a player. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+						Grants operator status to a player. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/op">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#pardon"><code>/pardon</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Removes players from the banlist. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Removes players from the banlist. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/pardon">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#pardon"><code>/pardon-ip</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Removes an IP address from the banlist. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Removes an IP address from the banlist. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/pardon#pardon-ip">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/particle</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Generates particles. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Generates particles. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/particle">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/perf</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Captures info and metrics about the game for 10 seconds. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						
+						Captures info and metrics about the game for 10 seconds. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/perf">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/place</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Used to place a configured feature, jigsaw, template, or structure at a given location.
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						
+						Used to place a configured feature, jigsaw, template, or structure at a given location.
                         [<a href="https://minecraft.fandom.com/wiki/Commands/place">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/playsound</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Plays a sound. [<a href="https://minecraft.fandom.com/wiki/Commands/playsound">Wiki</a>]
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Plays a sound. [<a href="https://minecraft.fandom.com/wiki/Commands/playsound">Wiki</a>]
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/publish</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Opens a single-player world to a local network. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Opens a single-player world to a local network. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/publish">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/recipe</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Gives or takes player recipes. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Gives or takes player recipes. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/recipe">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/reload</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Reloads loot tables, advancements, and functions from disk. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Reloads loot tables, advancements, and functions from disk. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/reload">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/return</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Control execution flow inside functions. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Control execution flow inside functions. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/return">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/ride</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Used to make entities ride other entities, stop entities from riding, make rides evict
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Used to make entities ride other entities, stop entities from riding, make rides evict
                         their riders, or summon rides or riders. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/ride">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/save-all</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📕 Saves the server to disk. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+Saves the server to disk. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/save-all">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/save-off</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📕 Disables automatic server saves. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+Disables automatic server saves. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/save-off">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/save-on</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📕 Enables automatic server saves. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+Enables automatic server saves. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/save-on">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/say</code></p>
-                </div>
-                <div>
-                    <p>📗 Displays a message to multiple players. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Displays a message to multiple players. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/say">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/schedule</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 📕 Schedule the execution of a function. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+Schedule the execution of a function. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/schedule">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#scoreboard"><code>/scoreboard</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Manages scoreboard objectives and players. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Manages scoreboard objectives and players. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/scoreboard">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/seed</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Displays the world seed. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Displays the world seed. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/seed">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/setblock</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Changes a block to another block. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Changes a block to another block. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/setblock">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/setidletimeout</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Sets the time before idle players are kicked. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Sets the time before idle players are kicked. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/setidletimeout">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/setworldspawn</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Sets the world spawn. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Sets the world spawn. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/setworldspawn">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/spawnpoint</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Sets the spawn point for a player. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Sets the spawn point for a player. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/spawnpoint">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/spectate</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Force a spectating player to spectate an entity. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Force a spectating player to spectate an entity. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/spectate">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/spreadplayers</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Teleports entities to random locations. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Teleports entities to random locations. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/spreadplayers">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/stop</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📕 Stops the server. [<a href="https://minecraft.fandom.com/wiki/Commands/stop">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📕
+							<hover_note_text id="note_red"></hover_note_text>
+						</hover_note>
+
+Stops the server. [<a href="https://minecraft.fandom.com/wiki/Commands/stop">Wiki</a>]</p>
+                </entry>
+                <entry>
                     <p><code>/stopsound</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Stops a sound currently playing. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Stops a sound currently playing. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/stopsound">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#summon"><code>/summon</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Summons an entity. [<a href="https://minecraft.fandom.com/wiki/Commands/summon">Wiki</a>]
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Summons an entity. [<a href="https://minecraft.fandom.com/wiki/Commands/summon">Wiki</a>]
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/tag</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Manages entity tags. [<a href="https://minecraft.fandom.com/wiki/Commands/tag">Wiki</a>]
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Manages entity tags. [<a href="https://minecraft.fandom.com/wiki/Commands/tag">Wiki</a>]
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/team</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Controls teams. [<a href="https://minecraft.fandom.com/wiki/Commands/team">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Controls teams. [<a href="https://minecraft.fandom.com/wiki/Commands/team">Wiki</a>]</p>
+                </entry>
+                <entry>
                     <p><code>/teammsg, /tm</code></p>
-                </div>
-                <div>
-                    <p>📗 Sends a message to the player’s team. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Sends a message to the player’s team. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/teammsg">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/teleport, /tp</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Teleports entities. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Teleports entities. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/teleport">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#tellraw"><code>/tellraw</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Displays a JSON-formatted message to players. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Displays a JSON-formatted message to players. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/tellraw">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/time</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Changes or queries the world's game time. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Changes or queries the world's game time. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/time">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/title</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Manages screen titles. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Manages screen titles. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/title">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/trigger</code></p>
-                </div>
-                <div>
-                    <p>📗 Manages trigger scoreboards. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Manages trigger scoreboards. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/trigger">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/weather</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 Sets the weather. [<a href="https://minecraft.fandom.com/wiki/Commands/weather">Wiki</a>]
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>Sets the weather. [<a href="https://minecraft.fandom.com/wiki/Commands/weather">Wiki</a>]
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#whitelist"><code>/whitelist</code></a></p>
-                </div>
-                <div>
-                    <p>🛡️ 📗 📒 Manages the server whitelist. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📗
+							<hover_note_text id="note_green"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Manages the server whitelist. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/whitelist">Wiki</a>]</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/worldborder</code></p>
-                </div>
-                <div>
-                    <p>🛡️ 📒 Manages the world border. [<a
+                </entry>
+                <entry>
+                    <p>
+						<hover_note>🛡️
+							<hover_note_text id="note_admin"></hover_note_text>
+						</hover_note>
+						<hover_note>📒
+							<hover_note_text id="note_yellow"></hover_note_text>
+						</hover_note>Manages the world border. [<a
                             href="https://minecraft.fandom.com/wiki/Commands/worldborder">Wiki</a>]</p>
-                </div>
+                </entry>
             </div>
 
             <p>There are a lot of commands, but most of them are either not important or are simple to understand. We’ll
                 go over some important commands and command syntax to know. You can always <a
                     href="https://minecraft.fandom.com/wiki/Commands">check the wiki</a> for more
                 information about specific commands.</p>
+
+			<!--Page divider-->
+			<hr class="solid">
 
             <h2 id="target-selectors">Target Selectors</h2>
 
@@ -941,6 +1533,9 @@
                 distance. <code>random</code> is random and <code>arbitrary</code> sorts by the time of entity creation
                 and is the default.
             </p>
+
+			<!--Page divider-->
+			<hr class="solid">
 
             <h2 id="important-commands">Important Commands</h2>
 

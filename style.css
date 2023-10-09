@@ -35,6 +35,69 @@ body a:hover {
     color: #74ccff;
 }
 
+hover_note {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+hover_note hover_note_text {
+	/* Box formatting */
+	background-color: #080808;
+	text-align: center;
+	width: 20em;
+	border-radius: 0.5em;
+	line-height: 133%;
+	font-size: smaller;
+	padding: 0.5em;
+
+	/* Positioning */
+	position: absolute;
+	z-index: 1;
+	right: 0;
+}
+
+hover_note hover_note_text {
+	opacity: 0;
+	visibility: hidden;
+	transition: ease 0.25s 0.1s;
+}
+
+hover_note:hover hover_note_text {
+	opacity: 1;
+	visibility: visible;
+	transition: ease 0.25s 0.1s;
+}
+
+#note_green::before {
+	content: "These are generally safe to use and/or are highly unlikely to have any negative effect on the server.";
+	color: #90ff90;
+}
+
+#note_yellow::before {
+	content: "These are high level and/or have decent potential to impact the server in a negative way if used incorrectly. Exercise caution when using these commands or settings, even if you know what you are doing.";
+	color: #ffff90;
+}
+
+#note_red::before {
+	content: "These are dangerous to misuse, affect the player experience, or may break installed server software. Do not use these commands or settings unless absolutely necessary, and use extreme caution if you must use them.";
+	color: #ff9090;
+}
+
+#note_x::before {
+	content: "These should never be used or should only be used by operators, and sparingly at that. Do not use these without notifying other admins!";
+	color: #909090;
+}
+
+#note_admin::before {
+	content: "These require additional permissions to be executed and are not accessable by default.";
+	color: #6eafaf;
+}
+
+hr.solid {
+	border-top: 0.1em solid #7a7a7a;
+}
+
 code {
     font-size: larger;
     color: #c9c9c9
@@ -147,7 +210,6 @@ img {
 }
 
 .maintext {
-
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 2%;
@@ -214,7 +276,7 @@ main {
     border-radius: 5px;
 }
 
-.cmdtable div {
+.cmdtable entry {
     display: block;
     border-style: solid;
     border-width: 1px;
