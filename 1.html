@@ -65,9 +65,6 @@
             <a href="2.html#powertools">Powertools</a>
         </div>
         <a href="2.html#eyeofonyx">Eye of Onyx</a>
-        <div class="subsubnav">
-            <a href="2.html#challenge-handshakes">Challenge Handshakes</a>
-        </div>
         <a href="2.html#griefdefender">GriefDefender</a>
         <div class="subsubnav">
             <a href="2.html#griefdefender-commands">Commands</a>
@@ -76,7 +73,6 @@
         </div>
         <a href="2.html#luckperms">LuckPerms</a>
         <a href="2.html#signshop">SignShop</a>
-        <a href="2.html#vault">Vault</a>
         <a href="2.html#worldedit">WorldEdit</a>
         <div class="subsubnav">
             <a href="2.html#worldedit-basic-commands">Basic Commands</a>
@@ -103,7 +99,6 @@
             <a href="3.html#circle">Circle</a>
             <a href="3.html#pluralkit">PluralKit</a>
             <a href="3.html#dreamvisitor">Dreamvisitor</a>
-            <a href="3.html#starboard">Starboard</a>
         </div>
         <a href="3.html#channels">Channels</a>
         <a href="3.html#roles">Roles</a>
@@ -1498,16 +1493,7 @@ Stops the server. [<a href="https://minecraft.fandom.com/wiki/Commands/stop">Wik
 # Send a message to all entities with a score in “myscore” of up to 15</code></pre>
 
             <p><code>tag</code> targets entities with a specified tag. Note that if you specify more than one, it will
-                only target entities with both tags, not one or the other. You can get around this fact by using logic.
-                Consider the following statement:
-            <pre><code>execute ... unless @s[tag=!foo,tag=!bar] ...</code></pre>
-            This selection command can be better understood as such:<br>Execute ... unless 1) this entity does NOT
-            have the tag foo AND 2) this entity does NOT have the tag bar ..."<br>
-            This is effectively the same as saying, "Execute ... if 1) this entity has the tag foo OR 2) this entity
-            has the tag bar ..."<br>
-            If you're interested in the login behind this, you can check out a <a
-                href="https://www.desmos.com/calculator/2ucbbcv567">Desmos chart</a> that explores this in more
-            detail.<br>
+                only target entities with both tags, not one or the other.<br>
             You can use <code>[tag=!&lt;string>]</code> to target entities without a specified
             tag, <code>[tag=]</code> to target entities without any tags, and <code>[tag=!]</code> to target
             entities with at least one tag.</p>

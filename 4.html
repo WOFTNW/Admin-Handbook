@@ -10,7 +10,8 @@
     <script src="sidenav.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="highlight/styles/vs2015.min.css">
     <script src="highlight/highlight.min.js"></script>
     <script src="highlight/src/languages/mcfunction.js"></script>
@@ -65,9 +66,6 @@
             <a href="2.html#powertools">Powertools</a>
         </div>
         <a href="2.html#eyeofonyx">Eye of Onyx</a>
-        <div class="subsubnav">
-            <a href="2.html#challenge-handshakes">Challenge Handshakes</a>
-        </div>
         <a href="2.html#griefdefender">GriefDefender</a>
         <div class="subsubnav">
             <a href="2.html#griefdefender-commands">Commands</a>
@@ -76,7 +74,6 @@
         </div>
         <a href="2.html#luckperms">LuckPerms</a>
         <a href="2.html#signshop">SignShop</a>
-        <a href="2.html#vault">Vault</a>
         <a href="2.html#worldedit">WorldEdit</a>
         <div class="subsubnav">
             <a href="2.html#worldedit-basic-commands">Basic Commands</a>
@@ -103,7 +100,6 @@
             <a href="3.html#circle">Circle</a>
             <a href="3.html#pluralkit">PluralKit</a>
             <a href="3.html#dreamvisitor">Dreamvisitor</a>
-            <a href="3.html#starboard">Starboard</a>
         </div>
         <a href="3.html#channels">Channels</a>
         <a href="3.html#roles">Roles</a>
@@ -167,8 +163,68 @@
                 <p>The royalty board changes accordingly.</p>
             </div>
 
-            <p>The <a href="2.html#eyeofonyx">Eye of Onyx</a> plugin automates this system.</p>
-            <div class="sidenote"><p>This section is incomplete and needs more content.</p></div>
+            <p>The <a href="2.html#eyeofonyx">Eye of Onyx</a> plugin automates this system. Players can participate in
+                the royalty system without staff involvement.</p>
+
+            <h2 id="challenge-handshakes">Challenge Handshakes</h2>
+
+            <div class="two-share">
+                <div>
+                    <p>A challenge can be initiated with <code>/challenge</code>. To initiate a challenge, a player
+                        must meet the
+                        following requirements:</p>
+                    <ul>
+                        <li>The player must be part of a tribe-associated team.</li>
+                        <li>The player must not already be participating in a challenge.</li>
+                        <li>The player must not be on movement cooldown.</li>
+                        <li>The player must not be a ruler.</li>
+                        <li>The player must not be banned from royalty.</li>
+                    </ul>
+                    <p>If all these requirements are met, the player will be given the option to challenge one of
+                        the
+                        positions directly above their own. When chosen, Eye of Onyx will verify that the player
+                        being
+                        challenged (the defender) meets the following requirements:</p>
+                    <ul>
+                        <li>The player must not already be participating in a challenge.</li>
+                        <li>The player must not be on movement cooldown.</li>
+                    </ul>
+                    <p>If all these requirements are met, the challenge will be initiated! The defender then must
+                        acknowledge the challenge via the notification received.</p>
+                </div>
+
+                <div>
+                    <img alt="A GIF of the challenge initiation process." src="ChallengeInit.GIF">
+                    <p class="caption">The challenge initiation process.</p>
+                    <img alt="A GIF of the challenge acknowledgement process."
+                        src="https://lh6.googleusercontent.com/8BcBdk_SV2HeTC1Tk-hrHB_E42T8orivb2WEhm3VvSJgqCOaiCmSZne8kx6cNGYjV7jvpUU7uKwve3HLWC5oTQnnZPZTeaW6E1rIaRmTQvAk6-qvtHPTjWUq_kTOBDa201ZJlc18fiVJ0IYnCetLHh4">
+                    <p class="caption">The challenge acknowledgement process</p>
+                </div>
+            </div>
+
+            <p>Players may have more than one requested challenge at a time. If both heirs simultaneously challenge
+                the ruler, the ruler may choose which to accept if neither have yet been acknowledged. Once a
+                challenge has been accepted, all other requests are discarded and no further challenges can be
+                initiated against the player.</p>
+            <p>Before a challenge can be accepted, the defender must use Eye of Onyx's web-based Royalty Portal to
+                submit at least one date and time for the challenge to take place. After submitting available times,
+                the challenge is considered accepted. Players who have received a challenge request must accept it
+                within a set number of days before they are automatically removed. After the defender accepts the
+                challenge, the attacker must select one of the propsed times. When one is chosen, the challenge is
+                considered finalized.</p>
+            <p>At the time agreed upon, the challenge will be considered active and players will be promted to
+                teleport to the challenge lobby. From here, the competitors will select which challenge to play.
+                When both teams are ready, the challenge will begin. After the game, the winner will stay on the
+                royalty board and the loser will be removed.</p>
+            <p>Players are allowed five total minutes of offline time. If a player disconnects for two minutes, they can
+                disconnect for another three before their time is out. If a player runs out of offline time, the other
+                player is automatically considered the winner. This way, a challenge will never end in a stalemate, even
+                when both players leave the game.</p>
+            <p>The royalty board will then be updated accordingly.</p>
+
+            <div class="sidenote">
+                <p>This section is incomplete and needs more content.</p>
+            </div>
 
         </div>
     </main>

@@ -66,9 +66,6 @@
             <a href="2.html#powertools">Powertools</a>
         </div>
         <a href="2.html#eyeofonyx">Eye of Onyx</a>
-        <div class="subsubnav">
-            <a href="2.html#challenge-handshakes">Challenge Handshakes</a>
-        </div>
         <a href="2.html#griefdefender">GriefDefender</a>
         <div class="subsubnav">
             <a href="2.html#griefdefender-commands">Commands</a>
@@ -77,7 +74,6 @@
         </div>
         <a href="2.html#luckperms">LuckPerms</a>
         <a href="2.html#signshop">SignShop</a>
-        <a href="2.html#vault">Vault</a>
         <a href="2.html#worldedit">WorldEdit</a>
         <div class="subsubnav">
             <a href="2.html#worldedit-basic-commands">Basic Commands</a>
@@ -104,7 +100,6 @@
             <a href="3.html#circle">Circle</a>
             <a href="3.html#pluralkit">PluralKit</a>
             <a href="3.html#dreamvisitor">Dreamvisitor</a>
-            <a href="3.html#starboard">Starboard</a>
         </div>
         <a href="3.html#channels">Channels</a>
         <a href="3.html#roles">Roles</a>
@@ -168,9 +163,9 @@
                         <li><a href="#eyeofonyx">Eye of Onyx</a></li>
                         <li><a href="#griefdefender">GriefDefender</a></li>
                         <li><a href="#luckperms">LuckPerms</a></li>
+                        <li><a href="#openrp">OpenRP</a></li>
                         <li><a href="#signshop">SignShop</a></li>
                         <li><a href="#spark">spark</a></li>
-                        <li><a href="#vault">Vault</a></li>
                         <li><a href="#worldedit">WorldEdit</a></li>
                         <li><a href="#worldguard">WorldGuard</a></li>
                     </ul>
@@ -208,252 +203,305 @@
                 damage. Designed with large servers in mind, CoreProtect will record and manage data without impacting
                 server performance.</p>
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co help</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"><hover_note_text>
                         </hover_note>
                         
                         Display a list of commands in-game.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co inspect</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Enable the inspector. Type the command again to disable it. You can also use just "/co i".</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co lookup u:&lt;user> t:&lt;time> r:&lt;radius> a:&lt;action> i:&lt;include> e:&lt;exclude></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Perform a lookup. Nearly all of the parameters are optional.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co rollback u:&lt;user> t:&lt;time> r:&lt;radius> a:&lt;action> i:&lt;include> e:&lt;exclude></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Perform a rollback. Uses the same parameters as /co lookup.<br><i>Rollbacks can be used to revert player actions.</i></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co restore</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Perform a restore. Uses the same parameters as /co lookup.<br><i>Restoring can be used to undo rollbacks or to restore player actions.</i></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co purge t:&lt;time> r:&lt;world></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Purge old block data. Useful for freeing up space on your HDD if you don't need the older data.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co reload</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Reloads the configuration file.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co status</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Displays the plugin status and version information.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/co consumer</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Console command to pause or resume consumer queue processing.</p>
-                </div>
+                </entry>
             </div>
 
             <br>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Parameter</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>u:&lt;user></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>You can specify a single user or multiple users.<br><ul>
                         <li>Example: <code>u:Notch</code></li>
                         <li>Example: <code>u:Notch,Intelli</code></li>
                         <li>Example: <code>u:#fire,#tnt,#creeper,#explosion</code></li>
                     </ul></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>t:&lt;time></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>You can specify weeks, days, hours, minutes, and seconds.<br>Time amounts can be combined, and decimals may be used.<br><ul>
                         <li>Example: <code>t:2w,5d,7h,2m,10s</code></li>
                         <li>Example: <code>t:5d2h</code></li>
                         <li>Example: <code>t:1h-2h</code> <i>(between one to two hours)</i></li>
                         <li>Example: <code>t:2.50h</code> <i>(two and a half hours)</i></li>
                     </ul></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>r:&lt;radius></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>A numeric radius targets within that many blocks of your player location.<br><ul>
                         <li>Example: <code>r:10</code> <i>(target within 10 blocks of your location)</i></li>
                         <li>Example: <code>r:#world_the_end</code> <i>(target a specific world)</i></li>
                         <li>Example: <code>r:#global</code> <i>(target the entire server)</i></li>
                         <li>Example: <code>r:#worldedit</code> or <code>r:#we</code> <i>(target a WorldEdit selection)</i></li>
                     </ul></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>a:&lt;action></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Restrict the command to a specific action.<br><ul>
                         <li>Example: <code>a:+block</code> <i>(only include placed blocks)</i></li>
                     </ul>The full list of actions can be found in the CoreProtect documentation.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>i:&lt;include></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Can be used to specify a block/item/entity.<br><ul>
                         <li>Example: <code>i:stone</code> <i>(only include stone)</i></li>
                         <li>Example: <code>i:stone,oak_wood,bedrock</code> <i>(specify multiple blocks)</i></li>
                     </ul>You can find a list of block names at <a href="https://coreprotect.net/wiki-blocks">https://coreprotect.net/wiki-blocks</a>.<br>You can find a list of entity names at <a href="https://coreprotect.net/wiki-entities">https://coreprotect.net/wiki-entities</a>.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>e:&lt;exclude></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Can be used to exclude a block/item/entity/user.<br><ul>
                         <li>Example: <code>e:tnt</code> <i>(exclude TNT)</i></li>
                     </ul></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>#&lt;hashtag>></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Add a hashtag to the end of your command to perform additional actions.<br><ul>
                         <li><code>#preview</code> Preview a rollback/restore</li>
                         <li><code>#count</code> Return the number of rows found in a lookup query</li>
                         <li><code>#verbose</code> Display additional information during a rollback/restore</li>
                         <li><code>#silent</code> Display minimal information during a rollback/restore</li>
                     </ul></p>
-                </div>
+                </entry>
             </div>
 
             <h2 id="dreamvisitor"><a href="https://github.com/stonley890/Dreamvisitor/wiki">Dreamvisitor</a></h2>
             <p>Dreamvisitor, created by Bog specifically for the server, has a variety of features. It serves as an
-                all-in-one utility plugin and Discord bot. Here are some important commands:</p>
+                all-in-one utility plugin and Discord bot.</p>
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
-                    <p><code>/aradio &lt;message></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
+                    <p><code>/dvset</code></p>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
-                        The admin radio sends a message to all online operators and the console.</p>
-                </div>
-                <div>
-                    <p><a href="#item-blacklist"><code>/itemblacklist</code></a></p>
-                </div>
-                <div>
+                        Open Dreamvisitor options.</p>
+                </entry>
+                <entry>
+                    <p><code>/aradio &lt;message></code></p>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+                        
+                        The admin radio sends a message to all online operators and the console.</p>
+                </entry>
+                <entry>
+                    <p><a href="#item-blacklist"><code>/itemblacklist</code></a></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Access the item blacklist GUI.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/panic</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📕
                             <hover_note_text id="note_red"></hover_note_text>
                         </hover_note>
                         
                         Kicks all players and sets the player limit override to 0.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/pausebypass &lt;add|remove|list></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Allow players to bypass chat pause in case of events or other situations where certain
                         players need chat priority.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="#pause-chat"><code>/pausechat</code></a></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📕
                             <hover_note_text id="note_red"></hover_note_text>
                         </hover_note>
@@ -462,101 +510,139 @@
                         use of <code>/me</code>. You can allow certain players to bypass this with
                         <code>/pausebypass</code>.
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/playerlimit [limit]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📕
                             <hover_note_text id="note_red"></hover_note_text>
                         </hover_note>
                         
                         Sets the player limit. This will bypass the server’s player limit, both over and under.
                         The player limit can be increased for a concentrated event, for example.</p>
-                </div>
-                <div>
-                    <p><code>/radio &lt;message></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
+                    <p><code>/motd [motd string]</code></p>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+                        
+                        Set the MOTD shown in the server list. This does not persist through restarts.</p>
+                </entry>
+                <entry>
+                    <p><code>/radio &lt;message></code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sends a message to all online players with the <code>dreamvisitor.radio</code> permission.
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="#soft-whitelist"><code>/softwhitelist &lt;add|remove|list|on|off> [&lt;player>]</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Manage the soft whitelist.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/tagradio &lt;tag> &lt;message></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sends a message to all players with the specified tag.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/user &lt;username></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Get the details of a player, even if they are offline.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/togglepvp</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Globally turns PvP off. Only use this if absolutely necessary in an emergency or during an
                         event.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/tribeupdate [player]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Update the roles of a user based on their player's team.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/zoop</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Vanish from Discord. This command should be used with Essentials <code>/vanish</code> and
                         a false disconnect tellraw.</p>
-                </div>
+                </entry>
 
             </div>
 
@@ -594,16 +680,16 @@
             </p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/editsign &lt;set/clear/copy/paste> [line number] [text]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -613,33 +699,33 @@
                         </hover_note>
                         
                         Edits a sign that the player is looking at.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/msgtoggle [player] [on|off]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Blocks receiving all private messages.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/mute &lt;player> [datediff]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Mutes or unmutes a player.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/spawner &lt;mob> [delay]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -649,13 +735,13 @@
                         </hover_note>
                         
                         Change the mob type of a spawner.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="#powertools"><code>/powertool [l:|a:|r:|c:|d:][command] [arguments] ({player} can be replaced by name of a clicked player.)</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -667,11 +753,11 @@
                         Assigns a command to the item in hand. Use 'c:' as the command to make a chat macro. Use
                         'a:' to append multiple commands. Use 'r:' to remove a single command. Use 'l:' to list all
                         power tools Use 'd:' to remove all power tools.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gc</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -681,11 +767,11 @@
                         </hover_note>
                         
                         Reports memory, uptime and tick info.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/enderchest [player], /ec</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -695,11 +781,11 @@
                         </hover_note>
                         
                         Lets you see inside an ender chest.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/powertooltoggle</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -709,11 +795,11 @@
                         </hover_note>
                         
                         Enables or disables all current powertools.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/speed [type] &lt;speed> [player]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -723,11 +809,11 @@
                         </hover_note>
                         
                         Change your walk or fly speed.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/whois &lt;nickname|playername></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -737,11 +823,11 @@
                         </hover_note>
                         
                         Displays player information.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/disposal</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -751,11 +837,11 @@
                         </hover_note>
                         
                         Opens a portable disposal menu.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/condense [itemname]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -765,11 +851,11 @@
                         </hover_note>
                         
                         Condenses items into more compact blocks.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/book [title|author [name]]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -779,23 +865,23 @@
                         </hover_note>
                         
                         Allows reopening and editing of sealed books.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/mail [read|clear|clear [number]|send [to] [message]|sendtemp [to] [expire time] [message]|sendall [message]]</code>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Manages inter-player, intra-server mail.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/pweather [list|reset|storm|sun|clear] [player|*]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -805,33 +891,33 @@
                         </hover_note>
                         
                         Adjust a player's weather.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/ignore &lt;player></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Toggles ignoring other players.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/near [playername] [radius]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Lists the players nearby or around a player.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/invsee &lt;player> [armor]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -841,11 +927,11 @@
                         </hover_note>
                         
                         See and/or edit the inventory of other players.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/socialspy [player] [on|off]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -855,12 +941,12 @@
                         </hover_note>
                         
                         Toggles if you can see msg/mail commands in chat.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/ptime [list|reset|day|night|dawn|
                         17:30|4pm|4000ticks] [player|*]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -870,22 +956,22 @@
                         </hover_note>
                         
                         Adjust player's client time. Add @ prefix to fix.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/home [player:]&lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Teleport to your home.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/vanish [player] [on|off]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -895,11 +981,11 @@
                         </hover_note>
                         
                         Hide yourself from other players.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/god [player] [on|off]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -909,11 +995,11 @@
                         </hover_note>
                         
                         Enables your godly powers.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/skull [owner]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -924,11 +1010,11 @@
                         
                         Get the player head item with your skin or a skin of a specified player, or change the
                         skin of the head you're holding.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/broadcast &lt;msg></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -938,11 +1024,11 @@
                         </hover_note>
                         
                         Broadcasts a message to the entire server.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/itemdb &lt;item></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -952,11 +1038,11 @@
                         </hover_note>
                         
                         Searches for an item.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/itemlore &lt;add/set/clear> [text/line] [text]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -966,11 +1052,11 @@
                         </hover_note>
                         
                         Edit the lore of an item.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/itemname [name]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -981,11 +1067,11 @@
                         
                         Renames the item you're currently holding. Leave [name] empty to reset. You can add in
                         color codes when you have permission to.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/eco &lt;give|take|set|reset> &lt;player> &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -995,11 +1081,11 @@
                         </hover_note>
                         
                         Manages a player’s economy.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/feed [player]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1009,11 +1095,11 @@
                         </hover_note>
                         
                         Satisfy the hunger.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/heal [player]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1023,11 +1109,11 @@
                         </hover_note>
                         
                         Heals you or the given player.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/nick [player] &lt;nickname|off></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1037,7 +1123,7 @@
                         </hover_note>
                         
                         Change your nickname or that of another player.</p>
-                </div>
+                </entry>
             </div>
 
             <h3 id="powertools">Powertools</h3>
@@ -1063,27 +1149,27 @@
             </p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><code><b>Command</b></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/royalty list [tribe]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Lists the royalty board. If a tribe is specified, only that tribe will be reported.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/royalty set &lt;player> &lt;position></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1094,11 +1180,11 @@
                         
                         Sets the specified player to the specified position of their tribe. This will overwrite
                         the position entirely.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/royalty clear &lt;tribe> &lt;position></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1109,11 +1195,11 @@
                         
                         Clears the entry at the specified location and updates the royalty board. If there are
                         filled positions below the empty ones, they will be moved up.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/royalty update</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1124,11 +1210,11 @@
 
                         Reloads and updates the royalty board. If there are manual changes to board.yml, use this
                         command to load the new file in-game.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/royalty manage &lt;tribe> &lt;position> [key] [value]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1138,11 +1224,11 @@
                         </hover_note>
 
                         Manually set data values in board.yml.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/eyeofonyx ban &lt;username></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1151,11 +1237,11 @@
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         Adds a player to the royalty ban list. Banned players may not participate in royalty.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/eyeofonyx unban &lt;username></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1165,11 +1251,11 @@
                         </hover_note>
                         
                         Removes a player from the royalty ban list.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/eyeofonyx freeze</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1180,11 +1266,11 @@
 
                         Toggles whether the royalty board can change or not. In the frozen state, challenge
                         initiation and royalty board movement are disabled.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/eyeofonyx disable</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1194,11 +1280,11 @@
                         </hover_note>
                         
                         Disables the Eye of Onyx plugin. Use in a dire emergency.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/eyeofonyx config [key] [value]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1208,52 +1294,19 @@
                         </hover_note>
 
                         Allows changing some values in config.yml.</p>
-                </div>
-                <div>
-                    <p><a href="#challenge-handshakes"><code>/challenge</code></a></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
+                    <p><code>/challenge</code></p>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Initiate a challenge.</p>
-                </div>
+                </entry>
 
-            </div>
-
-            <h3 id="challenge-handshakes">Challenge Handshakes</h3>
-
-            <div class="two-share">
-                <div>
-                    <p>A challenge can be initiated with /challenge. To initiate a challenge, a player must meet the
-                        following requirements:</p>
-                    <ul>
-                        <li>The player must be part of a tribe-associated team.</li>
-                        <li>The player must not already be participating in a challenge.</li>
-                        <li>The player must not be on movement cooldown.</li>
-                        <li>he player must not be a ruler.</li>
-                        <li>The player must not be banned from royalty.</li>
-                    </ul>
-                    <p>If all these requirements are met, the player will be given the option to challenge one of the
-                        positions directly above their own. When chosen, Eye of Onyx will verify that the player being
-                        challenged (the defender) meets the following requirements:</p>
-                    <ul>
-                        <li>The player must not already be participating in a challenge.</li>
-                        <li>The player must not be on movement cooldown.</li>
-                    </ul>
-                    <p>If all these requirements are met, the challenge will be initiated! The defender then must
-                        acknowledge the challenge via the notification received.</p>
-                </div>
-
-                <div>
-                    <img alt="A GIF of the challenge initiation process." src="ChallengeInit.GIF">
-                    <p class="caption">The challenge initiation process.</p>
-                    <img alt="A GIF of the challenge acknowledgement process."
-                        src="https://lh6.googleusercontent.com/8BcBdk_SV2HeTC1Tk-hrHB_E42T8orivb2WEhm3VvSJgqCOaiCmSZne8kx6cNGYjV7jvpUU7uKwve3HLWC5oTQnnZPZTeaW6E1rIaRmTQvAk6-qvtHPTjWUq_kTOBDa201ZJlc18fiVJ0IYnCetLHh4">
-                    <p class="caption">The challenge acknowledgement process</p>
-                </div>
             </div>
 
             <h2 id="grieffefender"><a href="https://docs.griefdefender.com/wiki/">GriefDefender</a></h2>
@@ -1261,16 +1314,16 @@
                 plots.</p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/abandon &lt;all|claim|top></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
@@ -1280,11 +1333,11 @@
                         </hover_note>
                         
                         Abandon a specific claim, or all of your owned claims.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/abandon world [world]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1294,121 +1347,121 @@
                         </hover_note>
                         
                         Abandon all claims in the current world or a specified world.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/buyblocks &lt;count></count></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Purchases additional claim blocks.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gd buy claim</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         View a list of claims for sale.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/contractclaim &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Contracts/shrinks the claim from the direction you are facing.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/claimcreate &lt;radius> [<a href="#claim-types">type</a>]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates a claim around the player of the given type.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/expandclaim &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Expands the claim in the direction you are facing.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gd claim farewell &lt;clear|message></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sets a message to display when a player leaves the claim.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gd claim greeting &lt;clear|message></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sets a message to display when a player enters the claim.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/claimnotifications</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Enable/disable greeting and farewell messages on trusted claims.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gd claim we &lt;claim|clear|select></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Used to manage GD claims with WorldEdit.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/cuboid</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Toggles 3D claiming on and off.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/modeadmin</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1418,44 +1471,44 @@
                         </hover_note>
                         
                         Enables admin claim mode with the claiming tool.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/modebasic</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Enables basic claim mode with the claiming tool.</p>
-                </div>
-                <div>
-                    <p><code>/modesubdivide</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
+                    <p><code>/modesubentryide</code></p>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
-                        Enables subdivide claim mode with the claiming tool.</p>
-                </div>
-                <div>
+                        Enables subentryide claim mode with the claiming tool.</p>
+                </entry>
+                <entry>
                     <p><code>/modetown</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Enables town claim mode with the claiming tool.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gd player info <player> <world>|<player>|[<world>]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1465,22 +1518,22 @@
                         </hover_note>
                         
                         Gets information about a player and their claim blocks.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/sellblocks &lt;blocks></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sell your claim blocks for server money.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gd sell claim &lt;price></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
@@ -1488,51 +1541,51 @@
                         
                         Puts your claim up for sale at the set price. To disable sale, set the price to -1 or set
                         ForSale setting in /claiminfo to false.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/transferblocks &lt;player> &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Transfers the player’s claim blocks to another player.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/trapped</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Teleports the player to a safe location if they are stuck and unable to build.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/trust|trustall &lt;player|group|list> &lt;<a href="#trust-types">trusttype</a>></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         View and manage claim permissions for this claim or all claims you own.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/untrust|untrustall &lt;player|group></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Revoke a player or group’s access to this claim or all claims you own.</p>
-                </div>
+                </entry>
 
             </div>
 
@@ -1568,23 +1621,26 @@
                 players can use by creating groups and assigning permissions.</p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/lp editor</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Provides a link to a web editor. This editor is used to manage permissions.</p>
-                </div>
+                </entry>
             </div>
 
             <h2 id="signshop"><a href="https://dev.bukkit.org/projects/signshop/pages/signs">SignShop</a></h2>
@@ -1593,175 +1649,175 @@
                 a table of sign types available with SignShop instead.</p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Sign</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Buy] / [Sell]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Buy / sell an item from the shop chest for the price specified on the 4th line.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Trade]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Trades one set of items for another, 2 chests required.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Share]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Link to another SignShop to split profits, lines 2 and 3 are for the other players, line 4 is for
                         % amounts (e.g. "25/50" for 75% to others).</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Bank]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Link to another SignShop to make the shop take/give money to a bank account, The bank account is
                         specified on line 2 of the sign (Note: you must own the bank account for this to work).</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Donate]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Gives an item to the shop chest.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[DonateHand]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Donates the item in your hand to the shop chest.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Dispose]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Takes the item in your hand and safely decomposes the material.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Slot]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Gives a random item from the selected chest items (not the entire inventory) to the player.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[DeviceOn]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Turns a lever on.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[DeviceOff]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Turns a lever off.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Toggle]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Toggles a lever.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Device]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Temporarily turns on a lever.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[DeviceItem]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Temporarily turns on a lever using items as payment.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Jukebox]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Allows players to create jukeboxes by placing music discs in a chest.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Restricted]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Makes it so only certain permission groups can use the linked SignShop (listed on lines 2, 3, and
                         4).</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[gBuy]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Buy an item from the shop chest, but the owner receives no money.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[gSell]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Sell an item to the shop chest, and the player receives money, but not from the owner.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[iBuy]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Buy an item from the "shop", money goes to no one, infinite items.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[iSell]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Sell an item to the "shop", infinite money, item disappears.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[iTrade]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Trades one set of items for another, infinite stock.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Class]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Takes the user's inventory and replaces it with items from a chest, infinite stock.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Kit]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1769,187 +1825,187 @@
                         
                         Gives the buyer a set of items once (infinite stock), must be reset using ResetKit sign
                         before they can use it again.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[ResetKit]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Allows a player to use a Kit sign again.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[iBuyXP]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Buy the number of XP levels on the third line of the sign.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[iSellXP]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Sell the number of XP levels on the third line of the sign.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[iXPBuy]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Buy an item using raw XP points on the third line of the sign.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[iXPSell]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Sell an item using raw XP points on the third line of the sign.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[iSlot]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Gives a random item from the selected chest items with infinite stock.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Day]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Turns the time to day.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Night]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Turns the time to night.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Rain]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Turns on rain + thunder.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[ClearSkies]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Turns off rain + thunder.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Repair]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Repairs the current item.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Heal]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Fully heals the player.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Enchant]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Sells the enchantments from the item in the chest.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Disenchant]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Removes enchantments from an item.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[TpToOwner]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         An example of a custom sign for running commands.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Command]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Allows players to run commands on the 2nd and 3rd lines of the sign.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[UserCommand]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
@@ -1957,18 +2013,18 @@
                         
                         Allows players to run commands on the 2nd and 3rd lines of the sign as if they typed it
                         themselves.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[Promote]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>🛡️
                             <hover_note_text id="note_admin"></hover_note_text>
                         </hover_note>
                         
                         Promotes players to the permission group listed on the 2nd line of the sign.</p>
-                </div>
+                </entry>
 
             </div>
 
@@ -1976,144 +2032,169 @@
             <p>spark (yes, the <i>s</i> in uncapitalized) is a performance monitoring tool.</p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="https://spark.lucko.me/docs/Command-Usage#spark-profiler"><code>/spark profiler</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Used to start, stop, or view information on a profiler. Profilers are used to create
                         digestible information on how well the server is running.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="https://spark.lucko.me/docs/Command-Usage#spark-tps"><code>/spark tps</code></a></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Prints information about the servers TPS (ticks per second) rate and CPU usage.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="https://spark.lucko.me/docs/Command-Usage#spark-health"><code>/spark health</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Generates a health report for the server, including TPS, CPU, Memory and Disk Usage.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="https://spark.lucko.me/docs/Command-Usage#spark-ping"><code>/spark ping [--player &lt;username>]</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Prints information about average (or specific) player ping.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="https://spark.lucko.me/docs/Command-Usage#spark-tickmonitor"><code>/spark tickmonitor</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Controls the tick monitoring system.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a href="https://spark.lucko.me/docs/Command-Usage#spark-gc"><code>/spark gc</code></a></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Prints information about the servers GC (garbage collection) history.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="https://spark.lucko.me/docs/Command-Usage#spark-gcmonitor"><code>/spark gcmonitor</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Toggles the GC (garbage collection) monitoring system on or off.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="https://spark.lucko.me/docs/Command-Usage#spark-heapsummary"><code>/spark heapsummary</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Generates a new memory (heap) dump summary and upload it to the viewer.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="https://spark.lucko.me/docs/Command-Usage#spark-heapdump"><code>/spark heapdump</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Generates a new heapdump (.hprof snapshot) file and saves to the disk.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><a
                             href="https://spark.lucko.me/docs/Command-Usage#spark-activity"><code>/spark activity</code></a>
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Prints information about recent activity performed by spark.</p>
-                </div>
+                </entry>
             </div>
-
-            <h2 id="vault">Vault</h2>
-            <p>Vault provides APIs for chat, permissions, and economy, but Wings of Fire: The New World only uses it as
-                an API for EssentialsEcon (the economy provided by EssentialsX). As such, Vault has no important
-                commands.</p>
 
             <h2 id="worldedit"><a href="https://worldedit.enginehub.org/en/latest/">WorldEdit</a></h2>
             <p>WorldEdit is a terrain editing plugin that allows operators to move and shape large quantities of blocks.
@@ -2124,62 +2205,77 @@
 
             <h3 id="worldedit-basic-commands">Basic Commands</h3>
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//wand</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Gives the player a wand (wooden axe). Left click to select the first desired position, right
                         click to select the second.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//undo [#]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Reverses a chosen number of WorldEdit commands. Defaults to 1.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//redo [#]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Reverses a chosen number of <code>//undo</code> commands. Defaults to 1.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//pos1|pos2, //1|2</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sets first and second positions to your current location respectively without the wand.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//set &lt;block></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2188,12 +2284,15 @@
                         </hover_note>
                         
                         Sets the current selection to the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//replace &lt;from> &lt;to></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2202,45 +2301,57 @@
                         </hover_note>
                         
                         Replaces the target block in a selection to the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//replacenear &lt;radius> &lt;from> &lt;to></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Replaces the target block in the radius to the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//copy</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Copies all blocks in a selection to the clipboard.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//cut</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Cuts all blocks in a selection to the clipboard.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//paste</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
@@ -2249,46 +2360,58 @@
                         </hover_note>
 
                         Pastes all blocks in the clipboard relative to the player’s position.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//clear clipboard</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Clears the clipboard.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//rotate &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Rotates the contents of the clipboard with the given angle (multiples of 90).</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//flip &lt;direction></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Flips the contents of the clipboard across the given direction or the direction the player is
                         facing.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//move &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2298,22 +2421,25 @@
                         
                         Moves all blocks in the selection to the chosen distance relative to the direction the
                         player is facing.</p>
-                </div>
+                </entry>
             </div>
 
             <h3 id="worldedit-tool-commands">Tool Commands</h3>
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//shift &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2322,78 +2448,99 @@
                         </hover_note>
                         
                         Shifts the selection a given amount.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//expand &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Expands the selection a given amount.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//sel</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Deselects the selection.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//count &lt;target></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Counts the number of blocks in a selection.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//size</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Provides information about the selection.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//drain &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Drains water and lava in the given radius.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//fixwater|fixlava &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Levels water or lava in the given radius.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/butcher &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2402,210 +2549,264 @@
                         </hover_note>
                         
                         Kills mobs in the given radius.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/up &lt;amount></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Teleports the player up on the y axis the given amount of blocks.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/thru</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Teleports the player through obstacles in the facing direction.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/give &lt;player> debugstick 1</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Gives the player a debug stick that can be used to easily rotate blocks.</p>
-                </div>
+                </entry>
             </div>
 
             <h3 id="worldedit-generation-commands">Generation Commands</h3>
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//stack &lt;#></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Repeats the content of the selection the chosen distance (#) relative to the direction the
                         player is facing.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//schematic list</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Lists available saved schematics.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//schematic load &lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Loads the chosen schematic into the clipboard.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//schematic paste</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Pastes the schematic currently in the clipboard.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//schematic save &lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Saves the current selection as a schematic with the chosen name.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//schematic delete &lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Deletes the chosen saved schematic.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//hollow &lt;thickness> &lt;block></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Hollows out the object in the selection with the given wall thickness and block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//walls &lt;block></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates walls around the sides of the selection with the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//cyl &lt;block> &lt;radius> &lt;height></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates a cylinder of the specified size using the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//hcyl &lt;block> &lt;radius> &lt;height></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates a hollow cylinder of the specified size using the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//sphere &lt;block> &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates a sphere of the specified size using the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//hsphere &lt;block> &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates a hollow sphere of the specified size using the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//pyramid &lt;block> &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates a pyramid of the specified size using the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//hpyramid &lt;block> &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates a hollow pyramid of the specified size using the chosen block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//fill &lt;block></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2614,192 +2815,222 @@
                         </hover_note>
                         
                         Fills a hole or container with the given block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//forest &lt;type></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Generates the specified type of forest in the selected region.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//snow &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Places snow in a given radius.</p>
-                </div>
+                </entry>
             </div>
 
             <h3 id="worldedit-brush-commands">Brush Commands</h3>
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//br sphere &lt;block> &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Applies a sphere brush to the held tool. Right click to use the brush.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//br cyl &lt;block> &lt;radius> &lt;height></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Applies a cylinder brush to the held tool. Unlike the sphere, the cylinder brush has a height
                         parameter along with a radius.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//br smooth &lt;radius> &lt;height></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Applies a horizontal smoothing brush to the held tool.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//br deform &lt;radius></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Applies a deform brush to the held tool.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/br none/unbind</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Unbinds the brush from the tool you are currently holding.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/mask &lt;block></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Applies or removes a mask to the selected brush. The brush will only affect the specified
                         block until the mask is disabled using <code>/mask</code> again.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/gmask &lt;block></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sets a global mask for all brushes. The brush will only affect the specified block until the
                         mask is disabled using <code>/gmask</code> again.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/tracemask #solid</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Allows brush to work underwater. Run /tracemask to disable.</p>
-                </div>
+                </entry>
             </div>
 
             <h3 id="worldedit-flags">Flags</h3>
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Flag</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[%block1,%block2,%block3,...]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Percentage modifier that allows multiple blocks to be included in a command. The given percentage
                         values must add up to 100% and are separated by a comma with no spaces. Exclude percentages for
                         equal distribution. (e.g. <code>//replace stone 70%dirt,30%cobblestone</code>) </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[facing=direction]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Specifies where a directional block should face.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[-a]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Ignore air blocks</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[-e]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Include entities</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[-b]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Include biomes</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[-m &lt;block>]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Excludes everything that isn’t a given block.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[!]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Prefixing any block with an exclamation point will exclude everything that comes after it. (e.g.
                         <code>//replace !dirt stone</code> will replace everything that is not dirt with stone.)
                     </p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>[*]</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>Prefixing any block with an asterisk (*) will set the given block in random directions.</p>
-                </div>
+                </entry>
             </div>
 
             <h2 id="worldguard"><a href="https://worldguard.enginehub.org/en/latest/">WorldGuard</a></h2>
@@ -2807,56 +3038,68 @@
                 The <a href="https://www.curseforge.com/minecraft/mc-mods/worldeditcui-fabric">WorldEdit CUI mod</a> is
                 recommended for some helpful visual information when using this tool. This guide will cover the most
                 common commands. More in-depth information can be found at the <a
-                    href="https://worldguard.enginehub.org/en/latest/">WorldGuard Documentation Hub</a>.
+                    href="https://worldguard.enginehub.org/en/latest/">WorldGuard Documentation Hub</a>.</b>
             </p>
 
             <h3 id="worldguard-commands">Commands</h3>
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Command</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//wand</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Gives the player a wand (wooden axe). Left click to select the first desired position, right
                         click to select the second.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>//pos1|pos2</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sets first and second positions to your current location respectively without the wand.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/rg define &lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Creates a new region using the current selection.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/rg remove &lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
@@ -2865,35 +3108,44 @@
                         </hover_note>
 
                         Deletes the given region. This cannot be undone.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/rg info &lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Provides information on the given region. Defaults to the region the player is currently
                         inside if no name is specified. Manual selections and changes can be made in this menu.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/rg flags &lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Lists all region flags in the given region. Manual selections can be made in this menu.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/rg flag &lt;name></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2902,12 +3154,15 @@
                         </hover_note>
                         
                         Allows or denies a specified game rule in the given region.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/rg setpriority</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2917,23 +3172,29 @@
                         
                         Sets the priority of a given region. Higher number priorities override the permissions of
                         lower number priorities.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/rg flag &lt;name> deny-message &lt;content></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sets the message players will receive when an action they attempt is blocked.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>/rg flag &lt;name> blocked-cmds </command></code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
@@ -2944,7 +3205,7 @@
                         Blocks specific commands from being used in the given region. Additional commands can be
                         added by separating with a comma. (e.g.
                         <code>/rg flag spawn blocked-cmd /tpa,/back,/tell</code>)</p>
-                </div>
+                </entry>
             </div>
 
             <h3 id="worldguard-flags">Flags</h3>
@@ -2967,16 +3228,16 @@
                     <code>deny</code> applies that setting to both members and non-members.</b></p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Flag</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>passthrough</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
@@ -2988,11 +3249,11 @@
                         <li>If set to <code>deny</code>, then the region protects its area.</li>
                         <li>If set to <code>allow</code>, then the region no longer protects its area.</li>
                     </ul>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>build</code></p>
-                </div>
-                <div style="display: block;">
+                </entry>
+                <entry style="display: block;">
                     <p>
                         <hover_note>📕
                             <hover_note_text id="note_red"></hover_note_text>
@@ -3011,11 +3272,11 @@
                     </ul>
                     <p>This <b>should not be used to protect a region!</b> Regions are automatically protected by the
                         <code>passthrough</code> flag.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>interact</code></p>
-                </div>
-                <div style="display: block;">
+                </entry>
+                <entry style="display: block;">
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
@@ -3027,265 +3288,265 @@
                         <li>Whether vehicles (including animals) can be mounted</li>
                         <li>etc.</li>
                     </ul>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>block-break / block-place</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether blocks can be mined / used.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>use</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether doors, levers, etc. (but not inventories) can be used.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>damage-animals</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether players can harm friendly animals (cows, sheep, etc).</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>chest-access</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether inventories can be accessed.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>ride</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether vehicles (including animals) can be mounted.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>pvp</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether player versus player combat is permitted.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>sleep</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether sleeping in a bed is permitted.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>respawn-anchors</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether respawn anchors can be activated.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>tnt</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether TNT detonation or damage is permitted.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>vehicle-place / vehicle-destroy</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether vehicles (boats, minecarts) can be placed / destroyed.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>lighter</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether flint and steel can be used.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>block-trampling</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether farmland and turtle eggs can be trampled.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>frosted-ice-form</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether players with frost walker boots will form ice</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>item-frame-rotation</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether items can be rotated within item frames</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>firework-damage</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether fireworks can deal damage to entities</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>use-anvil</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether anvils can be used.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>use-dripleaf</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Whether dripleaf can be used.</p>
-                </div>
+                </entry>
             </div>
 
             <p>WorldGuard Extra Flags provides the following extra flags. Note that most of these flags <b>bypass
                     operators entirely.</b></p>
 
             <div class="cmdtable">
-                <div>
+                <entry>
                     <p><b>Flag</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><b>Description</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>blocked-effects</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Disables the effects of potion effects while inside.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>chat-prefix / chat-suffix</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Defines the prefix/suffix shown when inside the region.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>chunk-unload</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Prevents chunks the region occupies from being unloaded.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>command-on-entry / command-on-exit</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Executes a command as the player when a player enters/exits the region.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>console-command-on-entry / console-command-on-exit</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
                         Executes a command as the console when a player enters/exits the region.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>fly</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
@@ -3295,11 +3556,11 @@
                         </hover_note>
                         
                         When set to <code>deny</code>, disallows creative flight from the ground.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>frostwalker</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
@@ -3307,11 +3568,11 @@
                         
                         When set to <code>deny</code>, stops frostwalker boots from forming ice on water within the
                         region.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>give-effects</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
@@ -3320,55 +3581,55 @@
                         Gives players who enter the region a permanent <a
                             href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html">potion
                             effect</a> until they leave.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>glide</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         When set to <code>deny</code>, stops all gliding inside the region.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>godmode</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         When set to <code>allow</code>, stops all damage delivered to players.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>item-durability</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         When set to <code>deny</code>, tools will not be damaged by any actions.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>join-location</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Players who disconnect in the region will teleport to the given location when joining.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>keep-exp</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
@@ -3377,11 +3638,11 @@
                         When set to <code>allow</code>, players always keep experience levels on death. If the
                         <code>keepInventory</code> gamerule is set to <code>true</code> and this flag is set to
                         <code>deny</code>, the experience will be deleted on death.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>keep-inventory</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
@@ -3390,22 +3651,22 @@
                         When set to <code>allow</code>, players always keep inventory on death. If the
                         <code>keepInventory</code> gamerule is set to <code>true</code> and this flag is set to
                         <code>deny</code>, the inventory will be deleted on death.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>nether-portals</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         When set to <code>deny</code>, nether portals cannot be lit.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>play-sounds</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📒
                             <hover_note_text id="note_yellow"></hover_note_text>
@@ -3414,51 +3675,51 @@
                         Plays a sound (from a resource location) repeatedly at a specified interval to players inside
                         the region.<br><b>This flag may produce errors if it is set incorrectly. Ask a friend to help
                             you set this if you're not sure.</b></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>respawn-location</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Sets the location to respawn players upon death.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>teleport-on-entry /  teleport-on-exit</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Teleports a player to the give location when they enter/exit the region.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>walk-speed / fly-speed</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         Players inside the region will inherit this speed while walking/flying.</p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p><code>worldedit</code></p>
-                </div>
-                <div>
+                </entry>
+                <entry>
                     <p>
                         <hover_note>📗
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
                         When set to <code>deny</code>, stops all WorldEdit operations.</p>
-                </div>
+                </entry>
             </div>
 
         </div>
