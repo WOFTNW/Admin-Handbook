@@ -82,7 +82,7 @@
             <a href="2.html#worldedit-brush-commands">Brush Commands</a>
             <a href="2.html#worldedit-flags">Flags</a>
         </div>
-        <a href="2.html#worldedit">WorldGuard</a>
+        <a href="2.html#worldguard">WorldGuard</a>
         <div class="subsubnav">
             <a href="2.html#worldguard-commands">Commands</a>
             <a href="2.html#worldguard-flags">Flags</a>
@@ -188,7 +188,7 @@
                     redstone and
                     command blocks. <b>The <i>client side</i> is the actual interface that the player uses to interact
                         with the world,
-                        but it doesn’t do any world generation or entity ticking.</b> The client side is just
+                        but it doesn't do any world generation or entity ticking.</b> The client side is just
                     responsible for
                     letting the player interact with the game (moving, changing blocks, running commands, rendering the
                     game). This concept is similar on a multiplayer server. The only difference is that all the previous
@@ -523,7 +523,7 @@
                             <hover_note_text id="note_red"></hover_note_text>
                         </hover_note>
                         
-                        Sets the player limit. This will bypass the server’s player limit, both over and under.
+                        Sets the player limit. This will bypass the server's player limit, both over and under.
                         The player limit can be increased for a concentrated event, for example.</p>
                 </entry>
                 <entry>
@@ -659,7 +659,7 @@
             <p class="caption">A demonstration of the item blacklist.</p>
 
             <h3 id="soft-whitelist">Soft Whitelist</h3>
-            <p>The soft whitelist acts as a secondary whitelist that works much like Minecraft’s built-in whitelist
+            <p>The soft whitelist acts as a secondary whitelist that works much like Minecraft's built-in whitelist
                 feature. This allows reducing the allowed players to a specified group while not modifying the main
                 whitelist. Players with the <code>dreamvisitor.nowhitelist</code> permission will always bypass the soft
                 whitelist. <b>Operators will always bypass the soft whitelist.</b>
@@ -675,7 +675,7 @@
             <h2 id="essentialsx"><a href="https://essinfo.xeya.me/commands.html">EssentialsX</a></h2>
             <p>EssentialsX is the most comprehensive general-purpose plugin available. It provides teleportation,
                 moderation tools, gameplay enhancements, homes, warps, sign shops, kits, and everything in between.
-                Being a general-purpose plugin, it doesn’t excel at any specific feature or function, but its
+                Being a general-purpose plugin, it doesn't excel at any specific feature or function, but its
                 versatility means there are a lot of commands to consider. Here are the most important for an admin:
             </p>
 
@@ -1080,7 +1080,7 @@
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
-                        Manages a player’s economy.</p>
+                        Manages a player's economy.</p>
                 </entry>
                 <entry>
                     <p><code>/feed [player]</code></p>
@@ -1138,8 +1138,10 @@
             <p>Examples:</p>
             <pre><code>/powertool setblock ~ ~-1 ~ stone
 # Executes 'setblock ~ ~-1 ~ stone' on click
+
 /powertool effect give {player} regeneration
 # Gives regeneration to a clicked player
+
 /powertool a:effect give {player} saturation
 # Adds a subsequent command to give saturation to a clicked player</code></pre>
 
@@ -1551,7 +1553,7 @@
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
-                        Transfers the player’s claim blocks to another player.</p>
+                        Transfers the player's claim blocks to another player.</p>
                 </entry>
                 <entry>
                     <p><code>/trapped</code></p>
@@ -1584,7 +1586,7 @@
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
-                        Revoke a player or group’s access to this claim or all claims you own.</p>
+                        Revoke a player or group's access to this claim or all claims you own.</p>
                 </entry>
 
             </div>
@@ -2359,7 +2361,7 @@
                             <hover_note_text id="note_red"></hover_note_text>
                         </hover_note>
 
-                        Pastes all blocks in the clipboard relative to the player’s position.</p>
+                        Pastes all blocks in the clipboard relative to the player's position.</p>
                 </entry>
                 <entry>
                     <p><code>//clear clipboard</code></p>
@@ -3015,7 +3017,7 @@
                     <p><code>[-m &lt;block>]</code></p>
                 </entry>
                 <entry>
-                    <p>Excludes everything that isn’t a given block.</p>
+                    <p>Excludes everything that isn't a given block.</p>
                 </entry>
                 <entry>
                     <p><code>[!]</code></p>
@@ -3243,7 +3245,7 @@
                             <hover_note_text id="note_yellow"></hover_note_text>
                         </hover_note>
                         
-                        This flag is short for ‘passthrough build’. It has nothing to do with movement.</p>
+                        This flag is short for 'passthrough build'. It has nothing to do with movement.</p>
                     <ul>
                         <li>If not set (default), then the region protects it area.</li>
                         <li>If set to <code>deny</code>, then the region protects its area.</li>
@@ -3282,7 +3284,7 @@
                             <hover_note_text id="note_green"></hover_note_text>
                         </hover_note>
                         
-                        Everything that involves ‘using’ a block or entity:</p>
+                        Everything that involves 'using' a block or entity:</p>
                     <ul>
                         <li>Whether doors, levers, etc. (but not inventories) can be used</li>
                         <li>Whether vehicles (including animals) can be mounted</li>
