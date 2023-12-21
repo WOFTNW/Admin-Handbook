@@ -222,9 +222,244 @@
                 when both players leave the game.</p>
             <p>The royalty board will then be updated accordingly.</p>
 
-            <div class="sidenote">
-                <p>This section is incomplete and needs more content.</p>
+            <h2 id="challenge-handshakes">Royalty Management</h2>
+
+            <p>In some cases, it may be necessary to manually manage the royalty board. Internally, the royalty board is
+                considered a set of 10 different states, one per tribe. Each of these states have five positions, ruler,
+                heir apparent, heir presumptive, noble apparent, and noble presumptive. No state can affect another, so
+                they all act independently. In addition to the royalty board itself, Eye of Onyx also manages royalty
+                roles (on both guilds) as well as permissions through LuckPerms, which control claim permissions.
+            </p>
+        
+            <p>Below are all Eye of Onyx commands. Note the following:
+                <ul>
+                    <li>When an argument requires a player or entity, it will always allow vanilla
+                        <a href="1.html#target-selectors">target selectors</a>.</li>
+                    <li>Times will always attempt to display in your local time zone (determined through approximate
+                        geo-location). When submitting a time, submit it using your local time.</li>
+                </ul>
+            </p>
+
+            <div class="cmdtable">
+                <entry>
+                    <p><b>Command</b></p>
+                </entry>
+                <entry>
+                    <p><b>Description</b></p>
+                </entry>
+                <entry>
+                    <p><code>/royalty list [tribe]</code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+
+                        Lists the royalty board. If a tribe is specified, only that tribe will be reported.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/royalty set &lt;player> &lt;position></code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+
+                        Sets the specified member to the specified position of their tribe. This will overwrite the
+                        specified position of their tribe. If a player is overwritten, their roles and permissions will
+                        be removed and their challenges will be canceled. If there are empty positions available above
+                        the target position, the player will automatically be promoted to the highest empty position.
+                        The player will be given appropriate roles and permissions. This action will fail if the player
+                        is banned, the player has no recorded tribe, or the player is already on the royalty board.
+                        This command, upon succeeding, will set the user's last online time to the current time,
+                        regardless of when the player was actually last online.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/royalty clear &lt;tribe> &lt;position></code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+
+                        Clears the entry at the specified location and updates the royalty board. This will cancel any
+                        challenges involving this player as well as remove their roles and permissions. If any players
+                        occupy positions below the player to be removed, they will automatically be promoted.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/royalty swap &lt;tribe> &lt;pos1> &lt;pos2></code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+
+                        Swap two positions on a tribe's royalty board. This will cancel any challenges involving these
+                        players. It is allowed to swap any position with any position, which means it is possible to swap
+                        an occupied position with an empty position. If you want to swap with a player who is not on the
+                        royalty board, <code>/set</code> should be used instead.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/royalty update</code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📒
+                            <hover_note_text id="note_yellow"></hover_note_text>
+                        </hover_note>
+
+                        Reloads, recalculates, and updates the entire royalty board. It may take some time to completely
+                        apply permissions and roles. When executed, Eye of Onyx will reload <code>board.yml</code> from disk
+                        and recalculate the positions, permissions, and roles of each position on each state. Note that this
+                        command does not check any players who are not on the royalty board, so non-royalty members will not
+                        have any checks or updates.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/royalty manage &lt;tribe> &lt;position> [key] [value]</code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📕
+                            <hover_note_text id="note_red"></hover_note_text>
+                        </hover_note>
+
+                        Manually set data values in board.yml. If you execute the command without the <code>[key]</code> or
+                        <code>[value]</code> arguments, Eye of Onyx will print all the attributes of that position. If only
+                        the <code>[value]</code> argument is missing, Eye of Onyx will print the key specified. Below are all
+                        keys and their descriptions.
+
+                        <ul>
+                            <li><code>UUID</code>: The UUID of the player holding this position. This cannot be changed.</li>
+                            <li><code>NAME</code>: The OC name of the player. This is usually set automatically from the
+                            player's OpenRP character.</li>
+                            <li><code>JOINED_POS</code>: The date and time that this player assumed their current position.</li>
+                            <li><code>JOINED_BOARD</code>: The date and time that this player joined the royalty board.</li>
+                            <li><code>LAST_ONLINE</code>: The date and time that this player last joined or left the game.</li>
+                            <li><code>CHALLENGER</code>: The player challenging this position.</li>
+                            <li><code>CHALLENGER</code>: The player challenging this position. This does not appear for ruler
+                                positions.</li>
+                        </ul>
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/eyeofonyx ban &lt;username></code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+                        Adds a player to the royalty ban list. Banned players may not participate in royalty. This disallows them
+                        access to the <code>/challenge</code> command and will remove them from the royalty board if they are
+                        currently occupying a position.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/eyeofonyx unban &lt;username></code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+
+                        Removes a player from the royalty ban list.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/eyeofonyx freeze</code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📕
+                            <hover_note_text id="note_red"></hover_note_text>
+                        </hover_note>
+
+                        Toggles whether the royalty board can change or not. In the frozen state, challenge
+                        initiation and royalty board movement are disabled.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/eyeofonyx disable</code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>✖️
+                            <hover_note_text id="note_x"></hover_note_text>
+                        </hover_note>
+
+                        Disables the Eye of Onyx plugin. Use in a dire emergency.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/eyeofonyx config [key] [value]</code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>🛡️
+                            <hover_note_text id="note_admin"></hover_note_text>
+                        </hover_note>
+                        <hover_note>📕
+                            <hover_note_text id="note_red"></hover_note_text>
+                        </hover_note>
+
+                        Allows changing some values in config.yml.
+                    </p>
+                </entry>
+                <entry>
+                    <p><code>/challenge</code></p>
+                </entry>
+                <entry>
+                    <p>
+                        <hover_note>📗
+                            <hover_note_text id="note_green"></hover_note_text>
+                        </hover_note>
+
+                        Initiate a challenge.
+                    </p>
+                </entry>
             </div>
+
+            <h2 id="challenge-handshakes">Roles</h2>
+
+            <h2 id="challenge-handshakes">Permissions</h2>
+
 
         </div>
     </main>
