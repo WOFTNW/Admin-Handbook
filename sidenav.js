@@ -20,16 +20,16 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
         await delay(200);
 
         document.getElementById("sidenav").style.width = "0px";
-        document.getElementById("body").style.marginLeft = "0px";
+        document.body.style.marginLeft = "0px";
         document.getElementById("footer").style.marginLeft = "0px";
         document.getElementById("navbutton").style.marginLeft = "0px";
     }
 
     const openNav = async () => {
-
+ 
         if (document.documentElement.clientWidth > 1427) {
             document.getElementById("sidenav").style.width = "250px";
-            document.getElementById("body").style.marginLeft = "250px";
+            document.body.style.marginLeft = "250px";
             document.getElementById("footer").style.marginLeft = "250px";
         } else if (document.documentElement.clientWidth > 1100) {
             document.getElementById("sidenav").style.width = "250px";

@@ -99,16 +99,24 @@ hr.solid {
 	border-top: 0.1em solid #7a7a7a;
 }
 
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 code {
     font-size: larger;
-    color: #c9c9c9
+    color: #c9c9c9;
 }
 
 img {
     max-width: 100%;
 }
 
-.caption {
+.caption p {
     font-style: italic;
     font-weight: 300;
 }
@@ -260,8 +268,7 @@ main {
     padding: 20%;
 }
 
-.cmdtable {
-    display: grid;
+table {
     height: fit-content;
     grid: auto-flow auto / repeat(2, [line1 line2] auto);
     overflow: auto;
@@ -272,31 +279,24 @@ main {
     border-style: solid;
     border-color: #7a7a7a;
     border-radius: 5px;
+    border-collapse: collapse;
+    margin: 20px 0
 }
 
-.cmdtable entry {
-    display: block;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #7a7a7a;
-    border-radius: 0px;
-    margin: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100%;
+th, td {
+    text-align: left;
+    border: 1px solid #7a7a7a;
+    padding: 5px;
 }
 
-.cmdtable p {
-    margin: 5px;
-}
-
-.two-share {
+.split {
     display: grid;
     grid: auto-flow auto / repeat(2, [line1 line2] auto);
-    gap: 20px
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.two-share img {
+.split img {
     max-width: 500px;
 }
 
@@ -386,7 +386,7 @@ main {
         flex-direction: column;
     }
 
-    .two-share img {
+    .split img {
         width: 100%;
     }
 
@@ -404,7 +404,7 @@ main {
         font-size: medium;
     }
 
-    .two-share {
+    .split {
         grid: auto-flow auto / repeat(1, [line1] auto);
     }
 
