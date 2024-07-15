@@ -68,7 +68,7 @@ layout: none
             </div>
         </header>
         <div class="copy">
-            &copy; 2023 Wings of Fire: The New World. <a
+            &copy; 2023-2024 Wings of Fire: The New World. <a
                 href="https://github.com/Stonley890/Admin-Handbook/blob/main/LICENSE">MIT License</a>
         </div>
 
